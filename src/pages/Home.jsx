@@ -24,7 +24,7 @@ export const Home = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[#07162C]">
+      <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[#000000]">
         {/* Background Image with Cinematic Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 scale-105"
@@ -45,10 +45,10 @@ export const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-[#F4A300]/15 border border-[#F4A300]/40 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-[#F4A300] mb-6 backdrop-blur-md"
+              className="inline-flex items-center gap-2 bg-[#B22222]/20 border border-[#B22222]/40 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-[#B22222] mb-6 backdrop-blur-md"
             >
-              <HardHat className="w-4 h-4 text-[#F4A300]" />
-              <span>Premier Construction & Civil Engineering Firm</span>
+              <HardHat className="w-4 h-4 text-[#B22222]" />
+              <span>Tier-1 Construction & Civil Engineering Enterprise</span>
             </motion.div>
 
             {/* Animated Main Headline */}
@@ -59,7 +59,7 @@ export const Home = () => {
               className="text-4xl sm:text-6xl lg:text-7xl font-black font-['Montserrat'] tracking-tight leading-[1.1] text-white"
             >
               Building Excellence.<br />
-              <span className="amber-gradient-text text-red-600">Delivering Confidence.</span>
+              <span className="text-[#B22222]">Delivering Confidence.</span>
             </motion.h1>
 
             <motion.p
@@ -68,7 +68,7 @@ export const Home = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-gray-300 text-base sm:text-xl mt-6 font-normal leading-relaxed max-w-2xl"
             >
-              From iconic commercial towers and mega infrastructure networks to bespoke luxury residences, Viva Construct transforms bold visions into enduring architectural realities.
+              Viva Constructs Limited is a multi-disciplinary construction, engineering, and project management company committed to delivering innovative, high quality, and cost-effective infrastructure solutions across all 36 States of Nigeria and West Africa.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -80,7 +80,7 @@ export const Home = () => {
             >
               <Link
                 to="/projects"
-                className="bg-red-600 hover:bg-white-500 text-[#0A2342] font-bold text-base px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1 shadow-2xl shadow-[#F4A300]/30 flex items-center justify-center gap-3 group"
+                className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-base px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1 shadow-2xl shadow-[#B22222]/30 flex items-center justify-center gap-3 group"
               >
                 Explore Projects 
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -89,7 +89,7 @@ export const Home = () => {
                 to="/contact"
                 className="bg-white/10 hover:bg-white/20 text-white font-bold text-base px-8 py-4 rounded-xl transition-all border border-white/20 backdrop-blur-md flex items-center justify-center gap-3"
               >
-                Contact Us
+                Request Proposal
               </Link>
             </motion.div>
           </div>
@@ -104,10 +104,10 @@ export const Home = () => {
             {companyStats.slice(0, 4).map((stat, idx) => (
               <div 
                 key={idx}
-                className="glass-card-dark p-5 sm:p-6 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-[#F4A300]/50 transition-all"
+                className="glass-card-dark p-5 sm:p-6 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-[#B22222]/50 transition-all"
               >
-                <div className="absolute top-0 right-0 w-16 h-16 bg-[#F4A300]/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform" />
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#F4A300] mb-1 font-['Montserrat']">
+                <div className="absolute top-0 right-0 w-16 h-16 bg-[#B22222]/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform" />
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#B22222] mb-1 font-['Montserrat']">
                   <CounterStat endValue={stat.value} suffix={stat.suffix} />
                 </div>
                 <div className="text-xs sm:text-sm font-bold text-white uppercase tracking-wider font-['Montserrat']">
@@ -123,7 +123,7 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Section 2: Why Clients Trust Us */}
+      {/* Section 2: Why Clients Choose Us */}
       <section className="py-20 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -133,71 +133,69 @@ export const Home = () => {
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img 
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" 
-                  alt="Viva Construct Skyscraper Site"
-                  className="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700" 
+                  alt="Viva Constructs Project Site"
+                  className="w-full h-[480px] object-cover hover:scale-105 transition-transform duration-700" 
                 />
               </div>
 
               {/* Floating Highlight Card */}
-              <div className="absolute -bottom-8 -right-4 sm:bottom-6 sm:right-6 z-20 bg-[#0A2342] text-white p-6 rounded-2xl shadow-2xl border border-[#F4A300]/30 max-w-xs">
+              <div className="absolute -bottom-8 -right-4 sm:bottom-6 sm:right-6 z-20 bg-[#000000] text-white p-6 rounded-2xl shadow-2xl border border-[#B22222]/40 max-w-xs">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-lg bg-[#F4A300] flex items-center justify-center text-[#0A2342] font-bold">
+                  <div className="w-10 h-10 rounded-lg bg-[#B22222] flex items-center justify-center text-white font-bold">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-white font-['Montserrat']">Zero Lost-Time</h4>
-                    <p className="text-xs text-[#F4A300]">OSHA Safety Certified</p>
+                    <h4 className="font-bold text-sm text-white font-['Montserrat']">Safety & HSE First</h4>
+                    <p className="text-xs text-[#B22222]">100% Commitment to Safety</p>
                   </div>
                 </div>
                 <p className="text-xs text-gray-300 leading-relaxed">
-                  Over 2.4 million consecutive safe hours delivered across active Tier-1 projects.
+                  Every project is executed with disciplined project management and zero-defect safety governance.
                 </p>
               </div>
             </div>
 
             {/* Content Column */}
             <div>
-              <span className="text-[#F4A300] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
-                Pioneering Engineering
+              <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
+                What Makes Viva Constructs Different?
               </span>
-              <h2 className="text-3xl sm:text-4xl font-black text-[#0A2342] font-['Montserrat'] tracking-tight leading-tight">
-                Setting New Standards in Tier-1 Global Construction
+              <h2 className="text-3xl sm:text-4xl font-black text-[#000000] font-['Montserrat'] tracking-tight leading-tight">
+                At Viva Constructs Limited, We Don’t Simply Build Structures  We Build Confidence.
               </h2>
-              <p className="text-gray-600 text-base mt-4 leading-relaxed">
-                For over a decade, Viva Construct has stood at the forefront of structural engineering innovation. We combine 5D Building Information Modeling (BIM) with sustainable material science to engineer structures that inspire generations.
+              <p className="text-gray-600 text-sm sm:text-base mt-4 leading-relaxed">
+                Our strength lies in combining technical expertise with disciplined project management to deliver exceptional results across residential, commercial, industrial, telecommunications, and civil engineering projects.
               </p>
 
-              <div className="mt-8 space-y-4">
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  "LEED Platinum & Net-Zero Carbon Building Protocols",
-                  "5D BIM Virtual Clash Detection & Earned Value Management",
-                  "Turnkey Design-Build, CMAR & Lump-Sum Contract Flexibility",
-                  "24/7 Rapid Structural & Facility Asset Maintenance"
+                  "Experienced multi disciplinary engineering team",
+                  "End-to-end project management & SLA delivery",
+                  "Transparent budgeting & procurement",
+                  "Strict Health, Safety & Environmental (HSE) compliance",
+                  "Telecommunications infrastructure specialists",
+                  "36 States & West Africa execution capability",
+                  "Strict quality assurance processes",
+                  "Modern construction technologies",
+                  "Client focused solutions tailored to each project",
+                  "Long term value rather than short-term fixes"
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#F4A300]/20 flex items-center justify-center text-[#F4A300] flex-shrink-0 mt-0.5">
-                      <CheckCircle2 className="w-4 h-4 text-[#F4A300]" />
+                  <div key={idx} className="flex items-start gap-2">
+                    <div className="w-5 h-5 rounded-full bg-[#B22222]/20 flex items-center justify-center text-[#B22222] flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#B22222]" />
                     </div>
-                    <span className="text-sm font-semibold text-[#0A2342]">{item}</span>
+                    <span className="text-xs font-semibold text-[#000000] leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-10 flex items-center gap-6">
+              <div className="mt-8 flex items-center gap-6">
                 <Link
                   to="/about"
-                  className="bg-[#0A2342] hover:bg-[#07162C] text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all shadow-lg flex items-center gap-2"
+                  className="bg-[#000000] hover:bg-[#222222] text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all shadow-lg flex items-center gap-2"
                 >
-                  Read Our Full Story <ChevronRight className="w-4 h-4 text-[#F4A300]" />
+                  Read Our Story & Inspiration <ChevronRight className="w-4 h-4 text-[#B22222]" />
                 </Link>
-                <div className="flex items-center gap-3">
-                  <div className="flex -space-x-2">
-                    <img className="w-9 h-9 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" />
-                    <img className="w-9 h-9 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" />
-                    <img className="w-9 h-9 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" alt="David Chen" />
-                  </div>
-                  <span className="text-xs text-gray-500 font-medium">Led by Industry Visionaries</span>
-                </div>
               </div>
             </div>
 
@@ -209,10 +207,10 @@ export const Home = () => {
       <section className="py-20 bg-[#F8F9FA] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#F4A300] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
+            <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
               Comprehensive Capabilities
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-grey-500 font-['Montserrat'] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-black text-[#000000] font-['Montserrat'] tracking-tight">
               Mastery Across All Construction Disciplines
             </h2>
             <p className="text-gray-600 text-sm sm:text-base mt-3">
@@ -233,17 +231,17 @@ export const Home = () => {
                       alt={service.title} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A2342] via-transparent to-transparent opacity-80" />
-                    <span className="absolute top-4 left-4 bg-[#F4A300] text-[#0A2342] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-80" />
+                    <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
                       {service.category}
                     </span>
                   </div>
 
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#0A2342] font-['Montserrat'] group-hover:text-[#F4A300] transition-colors">
+                    <h3 className="text-xl font-bold text-[#000000] font-['Montserrat'] group-hover:text-[#B22222] transition-colors">
                       {service.title}
                     </h3>
-                    <p className="text-xs text-[#F4A300] font-semibold mt-1">
+                    <p className="text-xs text-[#B22222] font-semibold mt-1">
                       {service.subtitle}
                     </p>
                     <p className="text-gray-600 text-sm mt-3 line-clamp-3 leading-relaxed">
@@ -255,9 +253,9 @@ export const Home = () => {
                 <div className="px-6 pb-6 pt-0">
                   <Link
                     to="/services"
-                    className="inline-flex items-center gap-2 text-xs font-bold text-[#0A2342] group-hover:text-[#F4A300] transition-colors"
+                    className="inline-flex items-center gap-2 text-xs font-bold text-[#000000] group-hover:text-[#B22222] transition-colors"
                   >
-                    View Service Scope <ArrowRight className="w-4 h-4" />
+                    View Service Scope <ArrowRight className="w-4 h-4 text-[#B22222]" />
                   </Link>
                 </div>
               </div>
@@ -267,7 +265,7 @@ export const Home = () => {
           <div className="text-center mt-12">
             <Link
               to="/services"
-              className="bg-[#F4A300] hover:bg-[#D98F00] text-[#0A2342] font-bold text-sm px-8 py-4 rounded-xl shadow-lg transition-all inline-flex items-center gap-2"
+              className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg transition-all inline-flex items-center gap-2"
             >
               Explore All 11 Specialized Services <ArrowRight className="w-4 h-4" />
             </Link>
@@ -276,14 +274,14 @@ export const Home = () => {
       </section>
 
       {/* Section 4: Featured Landmark Projects */}
-      <section className="py-20 bg-[#0A2342] text-white relative overflow-hidden">
+      <section className="py-20 bg-[#000000] text-white relative overflow-hidden">
         {/* Glow */}
-        <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#F4A300]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#B22222]/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
             <div>
-              <span className="text-[#F4A300] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
+              <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
                 Portfolio Showcase
               </span>
               <h2 className="text-3xl sm:text-5xl font-black text-white font-['Montserrat'] tracking-tight">
@@ -292,7 +290,7 @@ export const Home = () => {
             </div>
             <Link
               to="/projects"
-              className="mt-4 md:mt-0 text-[#F4A300] hover:text-white font-bold text-sm flex items-center gap-2 transition-colors"
+              className="mt-4 md:mt-0 text-[#B22222] hover:text-white font-bold text-sm flex items-center gap-2 transition-colors"
             >
               View Full Gallery <ArrowRight className="w-4 h-4" />
             </Link>
@@ -302,7 +300,7 @@ export const Home = () => {
             {projectsData.slice(0, 3).map((project) => (
               <div 
                 key={project.id}
-                className="glass-card-dark rounded-2xl overflow-hidden border border-white/10 group hover:border-[#F4A300]/50 transition-all duration-300"
+                className="glass-card-dark rounded-2xl overflow-hidden border border-white/10 group hover:border-[#B22222]/50 transition-all duration-300"
               >
                 <div className="relative h-64 overflow-hidden">
                   <img 
@@ -310,18 +308,18 @@ export const Home = () => {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#07162C] via-transparent to-transparent opacity-90" />
-                  <span className="absolute top-4 left-4 bg-[#F4A300] text-[#0A2342] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-90" />
+                  <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
                     {project.category}
                   </span>
                   <div className="absolute bottom-4 left-4 right-4 text-xs text-gray-300 flex items-center justify-between">
-                    <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-[#F4A300]" /> {project.location}</span>
-                    <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-[#F4A300]" /> {project.year}</span>
+                    <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-[#B22222]" /> {project.location}</span>
+                    <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-[#B22222]" /> {project.year}</span>
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white font-['Montserrat'] group-hover:text-[#F4A300] transition-colors">
+                  <h3 className="text-xl font-bold text-white font-['Montserrat'] group-hover:text-[#B22222] transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-xs text-gray-400 mt-2 line-clamp-2">
@@ -331,7 +329,7 @@ export const Home = () => {
                   <div className="mt-4 pt-4 border-t border-white/10 flex justify-between items-center text-xs">
                     <div>
                       <span className="text-gray-400 block">Investment Scale</span>
-                      <span className="text-[#F4A300] font-bold">{project.budget}</span>
+                      <span className="text-[#B22222] font-bold">{project.budget}</span>
                     </div>
                     <div>
                       <span className="text-gray-400 block">Duration</span>
@@ -350,11 +348,11 @@ export const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#F4A300] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
+            <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
               Client Endorsements
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-[#0A2342] font-['Montserrat'] tracking-tight">
-              Trusted by Corporate Developers & Public Authorities
+            <h2 className="text-3xl sm:text-4xl font-black text-[#000000] font-['Montserrat'] tracking-tight">
+              Trusted by Developers & Institutional Clients
             </h2>
           </div>
 
@@ -362,9 +360,9 @@ export const Home = () => {
             {testimonialsData.slice(0, 3).map((item) => (
               <div key={item.id} className="bg-[#F8F9FA] p-8 rounded-2xl border border-gray-200 shadow-md relative flex flex-col justify-between">
                 <div>
-                  <div className="flex text-[#F4A300] mb-4">
+                  <div className="flex text-[#B22222] mb-4">
                     {[...Array(item.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-[#F4A300]" />
+                      <Star key={i} className="w-5 h-5 fill-[#B22222]" />
                     ))}
                   </div>
                   <p className="text-gray-700 text-sm italic leading-relaxed mb-6">
@@ -373,9 +371,9 @@ export const Home = () => {
                 </div>
 
                 <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
-                  <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full object-cover border-2 border-[#F4A300]" />
+                  <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full object-cover border-2 border-[#B22222]" />
                   <div>
-                    <h4 className="font-bold text-sm text-[#0A2342] font-['Montserrat']">{item.name}</h4>
+                    <h4 className="font-bold text-sm text-[#000000] font-['Montserrat']">{item.name}</h4>
                     <p className="text-xs text-gray-500">{item.title}, {item.company}</p>
                   </div>
                 </div>
@@ -386,29 +384,29 @@ export const Home = () => {
       </section>
 
       {/* Section 6: CTA Banner */}
-      <section className="py-16 bg-gradient-to-r from-[#07162C] via-[#0A2342] to-[#07162C] text-white relative overflow-hidden">
+      <section className="py-16 bg-[#000000] text-white relative overflow-hidden border-t border-[#444444]/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row justify-between items-center gap-8">
           <div>
             <h2 className="text-3xl sm:text-4xl font-black font-['Montserrat'] tracking-tight">
               Ready to Construct Your Landmark Vision?
             </h2>
             <p className="text-gray-300 text-sm sm:text-base mt-2 max-w-xl">
-              Connect with our structural engineers and architectural directors to request a tender bid or feasibility audit.
+              Connect with our structural engineers and estimating directors to request a tender bid or feasibility audit.
             </p>
           </div>
 
           <div className="flex items-center gap-4">
             <Link
               to="/contact"
-              className="bg-[#F4A300] hover:bg-[#D98F00] text-[#0A2342] font-bold text-base px-8 py-4 rounded-xl shadow-2xl transition-all transform hover:-translate-y-0.5"
+              className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-base px-8 py-4 rounded-xl shadow-2xl transition-all transform hover:-translate-y-0.5"
             >
               Request Proposal
             </Link>
             <a
-              href="tel:+18005550199"
+              href="tel:+2347089057979"
               className="bg-white/10 hover:bg-white/20 text-white font-bold text-base px-6 py-4 rounded-xl transition-all border border-white/20"
             >
-              +1 (800) 555-0199
+              +234-7089057979
             </a>
           </div>
         </div>

@@ -48,7 +48,7 @@ export const Services = () => {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                     selectedCategory === cat
-                      ? 'bg-[#0A2342] text-[#F4A300] shadow-md'
+                      ? 'bg-[#B22222] text-white shadow-md'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -65,7 +65,7 @@ export const Services = () => {
                 placeholder="Search services..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-gray-50 text-xs pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300] transition-colors"
+                className="w-full bg-gray-50 text-xs pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222] transition-colors"
               />
             </div>
 
@@ -78,9 +78,9 @@ export const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {filteredServices.length === 0 ? (
-            <div className="text-center py-20 bg-white rounded-2xl shadow-sm border">
-              <HardHat className="w-12 h-12 text-[#F4A300] mx-auto mb-3" />
-              <h3 className="text-xl font-bold text-[#0A2342] font-['Montserrat']">No Services Found</h3>
+            <div className="text-center py-20 bg-white rounded-2xl shadow-sm border border-gray-200">
+              <HardHat className="w-12 h-12 text-[#B22222] mx-auto mb-3" />
+              <h3 className="text-xl font-bold text-[#000000] font-['Montserrat']">No Services Found</h3>
               <p className="text-sm text-gray-500 mt-1">Try clearing your search query or switching categories.</p>
             </div>
           ) : (
@@ -97,17 +97,17 @@ export const Services = () => {
                         alt={service.title} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A2342] via-transparent to-transparent opacity-80" />
-                      <span className="absolute top-4 left-4 bg-[#F4A300] text-[#0A2342] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-80" />
+                      <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
                         {service.category}
                       </span>
                     </div>
 
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-[#0A2342] font-['Montserrat'] group-hover:text-[#F4A300] transition-colors">
+                      <h3 className="text-xl font-bold text-[#000000] font-['Montserrat'] group-hover:text-[#B22222] transition-colors">
                         {service.title}
                       </h3>
-                      <p className="text-xs text-[#F4A300] font-semibold mt-1">
+                      <p className="text-xs text-[#B22222] font-semibold mt-1">
                         {service.subtitle}
                       </p>
                       <p className="text-gray-600 text-sm mt-3 leading-relaxed">
@@ -117,7 +117,7 @@ export const Services = () => {
                       <div className="mt-4 space-y-2">
                         {service.features.slice(0, 3).map((feat, idx) => (
                           <div key={idx} className="flex items-center gap-2 text-xs text-gray-700">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-[#F4A300]" />
+                            <CheckCircle2 className="w-3.5 h-3.5 text-[#B22222]" />
                             <span>{feat}</span>
                           </div>
                         ))}
@@ -128,13 +128,13 @@ export const Services = () => {
                   <div className="p-6 pt-0 flex justify-between items-center">
                     <button
                       onClick={() => setActiveModalService(service)}
-                      className="bg-[#0A2342] hover:bg-[#07162C] text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5"
+                      className="bg-[#000000] hover:bg-[#B22222] text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5"
                     >
-                      View Specs & Details <ArrowRight className="w-3.5 h-3.5 text-[#F4A300]" />
+                      View Specs & Details <ArrowRight className="w-3.5 h-3.5 text-[#B22222]" />
                     </button>
                     <Link
                       to="/contact"
-                      className="text-xs font-bold text-[#F4A300] hover:underline"
+                      className="text-xs font-bold text-[#B22222] hover:underline"
                     >
                       Inquire Bid
                     </Link>
@@ -162,10 +162,10 @@ export const Services = () => {
             />
 
             <div>
-              <span className="text-[#F4A300] font-bold text-xs uppercase tracking-widest block font-['Montserrat']">
+              <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block font-['Montserrat']">
                 {activeModalService.category} Discipline
               </span>
-              <h3 className="text-2xl font-bold text-[#0A2342] font-['Montserrat'] mt-1">
+              <h3 className="text-2xl font-bold text-[#000000] font-['Montserrat'] mt-1">
                 {activeModalService.subtitle}
               </h3>
               <p className="text-gray-700 text-sm mt-3 leading-relaxed">
@@ -175,13 +175,13 @@ export const Services = () => {
 
             {/* Key Features List */}
             <div className="bg-[#F8F9FA] p-6 rounded-xl border border-gray-200">
-              <h4 className="font-bold text-sm text-[#0A2342] font-['Montserrat'] mb-3">
+              <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3">
                 Key Technical Deliverables:
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {activeModalService.features.map((feat, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs font-medium text-gray-800">
-                    <CheckCircle2 className="w-4 h-4 text-[#F4A300]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#B22222]" />
                     <span>{feat}</span>
                   </div>
                 ))}
@@ -189,10 +189,10 @@ export const Services = () => {
             </div>
 
             {/* Service Stats Bar */}
-            <div className="grid grid-cols-3 gap-4 text-center bg-[#0A2342] text-white p-4 rounded-xl">
+            <div className="grid grid-cols-3 gap-4 text-center bg-[#000000] text-white p-4 rounded-xl border border-[#B22222]/30">
               <div>
                 <span className="text-xs text-gray-400 block">Completed Projects</span>
-                <span className="text-lg font-bold text-[#F4A300]">{activeModalService.stats.completed}</span>
+                <span className="text-lg font-bold text-[#B22222]">{activeModalService.stats.completed}</span>
               </div>
               <div>
                 <span className="text-xs text-gray-400 block">Average Scale</span>
@@ -200,7 +200,7 @@ export const Services = () => {
               </div>
               <div>
                 <span className="text-xs text-gray-400 block">Warranty Period</span>
-                <span className="text-lg font-bold text-[#F4A300]">{activeModalService.stats.warranty}</span>
+                <span className="text-lg font-bold text-[#B22222]">{activeModalService.stats.warranty}</span>
               </div>
             </div>
 
@@ -213,7 +213,7 @@ export const Services = () => {
               </button>
               <Link
                 to="/contact"
-                className="bg-[#F4A300] hover:bg-[#D98F00] text-[#0A2342] font-bold text-xs px-6 py-2.5 rounded-xl shadow transition-all"
+                className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-xs px-6 py-2.5 rounded-xl shadow transition-all"
               >
                 Request Proposal for this Service
               </Link>

@@ -49,7 +49,7 @@ export const Projects = () => {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                     selectedCategory === cat
-                      ? 'bg-[#0A2342] text-[#F4A300] shadow-md'
+                      ? 'bg-[#B22222] text-white shadow-md'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -66,7 +66,7 @@ export const Projects = () => {
                 placeholder="Search location, client..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-gray-50 text-xs pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300] transition-colors"
+                className="w-full bg-gray-50 text-xs pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222] transition-colors"
               />
             </div>
 
@@ -79,9 +79,9 @@ export const Projects = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {filteredProjects.length === 0 ? (
-            <div className="text-center py-20 bg-white rounded-2xl shadow-sm border">
-              <HardHat className="w-12 h-12 text-[#F4A300] mx-auto mb-3" />
-              <h3 className="text-xl font-bold text-[#0A2342] font-['Montserrat']">No Projects Found</h3>
+            <div className="text-center py-20 bg-white rounded-2xl shadow-sm border border-gray-200">
+              <HardHat className="w-12 h-12 text-[#B22222] mx-auto mb-3" />
+              <h3 className="text-xl font-bold text-[#000000] font-['Montserrat']">No Projects Found</h3>
               <p className="text-sm text-gray-500 mt-1">Try searching for a different keyword or category filter.</p>
             </div>
           ) : (
@@ -98,20 +98,20 @@ export const Projects = () => {
                         alt={project.title} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A2342] via-transparent to-transparent opacity-85" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-85" />
                       
-                      <span className="absolute top-4 left-4 bg-[#F4A300] text-[#0A2342] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                      <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
                         {project.category}
                       </span>
 
                       <div className="absolute bottom-3 left-4 right-4 text-xs text-gray-300 flex items-center justify-between">
-                        <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-[#F4A300]" /> {project.location}</span>
-                        <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-[#F4A300]" /> {project.year}</span>
+                        <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-[#B22222]" /> {project.location}</span>
+                        <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-[#B22222]" /> {project.year}</span>
                       </div>
                     </div>
 
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-[#0A2342] font-['Montserrat'] group-hover:text-[#F4A300] transition-colors">
+                      <h3 className="text-xl font-bold text-[#000000] font-['Montserrat'] group-hover:text-[#B22222] transition-colors">
                         {project.title}
                       </h3>
                       <p className="text-xs text-gray-500 mt-1 font-medium">
@@ -124,11 +124,11 @@ export const Projects = () => {
                       <div className="mt-4 pt-4 border-t border-gray-100 grid grid-cols-2 gap-2 text-xs">
                         <div>
                           <span className="text-gray-400 block">Investment</span>
-                          <span className="font-bold text-[#0A2342]">{project.budget}</span>
+                          <span className="font-bold text-[#B22222]">{project.budget}</span>
                         </div>
                         <div>
                           <span className="text-gray-400 block">Timeline</span>
-                          <span className="font-bold text-[#0A2342]">{project.duration}</span>
+                          <span className="font-bold text-[#000000]">{project.duration}</span>
                         </div>
                       </div>
                     </div>
@@ -137,7 +137,7 @@ export const Projects = () => {
                   <div className="p-6 pt-0">
                     <button
                       onClick={() => setActiveModalProject(project)}
-                      className="w-full bg-[#0A2342] hover:bg-[#07162C] text-white text-xs font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2 group-hover:bg-[#F4A300] group-hover:text-[#0A2342]"
+                      className="w-full bg-[#000000] hover:bg-[#B22222] text-white text-xs font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2"
                     >
                       View Case Study & Gallery <ArrowRight className="w-3.5 h-3.5" />
                     </button>
@@ -181,7 +181,7 @@ export const Projects = () => {
             {/* Overview */}
             <div>
               <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-gray-500 mb-2">
-                <span className="bg-[#F4A300]/20 text-[#0A2342] px-2.5 py-1 rounded-md">{activeModalProject.category}</span>
+                <span className="bg-[#B22222]/20 text-[#B22222] border border-[#B22222]/30 px-2.5 py-1 rounded-md">{activeModalProject.category}</span>
                 <span>Client: {activeModalProject.client}</span>
                 <span>Location: {activeModalProject.location}</span>
                 <span>Completion: {activeModalProject.year}</span>
@@ -193,13 +193,13 @@ export const Projects = () => {
 
             {/* Key Features */}
             <div className="bg-[#F8F9FA] p-5 rounded-xl border border-gray-200">
-              <h4 className="font-bold text-sm text-[#0A2342] font-['Montserrat'] mb-3">
+              <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3">
                 Landmark Deliverables:
               </h4>
               <div className="space-y-2">
                 {activeModalProject.features.map((feat, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs text-gray-800">
-                    <CheckCircle2 className="w-4 h-4 text-[#F4A300]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#B22222]" />
                     <span>{feat}</span>
                   </div>
                 ))}
@@ -213,7 +213,7 @@ export const Projects = () => {
               </h4>
               <div className="flex flex-wrap gap-2">
                 {activeModalProject.technologies.map((tech, idx) => (
-                  <span key={idx} className="bg-[#0A2342] text-[#F4A300] text-xs font-medium px-3 py-1 rounded-lg">
+                  <span key={idx} className="bg-[#000000] text-white text-xs font-medium px-3 py-1 rounded-lg border border-[#B22222]/30">
                     {tech}
                   </span>
                 ))}
@@ -229,7 +229,7 @@ export const Projects = () => {
               </button>
               <Link
                 to="/contact"
-                className="bg-[#F4A300] hover:bg-[#D98F00] text-[#0A2342] font-bold text-xs px-6 py-2.5 rounded-xl shadow transition-all"
+                className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-xs px-6 py-2.5 rounded-xl shadow transition-all"
               >
                 Inquire Similar Project
               </Link>

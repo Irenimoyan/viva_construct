@@ -36,18 +36,18 @@ export const Blog = () => {
                       alt={post.title} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                     />
-                    <span className="absolute top-4 left-4 bg-[#F4A300] text-[#0A2342] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                    <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
                       {post.category}
                     </span>
                   </div>
 
                   <div className="p-6">
                     <div className="flex items-center gap-4 text-xs text-gray-400 mb-3">
-                      <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-[#F4A300]" /> {post.date}</span>
-                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5 text-[#F4A300]" /> {post.readTime}</span>
+                      <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-[#B22222]" /> {post.date}</span>
+                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5 text-[#B22222]" /> {post.readTime}</span>
                     </div>
 
-                    <h3 className="text-xl font-bold text-[#0A2342] font-['Montserrat'] group-hover:text-[#F4A300] transition-colors leading-snug">
+                    <h3 className="text-xl font-bold text-[#000000] font-['Montserrat'] group-hover:text-[#B22222] transition-colors leading-snug">
                       {post.title}
                     </h3>
 
@@ -59,14 +59,14 @@ export const Blog = () => {
 
                 <div className="p-6 pt-0 flex justify-between items-center border-t border-gray-100 mt-4">
                   <div className="text-xs text-gray-500">
-                    By <span className="font-bold text-[#0A2342]">{post.author}</span>
+                    By <span className="font-bold text-[#000000]">{post.author}</span>
                   </div>
 
                   <button
                     onClick={() => setActiveArticle(post)}
-                    className="text-xs font-bold text-[#0A2342] hover:text-[#F4A300] transition-colors flex items-center gap-1"
+                    className="text-xs font-bold text-[#000000] hover:text-[#B22222] transition-colors flex items-center gap-1"
                   >
-                    Read Article <ArrowRight className="w-3.5 h-3.5" />
+                    Read Article <ArrowRight className="w-3.5 h-3.5 text-[#B22222]" />
                   </button>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export const Blog = () => {
             />
 
             <div className="flex items-center justify-between text-xs text-gray-500 border-b pb-3">
-              <span>Category: <strong>{activeArticle.category}</strong></span>
+              <span>Category: <strong className="text-[#B22222]">{activeArticle.category}</strong></span>
               <span>Published: <strong>{activeArticle.date}</strong></span>
               <span>Author: <strong>{activeArticle.author}</strong> ({activeArticle.authorRole})</span>
             </div>
@@ -103,7 +103,7 @@ export const Blog = () => {
             <div className="flex justify-end pt-4 border-t">
               <button
                 onClick={() => setActiveArticle(null)}
-                className="bg-[#0A2342] text-white text-xs font-bold px-6 py-2.5 rounded-xl hover:bg-[#07162C]"
+                className="bg-[#000000] hover:bg-[#B22222] text-white text-xs font-bold px-6 py-2.5 rounded-xl transition-colors"
               >
                 Close Article
               </button>

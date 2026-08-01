@@ -58,56 +58,57 @@ export const Contact = () => {
             {/* Left Info Column */}
             <div className="lg:col-span-5 space-y-8">
               <div>
-                <span className="text-[#F4A300] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
-                  Direct Inquiries
+                <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
+                  Direct Inquiries & Tenders
                 </span>
-                <h2 className="text-3xl font-black text-[#0A2342] font-['Montserrat'] tracking-tight">
-                  Global Headquarters & Regional Desks
+                <h2 className="text-3xl font-black text-[#000000] font-['Montserrat'] tracking-tight">
+                  Corporate Headquarters & Engineering Desks
                 </h2>
                 <p className="text-gray-600 text-sm mt-3 leading-relaxed">
-                  Our estimating and senior engineering directors are ready to review project blueprints and tender specifications.
+                  Our estimating and senior engineering directors are ready to review project blueprints, RFP documents, and tender specifications.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#0A2342] text-[#F4A300] flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-[#000000] text-[#B22222] flex items-center justify-center flex-shrink-0 border border-[#B22222]/30">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-[#0A2342] font-['Montserrat']">Global Headquarters</h4>
-                    <p className="text-xs text-gray-600 mt-1">750 Fifth Avenue, Suite 2400, New York, NY 10019</p>
+                    <h4 className="font-bold text-sm text-[#000000] font-['Montserrat']">Corporate Headquarters & Operations</h4>
+                    <p className="text-xs text-gray-600 mt-1">39 Ugbejeaki street Mende Maryland, Lagos State, Nigeria.</p>
+                    <p className="text-[11px] text-[#B22222] font-bold mt-0.5">Execution Capacity: All 36 States of Nigeria & West Africa</p>
                   </div>
                 </div>
 
                 <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#0A2342] text-[#F4A300] flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-[#000000] text-[#B22222] flex items-center justify-center flex-shrink-0 border border-[#B22222]/30">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-[#0A2342] font-['Montserrat']">Corporate Phone & Hotline</h4>
-                    <p className="text-xs text-gray-600 mt-1">Main Desk: +1 (800) 555-0199</p>
-                    <p className="text-xs text-[#F4A300] font-bold mt-0.5">24/7 Site Emergency Hotline: +1 (800) 555-0191</p>
+                    <h4 className="font-bold text-sm text-[#000000] font-['Montserrat']">Corporate Phone & Hotlines</h4>
+                    <p className="text-xs text-gray-600 mt-1">Main Desk: +234-7089057979</p>
+                    <p className="text-xs text-[#B22222] font-bold mt-0.5">24/7 Site Emergency Hotline: +234-7089057979</p>
                   </div>
                 </div>
 
                 <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#0A2342] text-[#F4A300] flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-[#000000] text-[#B22222] flex items-center justify-center flex-shrink-0 border border-[#B22222]/30">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-[#0A2342] font-['Montserrat']">Official Email Addresses</h4>
-                    <p className="text-xs text-gray-600 mt-1">Tender Bids: bids@vivaconstruct.com</p>
-                    <p className="text-xs text-gray-600">General Desk: contact@vivaconstruct.com</p>
+                    <h4 className="font-bold text-sm text-[#000000] font-['Montserrat']">Official Email Desks</h4>
+                    <p className="text-xs text-gray-600 mt-1">Tender & RFP Bids: Ganiyat@vivaconstructs.com</p>
+                    <p className="text-xs text-gray-600">General Desk: Ganiyat@vivaconstructs.com</p>
                   </div>
                 </div>
 
-                <div className="bg-[#0A2342] text-white p-5 rounded-2xl shadow-lg border border-[#F4A300]/30 flex items-start gap-4">
-                  <Clock className="w-6 h-6 text-[#F4A300] flex-shrink-0 mt-1" />
+                <div className="bg-[#000000] text-white p-5 rounded-2xl shadow-lg border border-[#B22222]/30 flex items-start gap-4">
+                  <Clock className="w-6 h-6 text-[#B22222] flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-bold text-sm text-white font-['Montserrat']">Operating Hours</h4>
-                    <p className="text-xs text-gray-300 mt-1">Monday - Friday: 07:00 AM - 19:00 PM EST</p>
-                    <p className="text-xs text-gray-300">Saturday: 08:00 AM - 14:00 PM EST</p>
+                    <p className="text-xs text-gray-300 mt-1">Monday - Friday: 08:00 AM - 17:00 PM</p>
+                    <p className="text-xs text-gray-300">Saturday: 09:00 AM - 14:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -115,11 +116,11 @@ export const Contact = () => {
 
             {/* Right Form Column */}
             <div className="lg:col-span-7 bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-gray-200">
-              <h3 className="text-2xl font-bold text-[#0A2342] font-['Montserrat'] mb-2">
+              <h3 className="text-2xl font-bold text-[#000000] font-['Montserrat'] mb-2">
                 Request a Project Proposal or Tender Bid
               </h3>
               <p className="text-xs text-gray-500 mb-6">
-                Fill out the specifications below and our engineering team will respond with a tender document within 24 hours.
+                Fill out the specifications below and our engineering team will respond with a formal proposal within 24 hours.
               </p>
 
               {submitted && (
@@ -143,7 +144,7 @@ export const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="e.g. Johnathan Vance"
-                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300]"
+                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222]"
                     />
                   </div>
 
@@ -156,7 +157,7 @@ export const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="j.vance@company.com"
-                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300]"
+                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222]"
                     />
                   </div>
                 </div>
@@ -169,8 +170,8 @@ export const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+1 (555) 000-0000"
-                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300]"
+                      placeholder="+234 708 905 7979"
+                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222]"
                     />
                   </div>
 
@@ -182,7 +183,7 @@ export const Contact = () => {
                       value={formData.company}
                       onChange={handleChange}
                       placeholder="Vanguard Holdings"
-                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300]"
+                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222]"
                     />
                   </div>
                 </div>
@@ -194,7 +195,7 @@ export const Contact = () => {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300]"
+                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222]"
                     >
                       <option value="Commercial Construction">Commercial Construction</option>
                       <option value="Residential Luxury">Residential Luxury</option>
@@ -213,7 +214,7 @@ export const Contact = () => {
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300]"
+                      className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222]"
                     >
                       <option value="Under $5M">Under $5M</option>
                       <option value="$5M - $20M">$5M - $20M</option>
@@ -232,13 +233,13 @@ export const Contact = () => {
                     onChange={handleChange}
                     required
                     placeholder="Provide details about site location, estimated square footage, target groundbreaking date, or BIM requirements..."
-                    className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300]"
+                    className="w-full bg-gray-50 text-xs px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222]"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#F4A300] hover:bg-[#D98F00] text-[#0A2342] font-bold text-sm py-4 rounded-xl shadow-xl transition-all flex items-center justify-center gap-2"
+                  className="w-full bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-sm py-4 rounded-xl shadow-xl transition-all flex items-center justify-center gap-2"
                 >
                   Submit Proposal Request <Send className="w-4 h-4" />
                 </button>
@@ -247,10 +248,10 @@ export const Contact = () => {
 
           </div>
 
-          {/* Interactive Google Map Embed Frame */}
+          {/* Interactive Map Embed Frame */}
           <div className="mt-16 bg-white rounded-3xl p-4 shadow-lg border border-gray-200 overflow-hidden">
-            <h4 className="font-bold text-sm text-[#0A2342] font-['Montserrat'] mb-3 pl-2 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-[#F4A300]" /> Headquarters Location
+            <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3 pl-2 flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-[#B22222]" /> Corporate Headquarters Location (Lagos, Nigeria)
             </h4>
             <div className="w-full h-80 rounded-2xl overflow-hidden bg-gray-200 relative">
               <iframe

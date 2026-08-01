@@ -29,32 +29,34 @@ export const Footer = () => {
           
           {/* Col 1: Corporate Brand */}
           <div className="lg:col-span-2 space-y-4">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#B22222] flex items-center justify-center text-white shadow-lg border border-white/10">
-                <HardHat className="w-6 h-6" />
-              </div>
+            <Link to="/" className="flex items-center gap-3 group">
+              <img 
+                src="/Viva logo.png" 
+                alt="Viva Constructs Logo" 
+                className="w-12 h-12 object-contain rounded-xl border border-white/20 shadow-lg group-hover:scale-105 transition-transform" 
+              />
               <div>
                 <span className="text-2xl font-black tracking-wider text-white font-['Montserrat'] block leading-none">
                   VIVA<span className="text-[#B22222]">.</span>
                 </span>
                 <span className="text-[10px] tracking-[0.25em] text-gray-400 font-semibold uppercase block mt-0.5">
-                  CONSTRUCT
+                  CONSTRUCTS LIMITED
                 </span>
               </div>
             </Link>
 
             <p className="text-sm text-gray-400 leading-relaxed max-w-md">
-              Building Excellence. Creating Lasting Value. Viva Construct is a premier Tier-1 global construction and civil engineering enterprise delivering landmark commercial towers, luxury estates, and critical infrastructure.
+              <strong className="text-white">Building Excellence. Delivering Confidence.</strong> Viva Constructs Limited is a multi-disciplinary construction, engineering, and project management company delivering high-quality residential, commercial, industrial, telecommunications, and civil infrastructure solutions across Nigeria and West Africa.
             </p>
 
-            <div className="flex items-center gap-3 pt-2">
+            <div className="flex flex-wrap items-center gap-3 pt-2">
               <div className="flex items-center gap-2 bg-[#222222] px-3 py-1.5 rounded-lg border border-[#444444] text-xs">
                 <ShieldCheck className="w-4 h-4 text-[#B22222]" />
-                <span>ISO 9001:2015</span>
+                <span className="font-semibold text-white">RC: 8867751 Verified</span>
               </div>
               <div className="flex items-center gap-2 bg-[#222222] px-3 py-1.5 rounded-lg border border-[#444444] text-xs">
                 <Award className="w-4 h-4 text-[#B22222]" />
-                <span>LEED Platinum</span>
+                <span>36 States & West Africa</span>
               </div>
             </div>
           </div>
@@ -144,13 +146,13 @@ export const Footer = () => {
 
             <div className="mt-6 space-y-2 text-xs">
               <p className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#B22222]" /> +1 (800) 555-0199
+                <Phone className="w-3.5 h-3.5 text-[#B22222]" /> +234-7089057979
               </p>
               <p className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#B22222]" /> contact@vivaconstruct.com
+                <Mail className="w-3.5 h-3.5 text-[#B22222]" /> Ganiyat@vivaconstructs.com
               </p>
               <p className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#B22222]" /> 750 5th Ave, Suite 2400, NY
+                <MapPin className="w-3.5 h-3.5 text-[#B22222]" /> 39 Ugbejeaki street Mende Maryland, Lagos State.
               </p>
             </div>
           </div>
@@ -159,7 +161,7 @@ export const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
-          <p>© {new Date().getFullYear()} Viva Construct Ltd. All Rights Reserved. Building Excellence.</p>
+          <p>© {new Date().getFullYear()} Viva Constructs Limited. All Rights Reserved. Building Excellence. Delivering Confidence.</p>
 
           <div className="flex items-center space-x-6">
             <a href="#" className="hover:text-[#B22222] transition-colors">Privacy Policy</a>

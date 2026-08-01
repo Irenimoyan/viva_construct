@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 
 export const SEOHead = ({ 
-  title = "Viva Construct | Building Excellence. Creating Lasting Value.", 
-  description = "Viva Construct is a premier multi-million dollar construction and engineering firm specializing in commercial towers, luxury residential, civil infrastructure, and sustainable building.",
-  keywords = "construction, civil engineering, commercial building, luxury villas, structural design, architecture, Viva Construct",
+  title = "Viva Constructs Limited | Building Excellence. Delivering Confidence.", 
+  description = "Viva Constructs Limited is a multi-disciplinary construction, engineering, and project management company delivering high-quality residential, commercial, industrial, telecommunications, and civil infrastructure projects.",
+  keywords = "construction, civil engineering, telecommunications infrastructure, commercial building, luxury residential, Viva Constructs Limited, Lagos Nigeria",
   schemaType = "ConstructionBusiness"
 }) => {
   useEffect(() => {
@@ -19,21 +19,22 @@ export const SEOHead = ({
     const schemaData = {
       "@context": "https://schema.org",
       "@type": schemaType,
-      "name": "Viva Construct ltd",
-      "legalName": "Viva Construct Ltd.",
-      "url": "https://vivaconstructltd.com",
-      "logo": "https://vivaconstruct.com/Viva logo.png",
+      "name": "Viva Constructs Limited",
+      "legalName": "Viva Constructs Limited",
+      "foundingDate": "2025",
+      "iso6523Code": "RC:8867751",
+      "url": "https://vivaconstructs.com",
+      "logo": "https://vivaconstructs.com/Viva logo.png",
       "description": description,
       "tagline": "Building Excellence. Delivering Confidence.",
       "telephone": "+234-7089057979",
       "email": "Ganiyat@vivaconstructs.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "750 Fifth Avenue, Suite 2400",
-        "addressLocality": "New York",
-        "addressRegion": "NY",
-        "postalCode": "10019",
-        "addressCountry": "US"
+        "streetAddress": "39 Ugbejeaki street, Mende Maryland",
+        "addressLocality": "Lagos",
+        "addressRegion": "Lagos State",
+        "addressCountry": "NG"
       },
       "sameAs": [
         "https://linkedin.com",

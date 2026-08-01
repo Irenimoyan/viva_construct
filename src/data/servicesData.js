@@ -7,15 +7,15 @@ export const servicesData = [
     category: "Building",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     shortDescription: "Custom luxury homes, modern high-rise residential complexes, and sustainable multi-family estates built to exacting standards.",
-    fullDescription: "Viva Construct designs and constructs iconic residential living spaces. From private ultra-luxury waterfront mansions to multi-story luxury apartment complexes, our team combines innovative architectural engineering with sustainable building methodologies.",
+    fullDescription: "Viva Constructs Limited designs and constructs iconic residential living spaces across Nigeria and West Africa. From private ultra-luxury estates to multi-story residential apartment complexes, our team combines innovative architectural engineering with sustainable building methodologies.",
     features: [
       "Custom Architectural Engineering",
       "Smart Home Infrastructure Integration",
-      "LEED Gold & Platinum Certified Build Specs",
+      "LEED Certified Build Specifications",
       "Acoustic & Thermal Energy Efficiency",
       "End-to-End Turnkey Delivery"
     ],
-    stats: { completed: "45+", avgScale: "$12M - $85M", warranty: "15 Years" }
+    stats: { completed: "25+", avgScale: "Residential Excellence", warranty: "15 Years" }
   },
   {
     id: "commercial-construction",
@@ -25,7 +25,7 @@ export const servicesData = [
     category: "Commercial",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
     shortDescription: "State-of-the-art corporate headquarters, mixed-use commercial centers, and premier hospitality developments.",
-    fullDescription: "We deliver landmark commercial projects that redefine city skylines. Utilizing heavy steel frameworks, curtain-wall glass engineering, and adaptive space planning, Viva Construct delivers projects on schedule and within budget.",
+    fullDescription: "We deliver landmark commercial projects that redefine urban skylines. Utilizing structural steel frameworks, curtain-wall glass engineering, and adaptive space planning, Viva Constructs Limited delivers projects on schedule and within budget.",
     features: [
       "Structural Steel & Curtain-Wall Systems",
       "BIM 5D Virtual Modeling & Collision Detection",
@@ -33,7 +33,25 @@ export const servicesData = [
       "Integrated Security & Fire Suppression",
       "Zero-Disruption Urban Site Management"
     ],
-    stats: { completed: "38+", avgScale: "$25M - $220M", warranty: "20 Years" }
+    stats: { completed: "15+", avgScale: "Commercial Towers", warranty: "20 Years" }
+  },
+  {
+    id: "telecom-infrastructure",
+    title: "Telecommunications Infrastructure",
+    subtitle: "Cell Towers, Fiber Ducting & Data Hubs",
+    iconName: "Radio",
+    category: "Specialized",
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    shortDescription: "Turnkey cellular mast foundations, fiber optic ducting networks, data center civil builds, and telecom site maintenance across West Africa.",
+    fullDescription: "Viva Constructs Limited specializes in mission-critical telecommunications civil engineering. We design and construct heavy tower foundation pads, rooftop antenna support structures, underground fiber optic duct banks, and data center facilities engineered for 99.999% uptime.",
+    features: [
+      "Cellular Tower Foundation & Mast Erection",
+      "Underground Fiber Optic Cable Ducting",
+      "Data Center Civil & Power Infrastructure",
+      "Remote Telecom Site Civil Works & Fencing",
+      "24/7 Telecom Structural Site Servicing"
+    ],
+    stats: { completed: "30+", avgScale: "Nationwide Telecom Sites", warranty: "Lifetime Structural" }
   },
   {
     id: "industrial-projects",
@@ -42,26 +60,26 @@ export const servicesData = [
     iconName: "Factory",
     category: "Industrial",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Automated distribution centers, manufacturing facilities, specialized cleanrooms, and renewable energy plants.",
+    shortDescription: "Automated distribution centers, manufacturing facilities, specialized warehouses, and processing plants.",
     fullDescription: "Industrial engineering demands rigorous structural stability and precision. We engineer heavy-duty reinforced foundations, crane superstructures, high-voltage electrical grid integration, and hazard-compliant industrial spaces.",
     features: [
       "Heavy Load Slab Engineering",
       "Hazardous Material Containment Systems",
       "Automated Logistics Facilities Support",
       "High-Capacity Electrical & Utility Distribution",
-      "ISO Cleanroom Standard Infrastructure"
+      "Industrial Standards Compliance"
     ],
-    stats: { completed: "22+", avgScale: "$40M - $350M", warranty: "25 Years" }
+    stats: { completed: "12+", avgScale: "Industrial Plants", warranty: "25 Years" }
   },
   {
     id: "civil-engineering",
     title: "Civil Engineering",
-    subtitle: "Critical Infrastructure & Urban Development",
+    subtitle: "Critical Infrastructure & Public Sector Works",
     iconName: "LandPlot",
     category: "Infrastructure",
     image: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Public sector infrastructure, water management systems, retaining structures, and mega land development.",
-    fullDescription: "Viva Construct partners with governmental authorities and private developers to engineer civil projects that support growing populations. From subterranean drainage systems to retaining walls and foundation piling.",
+    shortDescription: "Public sector infrastructure, water drainage networks, retaining structures, and site preparation across all 36 Nigerian states.",
+    fullDescription: "Viva Constructs Limited partners with municipal authorities and private institutions to engineer civil projects that support growing populations. From subterranean drainage systems to retaining walls and deep foundation piling.",
     features: [
       "Deep Foundation Piling & Earthworks",
       "Subsurface Stormwater Management",
@@ -69,7 +87,7 @@ export const servicesData = [
       "Structural Concrete Retaining Walls",
       "Environmental Impact Compliance"
     ],
-    stats: { completed: "30+", avgScale: "$15M - $180M", warranty: "30 Years" }
+    stats: { completed: "20+", avgScale: "Infrastructure Works", warranty: "30 Years" }
   },
   {
     id: "road-construction",
@@ -78,52 +96,52 @@ export const servicesData = [
     iconName: "HardHat",
     category: "Infrastructure",
     image: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Multi-lane highways, post-tensioned bridge spans, asphalt paving, and urban light rail transit corridors.",
-    fullDescription: "Connecting communities through resilient transport infrastructure. Viva Construct employs heavy machinery fleets, GPS-guided grading, and polymer-modified asphalt formulations for high-durability transit networks.",
+    shortDescription: "Multi-lane highways, concrete bridge spans, asphalt paving, and urban transit corridors.",
+    fullDescription: "Connecting communities through resilient transport infrastructure. Viva Constructs Limited employs heavy machinery fleets, GPS-guided grading, and high-durability asphalt formulations for long-lasting transit networks.",
     features: [
       "GPS-Guided Automated Grading & Earthmoving",
-      "Post-Tensioned Concrete Bridge Girders",
-      "High-Durability Polymer-Modified Asphalt",
-      "Smart Traffic Signaling & Barriers",
+      "Reinforced Concrete Bridge Spans",
+      "High-Durability Polymer Asphalt",
+      "Smart Traffic Barriers & Drainage",
       "Heavy-Duty Overpass Engineering"
     ],
-    stats: { completed: "18+", avgScale: "$30M - $400M", warranty: "25 Years" }
+    stats: { completed: "10+", avgScale: "Highway Corridors", warranty: "25 Years" }
   },
   {
     id: "renovation-restoration",
     title: "Renovation & Structural Retrofit",
-    subtitle: "Heritage Preservation & Seismic Upgrades",
+    subtitle: "Building Remodeling & Structural Upgrades",
     iconName: "Wrench",
     category: "Specialized",
     image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Historic building restoration, seismic strengthening, facade modernization, and adaptive reuse transformation.",
-    fullDescription: "Preserving architectural heritage while infusing modern structural integrity. We specialize in carbon-fiber seismic strengthening, facade replacement, interior core rehabilitation, and energy efficiency retrofitting.",
+    shortDescription: "Building renovation, structural strengthening, facade modernization, and adaptive reuse transformations.",
+    fullDescription: "Refreshing existing structures with modern engineering. We specialize in structural reinforcement, facade replacement, interior core rehabilitation, and energy efficiency retrofitting.",
     features: [
-      "Carbon Fiber Polymer Seismic Upgrades",
-      "Historic Masonry & Timber Preservation",
-      "Cladding & High-Efficiency Glazing Retrofits",
+      "Structural Concrete & Carbon Fiber Upgrades",
+      "Building Rehabilitation & Remodeling",
+      "Cladding & High-Efficiency Glazing",
       "Core Structural Load Alterations",
-      "Occupied Building Phase Construction"
+      "Phase Construction in Occupied Sites"
     ],
-    stats: { completed: "40+", avgScale: "$8M - $60M", warranty: "15 Years" }
+    stats: { completed: "20+", avgScale: "Retrofit Projects", warranty: "15 Years" }
   },
   {
     id: "interior-fitout",
     title: "Interior Fit-Out",
-    subtitle: "High-End Corporate & Luxury Interiors",
+    subtitle: "High-End Corporate & Residential Interiors",
     iconName: "Paintbrush",
     category: "Specialized",
     image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Turnkey luxury interiors, executive boardrooms, bespoke joinery, acoustic partition walls, and lighting systems.",
-    fullDescription: "Transforming empty building shells into breathtaking operational spaces. Our interior fit-out craftsmen install imported marble, acoustic paneling, customized millwork, and intelligent ambient lighting solutions.",
+    shortDescription: "Turnkey corporate interiors, executive boardrooms, bespoke joinery, acoustic partition walls, and architectural finishing.",
+    fullDescription: "Transforming empty building shells into functional operational spaces. Our interior fit-out craftsmen install premium flooring, acoustic paneling, customized millwork, and intelligent ambient lighting solutions.",
     features: [
-      "Custom Italian Joinery & Architectural Millwork",
-      "Acoustic Ceiling & Wall Panel Engineering",
+      "Custom Architectural Joinery & Millwork",
+      "Acoustic Ceiling & Wall Panel Systems",
       "Automated Architectural Lighting Controls",
-      "High-Durability Flooring (Marble, Terrazzo, Hardwood)",
+      "High-Durability Flooring Installation",
       "MEP Integrated Ceiling Systems"
     ],
-    stats: { completed: "55+", avgScale: "$5M - $35M", warranty: "10 Years" }
+    stats: { completed: "30+", avgScale: "Interior Fit-Outs", warranty: "10 Years" }
   },
   {
     id: "architecture-design",
@@ -132,16 +150,16 @@ export const servicesData = [
     iconName: "Compass",
     category: "Design",
     image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Parametric architectural design, master planning, 3D photorealistic visualization, and zoning approvals.",
-    fullDescription: "Our in-house architectural studio bridges futuristic aesthetics with structural feasibility. We create inspiring forms optimized for natural light, spatial flow, and environmental sustainability.",
+    shortDescription: "Architectural design, master planning, 3D photorealistic visualization, and municipal building approvals.",
+    fullDescription: "Our architectural planning team bridges aesthetic elegance with structural feasibility. We create inspiring floor plans and 3D renderings optimized for natural lighting, spatial flow, and environmental sustainability.",
     features: [
-      "Parametric & Biophilic Design Principles",
-      "Interactive 3D Virtual Reality Walkthroughs",
-      "Municipal Zoning & Building Code Approvals",
-      "Solar & Thermal Optimization Analysis",
-      "Complete Master Site Plan Conception"
+      "Parametric Architectural Principles",
+      "3D Renderings & Virtual Walkthroughs",
+      "Municipal Planning & Building Approvals",
+      "Solar & Environmental Spatial Analysis",
+      "Master Site Plan Conception"
     ],
-    stats: { completed: "60+", avgScale: "Design Phase", warranty: "Full Support" }
+    stats: { completed: "40+", avgScale: "Design Phase", warranty: "Full Support" }
   },
   {
     id: "structural-design",
@@ -150,51 +168,33 @@ export const servicesData = [
     iconName: "Layers",
     category: "Design",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Finite element analysis, wind tunnel dynamic testing, deep foundation calculations, and seismic damping design.",
-    fullDescription: "Uncompromising safety and computational efficiency. Our senior structural engineers solve complex geometric challenges using advanced steel, post-tensioned concrete, and composite mass timber technologies.",
+    shortDescription: "Structural analysis, foundation calculations, concrete and steel design calculations, and engineering sign-offs.",
+    fullDescription: "Uncompromising safety and computational efficiency. Our structural engineers solve complex geometric challenges using reinforced concrete, structural steel, and composite engineering technologies.",
     features: [
-      "Non-Linear Dynamic Seismic Simulation",
-      "High-Rise Wind Load Analysis",
-      "Post-Tensioned & Pre-Stressed Concrete Specs",
-      "Composite Mass-Timber Structural Layouts",
-      "PE Stamp & Regulatory Certification"
+      "Load Calculation & Foundation Analysis",
+      "High-Rise Structural Design",
+      "Reinforced & Post-Tensioned Concrete Layouts",
+      "Structural Steel Frame Design",
+      "PE Engineering Sign-off"
     ],
-    stats: { completed: "75+", avgScale: "Engineering Phase", warranty: "Lifetime Compliance" }
+    stats: { completed: "50+", avgScale: "Engineering Phase", warranty: "Lifetime Compliance" }
   },
   {
     id: "project-management",
     title: "Construction Project Management",
-    subtitle: "Cost Control, Procurement & Site Safety",
+    subtitle: "Cost Governance, Procurement & HSE Oversight",
     iconName: "ClipboardCheck",
     category: "Management",
     image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Comprehensive CM services, value engineering, supply chain procurement, and OSHA-compliant site oversight.",
-    fullDescription: "Guaranteeing project success through strict governance. We enforce rigorous milestone tracking, transparent financial auditing, subcontractor management, and strict zero-injury site protocols.",
+    shortDescription: "End-to-end project management, transparent budgeting, supply chain procurement, and HSE site governance.",
+    fullDescription: "Guaranteeing project success through disciplined governance. We enforce rigorous milestone tracking, transparent financial auditing, subcontractor oversight, and strict HSE safety protocols.",
     features: [
-      "Real-Time Earned Value Management (EVM)",
-      "Global Supply Chain & Material Sourcing",
-      "OSHA Zero-Accident Site Management",
-      "Quality Assurance & Inspection Controls",
-      "Risk Mitigation & Claims Management"
+      "Milestone Tracking & Cost Governance",
+      "Transparent Procurement & Material Sourcing",
+      "HSE Health, Safety & Environmental Compliance",
+      "Quality Assurance & Inspection Audits",
+      "Timely Project Delivery SLA"
     ],
-    stats: { completed: "150+", avgScale: "Over $2B Managed", warranty: "Guaranteed Completion" }
-  },
-  {
-    id: "facility-maintenance",
-    title: "Facility Maintenance & Asset Management",
-    subtitle: "24/7 Operational Upkeep & Lifecycle Care",
-    iconName: "ShieldCheck",
-    category: "Management",
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Preventative facility maintenance, MEP systems servicing, emergency structural repairs, and building management.",
-    fullDescription: "Protecting long-term asset value long after initial handover. Viva Construct provides round-the-clock facility maintenance, HVAC tuning, structural health monitoring, and facade inspection services.",
-    features: [
-      "24/7 Rapid Emergency Response Hotline",
-      "Predictive Sensor-Based HVAC Servicing",
-      "Structural Crack & Deflection Monitoring",
-      "Facade & Exterior Enclosure Audits",
-      "Long-Term Capital Replacement Planning"
-    ],
-    stats: { completed: "80+ Contracts", avgScale: "24/7 Coverage", warranty: "Service SLA" }
+    stats: { completed: "50+", avgScale: "Full Project SLA", warranty: "Guaranteed Delivery" }
   }
 ];

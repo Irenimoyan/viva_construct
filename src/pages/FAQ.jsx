@@ -41,7 +41,7 @@ export const FAQ = () => {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                     selectedCategory === cat
-                      ? 'bg-[#0A2342] text-[#F4A300]'
+                      ? 'bg-[#B22222] text-white shadow-md'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -57,7 +57,7 @@ export const FAQ = () => {
                 placeholder="Search FAQ questions..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-gray-50 text-xs pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F4A300]"
+                className="w-full bg-gray-50 text-xs pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#B22222]"
               />
             </div>
           </div>
@@ -75,11 +75,11 @@ export const FAQ = () => {
                     onClick={() => setOpenIndex(isOpen ? null : idx)}
                     className="w-full text-left px-6 py-5 flex justify-between items-center gap-4 hover:bg-gray-50 transition-colors"
                   >
-                    <span className="font-bold text-base text-[#0A2342] font-['Montserrat'] flex items-center gap-3">
-                      <HelpCircle className="w-5 h-5 text-[#F4A300] flex-shrink-0" />
+                    <span className="font-bold text-base text-[#000000] font-['Montserrat'] flex items-center gap-3">
+                      <HelpCircle className="w-5 h-5 text-[#B22222] flex-shrink-0" />
                       {faq.question}
                     </span>
-                    <ChevronDown className={`w-5 h-5 text-[#0A2342] transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#F4A300]' : ''}`} />
+                    <ChevronDown className={`w-5 h-5 text-[#000000] transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#B22222]' : ''}`} />
                   </button>
 
                   <AnimatePresence>

@@ -79,16 +79,18 @@ export const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           
           {/* Logo */}
-          <Link to="/public/Viva logo.png" className="flex items-center gap-3 group">
-            <div className="w-15 h-15 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform border border-white/20">
-              <img src="./public/Viva logo.png" alt=""  className='rounded-xl'/>
-            </div>
+          <Link to="/" className="flex items-center gap-3 group">
+            <img 
+              src="/Viva logo.png" 
+              alt="Viva Construct Logo"  
+              className="w-12 h-12 object-contain rounded-xl border border-white/20 shadow-lg group-hover:scale-105 transition-transform"
+            />
             <div>
-              <span className="text-2xl font-black tracking-wider text-red-600 font-['Montserrat'] block leading-none">
-                VIVA<span className="text-[#B22222]">.</span>
+              <span className="text-2xl font-black tracking-wider text-[#B22222] font-['Montserrat'] block leading-none">
+                VIVA<span className="text-white">.</span>
               </span>
               <span className="text-[10px] tracking-[0.25em] text-gray-400 font-semibold uppercase block mt-0.5">
-                CONSTRUCT LTD
+                CONSTRUCTS LIMITED
               </span>
             </div>
           </Link>

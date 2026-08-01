@@ -26,18 +26,18 @@ export const Certifications = () => {
                 key={cert.id}
                 className="bg-white rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-2xl transition-all relative overflow-hidden group flex flex-col justify-between"
               >
-                <div className="absolute top-0 right-0 w-24 h-24 bg-[#F4A300]/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform" />
+                <div className="absolute top-0 right-0 w-24 h-24 bg-[#B22222]/10 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform" />
 
                 <div>
-                  <div className="w-14 h-14 rounded-2xl bg-[#0A2342] text-[#F4A300] flex items-center justify-center mb-6 shadow-md">
+                  <div className="w-14 h-14 rounded-2xl bg-[#000000] text-[#B22222] flex items-center justify-center mb-6 shadow-md border border-[#B22222]/30">
                     <ShieldCheck className="w-8 h-8" />
                   </div>
 
-                  <span className="bg-[#F4A300] text-[#0A2342] text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                  <span className="bg-[#B22222] text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
                     {cert.badge}
                   </span>
 
-                  <h3 className="text-xl font-bold text-[#0A2342] font-['Montserrat'] mt-3">
+                  <h3 className="text-xl font-bold text-[#000000] font-['Montserrat'] mt-3">
                     {cert.title}
                   </h3>
                   
@@ -51,8 +51,8 @@ export const Certifications = () => {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
-                  <span className="flex items-center gap-1 font-mono text-[11px] text-[#0A2342] font-bold">
-                    <Lock className="w-3 h-3 text-[#F4A300]" /> {cert.code}
+                  <span className="flex items-center gap-1 font-mono text-[11px] text-[#000000] font-bold">
+                    <Lock className="w-3 h-3 text-[#B22222]" /> {cert.code}
                   </span>
                   <span className="text-emerald-600 font-bold flex items-center gap-1">
                     <CheckCircle2 className="w-3.5 h-3.5" /> Active Audit
