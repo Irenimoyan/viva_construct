@@ -15,9 +15,9 @@ export const Loader = () => {
           duration: 2,
           ease: "easeInOut"
         }}
-        className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#F4A300] to-[#D98F00] flex items-center justify-center text-[#0A2342] shadow-2xl mb-6 border-2 border-white/20"
+        className="w-20 h-20 flex items-center justify-center text-[#0A2342] shadow-2xl mb-6 border-2 border-none"
       >
-        <HardHat className="w-12 h-12" />
+        <img src="./public/Viva logo.png" alt="" className="w-20 h-20 rounded-2xl" />
       </motion.div>
 
       <motion.h2 
@@ -25,7 +25,7 @@ export const Loader = () => {
         animate={{ opacity: 1, y: 0 }}
         className="text-2xl font-black font-['Montserrat'] tracking-widest uppercase"
       >
-        VIVA<span className="text-[#F4A300]">.</span>CONSTRUCT
+      <span className="text-red-500">VIVA.</span>CONSTRUCT LTD
       </motion.h2>
 
       <p className="text-xs text-gray-400 tracking-[0.3em] uppercase mt-2">
@@ -38,7 +38,7 @@ export const Loader = () => {
           initial={{ x: '-100%' }}
           animate={{ x: '100%' }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-          className="w-full h-full bg-[#F4A300]"
+          className="w-full h-full bg-red-600"
         />
       </div>
     </div>

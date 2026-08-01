@@ -18,8 +18,9 @@ export const Home = () => {
   return (
     <>
       <SEOHead 
-        title="Viva Construct | Building Excellence. Creating Lasting Value."
-        description="Viva Construct is a premier Tier-1 multi-million dollar construction and engineering enterprise delivering landmark commercial towers, luxury estates, and civil infrastructure."
+        title="Viva Construct Limited | Building Excellence. Delivering Confidence."
+        description="Viva Constructs Limited is a multi disciplinary construction, engineering, and project management company committed to delivering innovative, high quality, and cost effective infrastructure solutions. We specialize in residential, commercial, industrial, telecommunications, and civil engineering projects, providing end-to-end services from planning and design through construction, commissioning, and maintenance.
+"
       />
 
       {/* Hero Section */}
@@ -58,7 +59,7 @@ export const Home = () => {
               className="text-4xl sm:text-6xl lg:text-7xl font-black font-['Montserrat'] tracking-tight leading-[1.1] text-white"
             >
               Building Excellence.<br />
-              <span className="amber-gradient-text">Creating Lasting Value.</span>
+              <span className="amber-gradient-text text-red-600">Delivering Confidence.</span>
             </motion.h1>
 
             <motion.p
@@ -79,7 +80,7 @@ export const Home = () => {
             >
               <Link
                 to="/projects"
-                className="bg-[#F4A300] hover:bg-[#D98F00] text-[#0A2342] font-bold text-base px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1 shadow-2xl shadow-[#F4A300]/30 flex items-center justify-center gap-3 group"
+                className="bg-red-600 hover:bg-white-500 text-[#0A2342] font-bold text-base px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1 shadow-2xl shadow-[#F4A300]/30 flex items-center justify-center gap-3 group"
               >
                 Explore Projects 
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -211,7 +212,7 @@ export const Home = () => {
             <span className="text-[#F4A300] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
               Comprehensive Capabilities
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-[#0A2342] font-['Montserrat'] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-black text-grey-500 font-['Montserrat'] tracking-tight">
               Mastery Across All Construction Disciplines
             </h2>
             <p className="text-gray-600 text-sm sm:text-base mt-3">

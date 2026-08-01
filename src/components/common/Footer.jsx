@@ -20,22 +20,22 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#07162C] text-gray-300 pt-16 pb-8 border-t border-white/10 relative overflow-hidden">
+    <footer className="bg-[#000000] text-gray-300 pt-16 pb-8 border-t border-[#444444]/40 relative overflow-hidden">
       {/* Subtle Background Glow */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#F4A300]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#B22222]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#444444]/40">
           
           {/* Col 1: Corporate Brand */}
           <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#F4A300] flex items-center justify-center text-[#0A2342] shadow-lg">
+              <div className="w-10 h-10 rounded-xl bg-[#B22222] flex items-center justify-center text-white shadow-lg border border-white/10">
                 <HardHat className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-2xl font-black tracking-wider text-white font-['Montserrat'] block leading-none">
-                  VIVA<span className="text-[#F4A300]">.</span>
+                  VIVA<span className="text-[#B22222]">.</span>
                 </span>
                 <span className="text-[10px] tracking-[0.25em] text-gray-400 font-semibold uppercase block mt-0.5">
                   CONSTRUCT
@@ -48,12 +48,12 @@ export const Footer = () => {
             </p>
 
             <div className="flex items-center gap-3 pt-2">
-              <div className="flex items-center gap-2 bg-[#0A2342] px-3 py-1.5 rounded-lg border border-white/10 text-xs">
-                <ShieldCheck className="w-4 h-4 text-[#F4A300]" />
+              <div className="flex items-center gap-2 bg-[#222222] px-3 py-1.5 rounded-lg border border-[#444444] text-xs">
+                <ShieldCheck className="w-4 h-4 text-[#B22222]" />
                 <span>ISO 9001:2015</span>
               </div>
-              <div className="flex items-center gap-2 bg-[#0A2342] px-3 py-1.5 rounded-lg border border-white/10 text-xs">
-                <Award className="w-4 h-4 text-[#F4A300]" />
+              <div className="flex items-center gap-2 bg-[#222222] px-3 py-1.5 rounded-lg border border-[#444444] text-xs">
+                <Award className="w-4 h-4 text-[#B22222]" />
                 <span>LEED Platinum</span>
               </div>
             </div>
@@ -61,7 +61,7 @@ export const Footer = () => {
 
           {/* Col 2: Quick Links */}
           <div>
-            <h4 className="text-white text-base font-bold font-['Montserrat'] mb-4 tracking-wide border-l-2 border-[#F4A300] pl-3">
+            <h4 className="text-white text-base font-bold font-['Montserrat'] mb-4 tracking-wide border-l-2 border-[#B22222] pl-3">
               Quick Navigation
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -69,9 +69,9 @@ export const Footer = () => {
                 <li key={item}>
                   <Link 
                     to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                    className="hover:text-[#F4A300] transition-colors flex items-center gap-1.5 group"
+                    className="hover:text-[#B22222] transition-colors flex items-center gap-1.5 group"
                   >
-                    <ArrowRight className="w-3.5 h-3.5 text-gray-500 group-hover:text-[#F4A300] transition-colors" />
+                    <ArrowRight className="w-3.5 h-3.5 text-gray-500 group-hover:text-[#B22222] transition-colors" />
                     {item}
                   </Link>
                 </li>
@@ -81,7 +81,7 @@ export const Footer = () => {
 
           {/* Col 3: Core Services */}
           <div>
-            <h4 className="text-white text-base font-bold font-['Montserrat'] mb-4 tracking-wide border-l-2 border-[#F4A300] pl-3">
+            <h4 className="text-white text-base font-bold font-['Montserrat'] mb-4 tracking-wide border-l-2 border-[#B22222] pl-3">
               Core Services
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -98,9 +98,9 @@ export const Footer = () => {
                 <li key={service}>
                   <Link 
                     to="/services" 
-                    className="hover:text-[#F4A300] transition-colors flex items-center gap-1.5 group"
+                    className="hover:text-[#B22222] transition-colors flex items-center gap-1.5 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#F4A300]/60 group-hover:bg-[#F4A300]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#B22222]/60 group-hover:bg-[#B22222]" />
                     {service}
                   </Link>
                 </li>
@@ -110,7 +110,7 @@ export const Footer = () => {
 
           {/* Col 4: Newsletter & Contact */}
           <div>
-            <h4 className="text-white text-base font-bold font-['Montserrat'] mb-4 tracking-wide border-l-2 border-[#F4A300] pl-3">
+            <h4 className="text-white text-base font-bold font-['Montserrat'] mb-4 tracking-wide border-l-2 border-[#B22222] pl-3">
               Stay Informed
             </h4>
             <p className="text-xs text-gray-400 mb-3 leading-relaxed">
@@ -125,11 +125,11 @@ export const Footer = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your corporate email"
                   required
-                  className="w-full bg-[#0A2342] text-white text-xs px-3.5 py-2.5 rounded-lg border border-white/10 focus:outline-none focus:border-[#F4A300] transition-colors"
+                  className="w-full bg-[#222222] text-white text-xs px-3.5 py-2.5 rounded-lg border border-[#444444] focus:outline-none focus:border-[#B22222] transition-colors"
                 />
                 <button
                   type="submit"
-                  className="absolute right-1 top-1 bottom-1 bg-[#F4A300] text-[#0A2342] px-3 rounded-md hover:bg-[#D98F00] transition-colors flex items-center justify-center font-bold text-xs"
+                  className="absolute right-1 top-1 bottom-1 bg-[#B22222] text-white px-3 rounded-md hover:bg-[#8B0000] transition-colors flex items-center justify-center font-bold text-xs"
                 >
                   <Send className="w-3.5 h-3.5" />
                 </button>
@@ -144,13 +144,13 @@ export const Footer = () => {
 
             <div className="mt-6 space-y-2 text-xs">
               <p className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#F4A300]" /> +1 (800) 555-0199
+                <Phone className="w-3.5 h-3.5 text-[#B22222]" /> +1 (800) 555-0199
               </p>
               <p className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#F4A300]" /> contact@vivaconstruct.com
+                <Mail className="w-3.5 h-3.5 text-[#B22222]" /> contact@vivaconstruct.com
               </p>
               <p className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#F4A300]" /> 750 5th Ave, Suite 2400, NY
+                <MapPin className="w-3.5 h-3.5 text-[#B22222]" /> 750 5th Ave, Suite 2400, NY
               </p>
             </div>
           </div>
@@ -162,23 +162,23 @@ export const Footer = () => {
           <p>© {new Date().getFullYear()} Viva Construct Ltd. All Rights Reserved. Building Excellence.</p>
 
           <div className="flex items-center space-x-6">
-            <a href="#" className="hover:text-[#F4A300] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[#F4A300] transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-[#F4A300] transition-colors">Site Map</a>
-            <a href="#" className="hover:text-[#F4A300] transition-colors">OSHA Safety</a>
+            <a href="#" className="hover:text-[#B22222] transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-[#B22222] transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-[#B22222] transition-colors">Site Map</a>
+            <a href="#" className="hover:text-[#B22222] transition-colors">OSHA Safety</a>
           </div>
 
           <div className="flex items-center space-x-3">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#0A2342] flex items-center justify-center hover:bg-[#F4A300] hover:text-[#0A2342] transition-colors">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
               <FaLinkedinIn className="w-4 h-4" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#0A2342] flex items-center justify-center hover:bg-[#F4A300] hover:text-[#0A2342] transition-colors">
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
               <FaXTwitter className="w-4 h-4" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#0A2342] flex items-center justify-center hover:bg-[#F4A300] hover:text-[#0A2342] transition-colors">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
               <FaInstagram className="w-4 h-4" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#0A2342] flex items-center justify-center hover:bg-[#F4A300] hover:text-[#0A2342] transition-colors">
+            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
               <FaYoutube className="w-4 h-4" />
             </a>
           </div>

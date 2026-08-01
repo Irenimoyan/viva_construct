@@ -44,29 +44,29 @@ export const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       {/* Top Bar */}
-      <div className="bg-[#07162C] text-gray-300 text-xs py-2 px-4 border-b border-white/10 hidden md:block">
+      <div className="bg-[#000000] text-gray-300 text-xs py-2 px-4 border-b border-[#444444]/40 hidden md:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-6">
-            <span className="flex items-center gap-1.5 hover:text-[#F4A300] transition-colors">
-              <Phone className="w-3.5 h-3.5 text-[#F4A300]" />
-              +1 (800) 555-0199
+            <span className="flex items-center gap-1.5 hover:text-[#B22222] transition-colors">
+              <Phone className="w-3.5 h-3.5 text-[#B22222]" />
+              +234-7089057979
             </span>
-            <span className="flex items-center gap-1.5 hover:text-[#F4A300] transition-colors">
-              <Mail className="w-3.5 h-3.5 text-[#F4A300]" />
-              contact@vivaconstruct.com
+            <span className="flex items-center gap-1.5 hover:text-[#B22222] transition-colors">
+              <Mail className="w-3.5 h-3.5 text-[#B22222]" />
+              Ganiyat@vivaconstructs.com
             </span>
-            <span className="flex items-center gap-1.5 hover:text-[#F4A300] transition-colors">
-              <MapPin className="w-3.5 h-3.5 text-[#F4A300]" />
-              750 5th Ave, New York, NY
+            <span className="flex items-center gap-1.5 hover:text-[#B22222] transition-colors">
+              <MapPin className="w-3.5 h-3.5 text-[#B22222]" />
+              39 Ugbejeaki street Mende Maryland, Lagos State.
             </span>
           </div>
 
           <div className="flex items-center space-x-4">
-            <span className="inline-flex items-center gap-1.5 bg-[#F4A300]/20 text-[#F4A300] px-2.5 py-0.5 rounded-full font-medium text-[11px]">
-              <ShieldCheck className="w-3 h-3" /> ISO 9001 / 45001 Certified
+            <span className="inline-flex items-center gap-1.5 bg-[#B22222]/20 text-[#B22222] px-2.5 py-0.5 rounded-full font-medium text-[11px] border border-[#B22222]/30">
+              <ShieldCheck className="w-3 h-3 text-[#B22222]" /> RC: 8867751 Certified
             </span>
             <span className="text-gray-400 flex items-center gap-1">
-              <Clock className="w-3 h-3 text-emerald-400" /> Mon-Fri: 07:00 - 19:00
+              <Clock className="w-3 h-3 text-[#B22222]" /> Mon-Fri: 8AM - 5PM <br /> Saturday: 9AM - 2PM:
             </span>
           </div>
         </div>
@@ -74,21 +74,21 @@ export const Navbar = () => {
 
       {/* Main Glassmorphism Header */}
       <nav className={`transition-all duration-300 ${
-        isScrolled ? 'glass-nav py-3 shadow-2xl' : 'bg-[#0A2342]/90 backdrop-blur-md py-4'
+        isScrolled ? 'glass-nav py-3 shadow-2xl' : 'bg-[#000000]/95 backdrop-blur-md py-4'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F4A300] to-[#D98F00] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-              <HardHat className="w-6 h-6 text-[#0A2342]" />
+          <Link to="/public/Viva logo.png" className="flex items-center gap-3 group">
+            <div className="w-15 h-15 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform border border-white/20">
+              <img src="./public/Viva logo.png" alt=""  className='rounded-xl'/>
             </div>
             <div>
-              <span className="text-2xl font-black tracking-wider text-white font-['Montserrat'] block leading-none">
-                VIVA<span className="text-[#F4A300]">.</span>
+              <span className="text-2xl font-black tracking-wider text-red-600 font-['Montserrat'] block leading-none">
+                VIVA<span className="text-[#B22222]">.</span>
               </span>
-              <span className="text-[10px] tracking-[0.25em] text-gray-300 font-semibold uppercase block mt-0.5">
-                CONSTRUCT
+              <span className="text-[10px] tracking-[0.25em] text-gray-400 font-semibold uppercase block mt-0.5">
+                CONSTRUCT LTD
               </span>
             </div>
           </Link>
@@ -103,7 +103,7 @@ export const Navbar = () => {
                   to={link.path}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-all relative ${
                     isActive 
-                      ? 'text-[#F4A300] font-semibold' 
+                      ? 'text-[#B22222] font-semibold' 
                       : 'text-gray-200 hover:text-white hover:bg-white/10'
                   }`}
                 >
@@ -111,7 +111,7 @@ export const Navbar = () => {
                   {isActive && (
                     <motion.div 
                       layoutId="activeNavIndicator"
-                      className="absolute bottom-0 left-2 right-2 h-0.5 bg-[#F4A300] rounded-full"
+                      className="absolute bottom-0 left-2 right-2 h-0.5 bg-[#B22222] rounded-full"
                     />
                   )}
                 </Link>
@@ -123,7 +123,7 @@ export const Navbar = () => {
           <div className="hidden sm:flex items-center gap-4">
             <Link
               to="/contact"
-              className="bg-[#F4A300] hover:bg-[#D98F00] text-[#0A2342] font-bold text-sm px-5 py-2.5 rounded-lg transition-all transform hover:-translate-y-0.5 shadow-lg shadow-[#F4A300]/25 flex items-center gap-2"
+              className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-sm px-5 py-2.5 rounded-lg transition-all transform hover:-translate-y-0.5 shadow-lg shadow-[#B22222]/30 flex items-center gap-2"
             >
               Get a Quote <ChevronRight className="w-4 h-4" />
             </Link>
@@ -135,7 +135,7 @@ export const Navbar = () => {
             className="xl:hidden p-2.5 rounded-lg text-gray-200 hover:text-white hover:bg-white/10 focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
-            {mobileMenuOpen ? <X className="w-7 h-7 text-[#F4A300]" /> : <Menu className="w-7 h-7" />}
+            {mobileMenuOpen ? <X className="w-7 h-7 text-[#B22222]" /> : <Menu className="w-7 h-7" />}
           </button>
         </div>
       </nav>
@@ -147,7 +147,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="xl:hidden bg-[#07162C] border-b border-white/10 overflow-hidden shadow-2xl"
+            className="xl:hidden bg-[#000000] border-b border-[#444444] overflow-hidden shadow-2xl"
           >
             <div className="px-4 pt-3 pb-6 space-y-2">
               {navLinks.map((link) => {
@@ -158,7 +158,7 @@ export const Navbar = () => {
                     to={link.path}
                     className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                       isActive 
-                        ? 'bg-[#F4A300] text-[#0A2342] font-bold' 
+                        ? 'bg-[#B22222] text-white font-bold' 
                         : 'text-gray-200 hover:bg-white/10 hover:text-white'
                     }`}
                   >
@@ -167,15 +167,15 @@ export const Navbar = () => {
                 );
               })}
 
-              <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
+              <div className="pt-4 border-t border-[#444444] flex flex-col gap-3">
                 <Link
                   to="/contact"
-                  className="w-full text-center bg-[#F4A300] text-[#0A2342] font-bold px-5 py-3 rounded-lg shadow-lg"
+                  className="w-full text-center bg-[#B22222] text-white font-bold px-5 py-3 rounded-lg shadow-lg"
                 >
                   Request Proposal
                 </Link>
                 <div className="text-center text-xs text-gray-400 pt-2">
-                  Emergency Desk: <span className="text-[#F4A300] font-semibold">+1 (800) 555-0199</span>
+                  Emergency Desk: <span className="text-[#B22222] font-semibold">+1 (800) 555-0199</span>
                 </div>
               </div>
             </div>
