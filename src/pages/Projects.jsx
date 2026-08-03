@@ -6,13 +6,15 @@ import { Modal } from '../components/common/Modal';
 import { projectsData } from '../data/projectsData';
 import { 
   MapPin, Calendar, DollarSign, Clock, Layers, ArrowRight, Search, Filter, 
-  CheckCircle2, HardHat, ExternalLink, Video 
+  CheckCircle2, HardHat, ExternalLink, Video, Image as ImageIcon 
 } from 'lucide-react';
 
 export const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
   const [activeModalProject, setActiveModalProject] = useState(null);
+  const [activeVideoSrc, setActiveVideoSrc] = useState('');
+  const [selectedPreviewImage, setSelectedPreviewImage] = useState(null);
 
   const categories = ['All', 'Telecommunications', 'Commercial', 'Residential', 'Civil Engineering'];
 
@@ -24,6 +26,12 @@ export const Projects = () => {
     return matchesCategory && matchesSearch;
   });
 
+  const handleOpenModal = (project) => {
+    setActiveModalProject(project);
+    setActiveVideoSrc(project.videos?.[0]?.src || project.video || '');
+    setSelectedPreviewImage(null);
+  };
+
   return (
     <>
       <SEOHead 
@@ -33,7 +41,7 @@ export const Projects = () => {
 
       <Breadcrumbs 
         currentPage="Projects Portfolio" 
-        subtitle="Explore iconic architectural engineering achievements delivered across the globe."
+        subtitle="Explore iconic architectural engineering achievements delivered across Nigeria and West Africa."
       />
 
       {/* Filter & Search Bar */}
@@ -100,13 +108,13 @@ export const Projects = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-85" />
                       
-                      <div className="absolute top-4 left-4 flex gap-2">
+                      <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
                         <span className="bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
                           {project.category}
                         </span>
-                        {project.video && (
+                        {(project.videos || project.video) && (
                           <span className="bg-[#000000]/80 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow flex items-center gap-1">
-                            <Video className="w-3 h-3 text-[#B22222]" /> Video Tour
+                            <Video className="w-3 h-3 text-[#B22222]" /> {project.videos ? `${project.videos.length} Videos` : 'Video Tour'}
                           </span>
                         )}
                       </div>
@@ -143,7 +151,7 @@ export const Projects = () => {
 
                   <div className="p-6 pt-0">
                     <button
-                      onClick={() => setActiveModalProject(project)}
+                      onClick={() => handleOpenModal(project)}
                       className="w-full bg-[#000000] hover:bg-[#B22222] text-white text-xs font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2"
                     >
                       View Case Study & Gallery <ArrowRight className="w-3.5 h-3.5" />
@@ -161,42 +169,106 @@ export const Projects = () => {
       {activeModalProject && (
         <Modal
           isOpen={!!activeModalProject}
-          onClose={() => setActiveModalProject(null)}
+          onClose={() => {
+            setActiveModalProject(null);
+            setSelectedPreviewImage(null);
+          }}
           title={activeModalProject.title}
         >
           <div className="space-y-6">
             
-            {/* Gallery Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-              {activeModalProject.video ? (
-                <div className="md:col-span-2 relative rounded-xl overflow-hidden shadow bg-black h-64">
+            {/* Video Showcase Section */}
+            {(activeModalProject.videos || activeModalProject.video) && (
+              <div className="space-y-3">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl bg-black h-72 sm:h-96 border border-gray-800">
                   <video 
-                    src={activeModalProject.video} 
+                    key={activeVideoSrc || activeModalProject.videos?.[0]?.src || activeModalProject.video}
+                    src={activeVideoSrc || activeModalProject.videos?.[0]?.src || activeModalProject.video} 
                     controls 
                     autoPlay 
                     muted 
                     loop 
                     className="w-full h-full object-cover"
                   />
+                  <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1 border border-white/10">
+                    <Video className="w-3.5 h-3.5 text-[#B22222]" /> Playing Video
+                  </div>
                 </div>
-              ) : (
-                <img 
-                  src={activeModalProject.mainImage} 
-                  alt={activeModalProject.title}
-                  className="w-full h-64 md:col-span-2 object-cover rounded-xl shadow"
-                />
-              )}
-              <div className="grid grid-rows-2 gap-3">
-                {activeModalProject.gallery.slice(0, 2).map((img, idx) => (
-                  <img 
-                    key={idx} 
-                    src={img} 
-                    alt={`Gallery ${idx}`}
-                    className="w-full h-30 object-cover rounded-xl shadow" 
-                  />
-                ))}
+
+                {/* Multiple Videos Selector */}
+                {activeModalProject.videos && activeModalProject.videos.length > 1 && (
+                  <div>
+                    <span className="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-2 font-['Montserrat']">
+                      Project Video Tour Playlist ({activeModalProject.videos.length} Videos Available):
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {activeModalProject.videos.map((vid, idx) => {
+                        const currentSrc = activeVideoSrc || activeModalProject.videos[0].src;
+                        const isSelected = currentSrc === vid.src;
+                        return (
+                          <button
+                            key={idx}
+                            onClick={() => setActiveVideoSrc(vid.src)}
+                            className={`px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 border ${
+                              isSelected
+                                ? 'bg-[#B22222] text-white border-[#B22222] shadow-md'
+                                : 'bg-gray-50 text-gray-700 border-gray-200 hover:bg-gray-100 hover:border-gray-300'
+                            }`}
+                          >
+                            <Video className={`w-3.5 h-3.5 ${isSelected ? 'text-white' : 'text-[#B22222]'}`} />
+                            <span>{idx + 1}. {vid.title}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
-            </div>
+            )}
+
+            {/* Selected Image Full Preview */}
+            {selectedPreviewImage && (
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-[#B22222]">
+                <img 
+                  src={selectedPreviewImage} 
+                  alt="Selected Preview" 
+                  className="w-full h-72 sm:h-96 object-cover"
+                />
+                <button
+                  onClick={() => setSelectedPreviewImage(null)}
+                  className="absolute top-3 right-3 bg-black/80 text-white text-xs font-bold px-3 py-1 rounded-full hover:bg-[#B22222]"
+                >
+                  Close Photo Preview ✕
+                </button>
+              </div>
+            )}
+
+            {/* Complete Photo Gallery Showcase */}
+            {activeModalProject.gallery && activeModalProject.gallery.length > 0 && (
+              <div>
+                <span className="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-2 font-['Montserrat']">
+                  Complete Project Image Gallery ({activeModalProject.gallery.length} High-Res Photos):
+                </span>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2">
+                  {activeModalProject.gallery.map((img, idx) => (
+                    <div 
+                      key={idx}
+                      onClick={() => setSelectedPreviewImage(img)}
+                      className={`relative h-24 rounded-xl overflow-hidden shadow cursor-pointer group border-2 transition-all ${
+                        selectedPreviewImage === img ? 'border-[#B22222] ring-2 ring-[#B22222]/30 scale-95' : 'border-transparent hover:border-[#B22222]/60'
+                      }`}
+                    >
+                      <img 
+                        src={img} 
+                        alt={`Site Gallery ${idx + 1}`}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                      />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Overview */}
             <div>
@@ -253,7 +325,10 @@ export const Projects = () => {
 
             <div className="flex justify-end gap-4 pt-4 border-t">
               <button
-                onClick={() => setActiveModalProject(null)}
+                onClick={() => {
+                  setActiveModalProject(null);
+                  setSelectedPreviewImage(null);
+                }}
                 className="px-5 py-2.5 text-xs font-bold text-gray-600 hover:text-gray-800"
               >
                 Close

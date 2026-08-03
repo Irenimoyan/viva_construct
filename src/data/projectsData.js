@@ -22,11 +22,21 @@ export const projectsData = [
     challenges: "Transforming an outdated 5-bedroom layout into an open-plan contemporary aesthetic while maintaining load-bearing structural integrity.",
     solutions: "Engineered reinforced steel beam support retrofits, integrated floor-to-ceiling glass paneling, and installed modern energy-efficient HVAC and power distribution systems.",
     mainImage: "/renovation.jpeg",
-    video: "/Remodelling of a five bedroom.mp4",
+    video: "/video credit.mp4",
+    videos: [
+      { title: "Project Overview & Credit", src: "/video credit.mp4" },
+      { title: "Remodeling Overview", src: "/Remodelling of a five bedroom.mp4" },
+      { title: "In-Progress Site Works", src: "/in progress video.mp4" },
+      { title: "Extended Site Tour 1", src: "/video tour 1.mp4" },
+      { title: "Extended Site Tour 2", src: "/video tour 2.mp4" }
+    ],
     gallery: [
       "/renovation.jpeg",
       "/frontpage.jpeg",
-      "/homepage.jpeg"
+      "/homepage.jpeg",
+      "/ongoing 1.jpeg",
+      "/ongoing 2.jpeg",
+      "/progress.jpeg"
     ],
     features: [
       "Contemporary Open-Plan Architectural Layout",
