@@ -266,8 +266,8 @@ export const Home = () => {
             <Link
               to="/services"
               className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg transition-all inline-flex items-center gap-2"
-            >
-              Explore All 10 Specialized Services <ArrowRight className="w-4 h-4" />
+            > 
+              Explore our Specialized Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

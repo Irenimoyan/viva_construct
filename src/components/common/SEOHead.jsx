@@ -15,6 +15,23 @@ export const SEOHead = ({
       metaDesc.setAttribute('content', description);
     }
 
+    // Update tab icon (favicon)
+    let faviconTag = document.querySelector('link[rel="icon"]');
+    if (faviconTag) {
+      faviconTag.setAttribute('href', '/viva-logo-circular.png');
+      faviconTag.setAttribute('type', 'image/png');
+    }
+
+    // Update Open Graph & Twitter preview images
+    let ogImg = document.querySelector('meta[property="og:image"]');
+    if (ogImg) {
+      ogImg.setAttribute('content', '/viva-logo-circular.png');
+    }
+    let twImg = document.querySelector('meta[property="twitter:image"]');
+    if (twImg) {
+      twImg.setAttribute('content', '/viva-logo-circular.png');
+    }
+
     // Inject JSON-LD Schema
     const schemaData = {
       "@context": "https://schema.org",
