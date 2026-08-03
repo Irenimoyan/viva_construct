@@ -1,5 +1,43 @@
 export const projectsData = [
   {
+    id: "djessy-boxing-gym",
+    title: "Djessy Commercial Boxing Gym & Athletic Center",
+    category: "Commercial",
+    location: "Lagos, Nigeria",
+    year: "2026",
+    client: "Djessy Sports & Fitness Enterprise",
+    duration: "6 Months",
+    budget: "Turnkey Commercial Development",
+    scale: "Full Boxing Arena & Fitness Complex",
+    shortDescription: "Architectural design, structural engineering, site planning, and turnkey construction of Djessy Boxing Gym & Athletic Center.",
+    description: "Viva Constructs Limited delivered end-to-end architectural engineering, site layout planning, structural foundation works, and specialized interior fit-out for the Djessy Boxing Gym. The facility features a high-grade main boxing arena ring, specialized training quarters, athlete accommodation bedrooms, floor plan zoning, and heavy-duty structural framework.",
+    services: [
+      "Architectural Site Planning & Master Layout Design",
+      "Reinforced Foundation Piling & Structural Steel Framework",
+      "Main Boxing Ring Arena & Heavy Equipment Rigging",
+      "Acoustic Interior Wall Fit-Out & Impact Flooring",
+      "Dedicated Athlete Quarters & Bedroom Facilities",
+      "Complete MEP Electrical, HVAC & Plumbing Installations"
+    ],
+    challenges: "Engineering a spacious open-span training arena with high structural load capacity for heavy athletic equipment and specialized acoustic dampening.",
+    solutions: "Utilized post-tensioned steel trusses for clear open-span spaces, installed heavy-impact rubberized flooring, and integrated high-velocity industrial HVAC systems.",
+    mainImage: "/Approach view.jpeg",
+    gallery: [
+      "/Approach view.jpeg",
+      "/main boxing gym.jpeg",
+      "/ground floor plan.jpeg",
+      "/site plan.jpeg",
+      "/bedroom for gym.jpeg",
+      "/Screenshot_3-8-2026_22180_.jpeg"
+    ],
+    features: [
+      "Modern Architectural Facade & Approach View",
+      "Professional Main Boxing Arena & Heavy Bag Rigging",
+      "Integrated Athlete Accommodations & Bedrooms",
+      "Comprehensive Site Plan & Zoned Ground Floor Layout"
+    ]
+  },
+  {
     id: "five-bedroom-duplex-remodeling",
     title: "Remodeling of 5-Bedroom Duplex into Contemporary House",
     category: "Residential",

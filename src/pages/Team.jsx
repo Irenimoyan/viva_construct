@@ -9,6 +9,16 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 export const Team = () => {
   const [activeTeamModal, setActiveTeamModal] = useState(null);
 
+  // Helper function to safely parse credentials into an array
+  const parseCredentials = (credentials) => {
+    if (!credentials) return [];
+    if (Array.isArray(credentials)) return credentials;
+    if (typeof credentials === 'string') {
+      return credentials.split(',').map(item => item.trim()).filter(Boolean);
+    }
+    return [];
+  };
+
   return (
     <>
       <SEOHead 
@@ -24,72 +34,78 @@ export const Team = () => {
       <section className="py-20 bg-[#F8F9FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamData.map((member) => (
-              <div 
-                key={member.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between"
-              >
-                <div>
-                  <div className="relative h-72 overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-80" />
-                    <span className="absolute bottom-4 left-4 bg-[#B22222] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
-                      {member.experience}
-                    </span>
-                  </div>
+            {teamData.map((member) => {
+              const creds = parseCredentials(member.credentials);
+              return (
+                <div 
+                  key={member.id}
+                  className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="relative h-72 overflow-hidden">
+                      <img 
+                        src={member.image || "https://i.pinimg.com/474x/9f/4c/f0/9f4cf0f24b376077a2fcdab2e85c3584.jpg?nii=t"} 
+                        alt={member.name} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-80" />
+                      {member.experience && (
+                        <span className="absolute bottom-4 left-4 bg-[#B22222] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                          {member.experience}
+                        </span>
+                      )}
+                    </div>
 
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#000000] font-['Montserrat'] group-hover:text-[#B22222] transition-colors">
-                      {member.name}
-                    </h3>
-                    <p className="text-xs text-[#B22222] font-bold mt-1">
-                      {member.role}
-                    </p>
-                    <p className="text-gray-600 text-sm mt-3 leading-relaxed line-clamp-3">
-                      {member.bio}
-                    </p>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#000000] font-['Montserrat'] group-hover:text-[#B22222] transition-colors">
+                        {member.name}
+                      </h3>
+                      <p className="text-xs text-[#B22222] font-bold mt-1">
+                        {member.role}
+                      </p>
+                      {member.bio && (
+                        <p className="text-gray-600 text-sm mt-3 leading-relaxed line-clamp-3">
+                          {member.bio}
+                        </p>
+                      )}
 
-                    <div className="mt-4 space-y-1.5">
-                      {Array.isArray(member.credentials) ? (
-                        member.credentials.slice(0, 2).map((cred, idx) => (
-                          <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-gray-700">
-                            <Award className="w-3.5 h-3.5 text-[#B22222]" />
-                            <span>{cred}</span>
-                          </div>
-                        ))
-                      ) : (
-                        <div className="flex items-center gap-2 text-xs font-semibold text-gray-700">
-                          <Award className="w-3.5 h-3.5 text-[#B22222]" />
-                          <span>{member.credentials}</span>
+                      {creds.length > 0 && (
+                        <div className="mt-4 space-y-1.5">
+                          {creds.slice(0, 2).map((cred, idx) => (
+                            <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-gray-700">
+                              <Award className="w-3.5 h-3.5 text-[#B22222]" />
+                              <span>{cred}</span>
+                            </div>
+                          ))}
                         </div>
                       )}
                     </div>
                   </div>
-                </div>
 
-                <div className="p-6 pt-0 flex justify-between items-center border-t border-gray-100 mt-4">
-                  <button
-                    onClick={() => setActiveTeamModal(member)}
-                    className="text-xs font-bold text-[#000000] hover:text-[#B22222] transition-colors flex items-center gap-1"
-                  >
-                    View Full Bio <ArrowRight className="w-3.5 h-3.5 text-[#B22222]" />
-                  </button>
+                  <div className="p-6 pt-0 flex justify-between items-center border-t border-gray-100 mt-4">
+                    <button
+                      onClick={() => setActiveTeamModal(member)}
+                      className="text-xs font-bold text-[#000000] hover:text-[#B22222] transition-colors flex items-center gap-1"
+                    >
+                      View Full Bio <ArrowRight className="w-3.5 h-3.5 text-[#B22222]" />
+                    </button>
 
-                  <div className="flex items-center space-x-2">
-                    <a href={`mailto:${member.email}`} className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
-                      <Mail className="w-4 h-4" />
-                    </a>
-                    <a href={member.linkedin} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
-                      <FaLinkedinIn className="w-4 h-4" />
-                    </a>
+                    <div className="flex items-center space-x-2">
+                      {member.email && (
+                        <a href={`mailto:${member.email}`} className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors" title="Email">
+                          <Mail className="w-4 h-4" />
+                        </a>
+                      )}
+                      {member.linkedin && (
+                        <a href={member.linkedin} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors" title="LinkedIn">
+                          <FaLinkedinIn className="w-4 h-4" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -104,49 +120,52 @@ export const Team = () => {
           <div className="space-y-6">
             <div className="flex flex-col sm:flex-row gap-6 items-center">
               <img 
-                src={activeTeamModal.image} 
+                src={activeTeamModal.image || "https://i.pinimg.com/474x/9f/4c/f0/9f4cf0f24b376077a2fcdab2e85c3584.jpg?nii=t"} 
                 alt={activeTeamModal.name} 
                 className="w-36 h-36 rounded-2xl object-cover shadow-lg border-2 border-[#B22222]"
               />
               <div>
-                <span className="bg-[#B22222]/20 text-[#B22222] border border-[#B22222]/30 text-xs font-bold px-3 py-1 rounded-full">
-                  {activeTeamModal.experience}
-                </span>
+                {activeTeamModal.experience && (
+                  <span className="bg-[#B22222]/20 text-[#B22222] border border-[#B22222]/30 text-xs font-bold px-3 py-1 rounded-full">
+                    {activeTeamModal.experience}
+                  </span>
+                )}
                 <h3 className="text-2xl font-bold text-[#000000] font-['Montserrat'] mt-2">
                   {activeTeamModal.name}
                 </h3>
                 <p className="text-sm font-bold text-[#B22222]">{activeTeamModal.role}</p>
 
                 <div className="mt-3 space-y-1 text-xs text-gray-600">
-                  <p className="flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-[#B22222]" /> {activeTeamModal.email}</p>
-                  <p className="flex items-center gap-2"><Phone className="w-3.5 h-3.5 text-[#B22222]" /> {activeTeamModal.phone}</p>
+                  {activeTeamModal.email && (
+                    <p className="flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-[#B22222]" /> {activeTeamModal.email}</p>
+                  )}
+                  {activeTeamModal.phone && (
+                    <p className="flex items-center gap-2"><Phone className="w-3.5 h-3.5 text-[#B22222]" /> {activeTeamModal.phone}</p>
+                  )}
                 </div>
               </div>
             </div>
 
-            <div>
-              <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-2">Executive Biography</h4>
-              <p className="text-gray-700 text-sm leading-relaxed">{activeTeamModal.bio}</p>
-            </div>
+            {activeTeamModal.bio && (
+              <div>
+                <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-2">Executive Biography</h4>
+                <p className="text-gray-700 text-sm leading-relaxed">{activeTeamModal.bio}</p>
+              </div>
+            )}
 
-            <div className="bg-[#F8F9FA] p-5 rounded-xl border border-gray-200">
-              <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3">Academic & Industry Credentials</h4>
-              <div className="space-y-2">
-                {Array.isArray(activeTeamModal.credentials) ? (
-                  activeTeamModal.credentials.map((cred, idx) => (
+            {parseCredentials(activeTeamModal.credentials).length > 0 && (
+              <div className="bg-[#F8F9FA] p-5 rounded-xl border border-gray-200">
+                <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3">Academic & Industry Credentials</h4>
+                <div className="space-y-2">
+                  {parseCredentials(activeTeamModal.credentials).map((cred, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-xs text-gray-800 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-[#B22222]" />
                       <span>{cred}</span>
                     </div>
-                  ))
-                ) : (
-                  <div className="flex items-center gap-2 text-xs text-gray-800 font-medium">
-                    <CheckCircle2 className="w-4 h-4 text-[#B22222]" />
-                    <span>{activeTeamModal.credentials}</span>
-                  </div>
-                )}
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="flex justify-end pt-4 border-t">
               <button
