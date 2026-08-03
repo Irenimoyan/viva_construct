@@ -4,7 +4,7 @@ import {
   HardHat, Phone, Mail, MapPin, Send, ShieldCheck, Award, 
   ArrowRight, CheckCircle2 
 } from 'lucide-react';
-import { FaLinkedinIn, FaXTwitter, FaInstagram, FaYoutube } from 'react-icons/fa6';
+import { FaLinkedinIn, FaXTwitter, FaInstagram, FaYoutube, FaFacebookF, FaTiktok } from 'react-icons/fa6';
 
 export const Footer = () => {
   const [email, setEmail] = useState('');
@@ -33,7 +33,7 @@ export const Footer = () => {
               <img 
                 src="/Viva logo.png" 
                 alt="Viva Constructs Logo" 
-                className="w-12 h-12 object-contain rounded-xl border border-white/20 shadow-lg group-hover:scale-105 transition-transform" 
+                className="w-12 h-12 object-cover rounded-full border border-white/20 shadow-lg group-hover:scale-105 transition-transform bg-black/40" 
               />
               <div>
                 <span className="text-2xl font-black tracking-wider text-white font-['Montserrat'] block leading-none">
@@ -170,18 +170,24 @@ export const Footer = () => {
             <a href="#" className="hover:text-[#B22222] transition-colors">OSHA Safety</a>
           </div>
 
-          <div className="flex items-center space-x-3">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
-              <FaLinkedinIn className="w-4 h-4" />
+          <div className="flex items-center space-x-2.5">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" title="Facebook" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
+              <FaFacebookF className="w-3.5 h-3.5" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
-              <FaXTwitter className="w-4 h-4" />
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" title="Instagram" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
+              <FaInstagram className="w-3.5 h-3.5" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
-              <FaInstagram className="w-4 h-4" />
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" title="LinkedIn" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
+              <FaLinkedinIn className="w-3.5 h-3.5" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
-              <FaYoutube className="w-4 h-4" />
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" title="X (Twitter)" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
+              <FaXTwitter className="w-3.5 h-3.5" />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer" title="YouTube" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
+              <FaYoutube className="w-3.5 h-3.5" />
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noreferrer" title="TikTok" className="w-8 h-8 rounded-lg bg-[#222222] flex items-center justify-center hover:bg-[#B22222] hover:text-white transition-colors">
+              <FaTiktok className="w-3.5 h-3.5" />
             </a>
           </div>
         </div>

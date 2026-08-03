@@ -77,7 +77,7 @@ export const About = () => {
             
             <div>
               <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
-                1. ABOUT THE COMPANY — Our Story
+                1. ABOUT THE COMPANY  Our Story
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-[#000000] font-['Montserrat'] tracking-tight leading-tight">
                 Building Tomorrow, Today.

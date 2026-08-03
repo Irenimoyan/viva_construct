@@ -14,7 +14,7 @@ export const Projects = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeModalProject, setActiveModalProject] = useState(null);
 
-  const categories = ['All', 'Commercial', 'Residential', 'Infrastructure', 'Industrial', 'Renovation', 'Interior Fit-Out'];
+  const categories = ['All', 'Telecommunications', 'Commercial', 'Residential', 'Civil Engineering'];
 
   const filteredProjects = projectsData.filter(project => {
     const matchesCategory = selectedCategory === 'All' || project.category === selectedCategory;
@@ -180,45 +180,56 @@ export const Projects = () => {
 
             {/* Overview */}
             <div>
-              <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-gray-500 mb-2">
-                <span className="bg-[#B22222]/20 text-[#B22222] border border-[#B22222]/30 px-2.5 py-1 rounded-md">{activeModalProject.category}</span>
-                <span>Client: {activeModalProject.client}</span>
-                <span>Location: {activeModalProject.location}</span>
-                <span>Completion: {activeModalProject.year}</span>
+              <div className="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-600 mb-3">
+                <span className="bg-[#B22222] text-white px-3 py-1 rounded-full">{activeModalProject.category}</span>
+                <span className="bg-gray-100 px-3 py-1 rounded-full text-gray-800">Client: {activeModalProject.client}</span>
+                <span className="bg-gray-100 px-3 py-1 rounded-full text-gray-800">Location: {activeModalProject.location}</span>
+                <span className="bg-gray-100 px-3 py-1 rounded-full text-gray-800">Year: {activeModalProject.year}</span>
+                <span className="bg-gray-100 px-3 py-1 rounded-full text-gray-800">Duration: {activeModalProject.duration}</span>
               </div>
               <p className="text-gray-700 text-sm mt-3 leading-relaxed">
                 {activeModalProject.description}
               </p>
             </div>
 
-            {/* Key Features */}
-            <div className="bg-[#F8F9FA] p-5 rounded-xl border border-gray-200">
-              <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3">
-                Landmark Deliverables:
-              </h4>
-              <div className="space-y-2">
-                {activeModalProject.features.map((feat, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-xs text-gray-800">
-                    <CheckCircle2 className="w-4 h-4 text-[#B22222]" />
-                    <span>{feat}</span>
-                  </div>
-                ))}
+            {/* Challenges & Solutions */}
+            {activeModalProject.challenges && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-red-50 rounded-xl border border-red-200">
+                  <h4 className="font-bold text-xs text-[#B22222] font-['Montserrat'] uppercase tracking-wider mb-1">
+                    Engineering Challenges:
+                  </h4>
+                  <p className="text-xs text-gray-700 leading-relaxed">
+                    {activeModalProject.challenges}
+                  </p>
+                </div>
+                <div className="p-4 bg-emerald-50 rounded-xl border border-emerald-200">
+                  <h4 className="font-bold text-xs text-emerald-800 font-['Montserrat'] uppercase tracking-wider mb-1">
+                    Viva Constructs Solutions:
+                  </h4>
+                  <p className="text-xs text-gray-700 leading-relaxed">
+                    {activeModalProject.solutions}
+                  </p>
+                </div>
               </div>
-            </div>
+            )}
 
-            {/* Technologies Badge */}
-            <div>
-              <h4 className="font-bold text-xs text-gray-500 font-['Montserrat'] mb-2 uppercase tracking-wider">
-                Engineering Technologies Utilized:
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {activeModalProject.technologies.map((tech, idx) => (
-                  <span key={idx} className="bg-[#000000] text-white text-xs font-medium px-3 py-1 rounded-lg border border-[#B22222]/30">
-                    {tech}
-                  </span>
-                ))}
+            {/* Key Services & Features */}
+            {activeModalProject.services && (
+              <div className="bg-[#F8F9FA] p-5 rounded-xl border border-gray-200">
+                <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3">
+                  Scope of Services Executed:
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {activeModalProject.services.map((serv, idx) => (
+                    <div key={idx} className="flex items-center gap-2 text-xs text-gray-800">
+                      <CheckCircle2 className="w-4 h-4 text-[#B22222] flex-shrink-0" />
+                      <span>{serv}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="flex justify-end gap-4 pt-4 border-t">
               <button

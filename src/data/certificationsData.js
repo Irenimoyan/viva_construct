@@ -1,50 +1,50 @@
 export const certificationsData = [
   {
-    id: "iso-9001",
-    title: "ISO 9001:2015 Quality Management",
-    issuer: "International Organization for Standardization",
-    description: "Certified international standard for rigorous quality control across all construction phases and engineering operations.",
-    badge: "ISO 9001",
-    code: "CERT-QA-9001-VIVA"
+    id: "cac-incorporation",
+    title: "CAC Certificate of Incorporation",
+    issuer: "Corporate Affairs Commission (CAC), Nigeria",
+    code: "RC: 8867751",
+    badge: "Official Legal Entity",
+    description: "Official legal registration certificate empowering Viva Constructs Limited to operate as a corporate construction, engineering, and project management firm."
   },
   {
-    id: "iso-14001",
-    title: "ISO 14001:2015 Environmental Management",
-    issuer: "Bureau Veritas Certification",
-    description: "Certified commitment to environmental sustainability, waste reduction, zero runoff, and carbon tracking.",
-    badge: "ISO 14001",
-    code: "CERT-ENV-14001-VIVA"
+    id: "tin-verification",
+    title: "Tax Identification Number (TIN)",
+    issuer: "Federal Inland Revenue Service (FIRS)",
+    code: "TIN Verified",
+    badge: "Tax Compliant",
+    description: "Verified tax identification registration guaranteeing full statutory tax compliance for public tenders and corporate contracting."
   },
   {
-    id: "iso-45001",
-    title: "ISO 45001:2018 Occupational Health & Safety",
-    issuer: "Global Safety Accreditation Board",
-    description: "Highest level certification for site safety protocols, worker welfare, and hazard elimination.",
-    badge: "ISO 45001",
-    code: "CERT-OHS-45001-VIVA"
+    id: "hse-policy",
+    title: "Health, Safety & Environmental (HSE) Policy",
+    issuer: "Viva Constructs HSE Board & NEBOSH Audit",
+    code: "HSE-2025-VCL",
+    badge: "Zero Compromise Safety",
+    description: "Mandatory corporate site safety framework enforcing strict PPE protocols, hazard risk assessments, zero lost-time accident standards, and eco protection."
   },
   {
-    id: "leed-platinum",
-    title: "LEED Platinum Authorized Builder",
-    issuer: "U.S. Green Building Council (USGBC)",
-    description: "Accredited master builder for zero-carbon, energy-positive, and LEED Platinum certified developments.",
-    badge: "LEED Platinum",
-    code: "USGBC-LEED-PLAT-2026"
+    id: "quality-assurance-policy",
+    title: "Quality Assurance & Quality Control Policy",
+    issuer: "Internal QA Board & Structural Engineering Council",
+    code: "QAQC-POL-886",
+    badge: "Zero-Defect Quality",
+    description: "Rigorous quality control guidelines governing structural material testing, concrete mix batching, welding inspections, and client handover standards."
   },
   {
-    id: "licensed-contractor",
-    title: "Licensed Class-A General Engineering Contractor",
-    issuer: "State Licensing Authorities",
-    description: "Full unlimited structural liability coverage and Class-A licensing across multiple national jurisdictions.",
-    badge: "Class-A Licensed",
-    code: "LIC-GEN-A-884920"
+    id: "engineering-coren",
+    title: "COREN & NSE Engineering Accreditation",
+    issuer: "Council for the Regulation of Engineering in Nigeria",
+    code: "COREN/REG/2025",
+    badge: "Licensed Engineering",
+    description: "Professional practice license certifying that all structural calculations and site supervision are directed by registered engineering professionals."
   },
   {
-    id: "agc-excellence",
-    title: "AGC National Safety Excellence Award",
-    issuer: "Associated General Contractors of America",
-    description: "Recognized for maintaining over 2 million consecutive work hours with zero lost-time incidents.",
-    badge: "Safety Award",
-    code: "AGC-SAFETY-2025"
+    id: "contractors-insurance",
+    title: "All-Risk Construction & Public Liability Insurance",
+    issuer: "Certified Corporate Insurance Underwriters",
+    code: "INS-CAR-9920",
+    badge: "Fully Insured Sites",
+    description: "Comprehensive Contractors' All Risk (CAR) insurance and public liability coverage protecting client capital, workers, and third-party site assets."
   }
 ];

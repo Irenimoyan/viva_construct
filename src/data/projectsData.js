@@ -1,154 +1,239 @@
 export const projectsData = [
   {
-    id: "apex-commercial-tower",
-    title: "Apex Horizon Commercial Tower",
-    category: "Commercial",
-    location: "Financial District, New York, USA",
+    id: "telecom-delta-asaba-100m",
+    title: "100m Heavy Lattice Telecom Tower, Asaba.",
+    category: "Telecommunications",
+    location: "Asaba, Delta State, Nigeria",
     year: "2025",
-    client: "Vanguard Global Real Estate",
-    duration: "28 Months",
-    budget: "$185,000,000",
-    scale: "68 Stories | 1,200,000 sq. ft.",
-    shortDescription: "A landmark 68-story LEED Platinum office tower featuring a dynamic double-skin glass facade and solar-integrated crown.",
-    description: "The Apex Horizon Tower stands as a testament to futuristic sustainable engineering in downtown New York. Constructed using high-strength low-carbon concrete and a post-tensioned steel frame, this tower withstands extreme wind dynamics while achieving a 42% reduction in annual energy usage.",
-    technologies: ["BIM 5D", "Parametric Glass Facade", "Post-Tensioned Steel", "Geothermal HVAC", "Rainwater Harvesting"],
-    mainImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    client: "Delta State Government",
+    duration: "4 Months",
+    budget: "Government Infrastructure Contract",
+    scale: "100m Structural Heavy Lattice Tower",
+    shortDescription: "Turnkey engineering, heavy foundation piling, and erection of a 100-meter telecommunications lattice tower for Delta State Government.",
+    description: "Viva Constructs Limited executed the end-to-end civil and structural engineering for a landmark 100-meter heavy-duty telecommunications tower in Asaba, Delta State. Scope encompassed deep foundation piling, high-tensile steel lattice erection, microwave dish mounting brackets, aviation hazard lighting, copper earthing grids, and auxiliary generator power base plinths.",
+    services: [
+      "Geotechnical Soil Testing & Deep Foundation Piling",
+      "100m Structural Lattice Steel Tower Erection",
+      "Antenna & Microwave Mounting Infrastructure",
+      "Lightning Protection & Copper Earthing System",
+      "Generator Base Plinth & Power Integration",
+      "Comprehensive HSE & Quality Assurance Oversight"
+    ],
+    challenges: "Erecting a 100-meter ultra-tall heavy steel lattice structure in high humidity riverine soil conditions requiring high wind-load tolerance.",
+    solutions: "Engineered high-capacity reinforced concrete friction piles, utilized crane rigging safety systems, and applied anti-corrosive marine-grade galvanization coatings.",
+    mainImage: "/telecom-asaba-100m.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+      "/telecom-asaba-100m.jpg",
+      "/telecom-asaba-100m.jpg",
+      "/telecom-asaba-100m.jpg"
     ],
     features: [
-      "LEED Platinum Sustainability Certification",
-      "68 High-Speed Smart Destination Elevators",
-      "Subterranean 4-Level EV Parking Infrastructure",
-      "Sky-Garden Atrium on Floor 45"
+      "100m Heavy-Duty Structural Lattice Specification",
+      "High Wind-Load Stability & Seismic Damping",
+      "Subsurface Copper Earthing & Lightning Protection",
+      "Delivered Safely with Zero Lost-Time Injuries"
     ]
   },
   {
-    id: "lumina-luxury-estates",
-    title: "Lumina Waterfront Residences",
-    category: "Residential",
-    location: "Miami Beach, Florida, USA",
-    year: "2024",
-    client: "Azure Living Developments",
-    duration: "18 Months",
-    budget: "$62,000,000",
-    scale: "12 Bespoke Luxury Villas",
-    shortDescription: "An ultra-luxury gated enclave of 12 waterfront villas featuring floor-to-ceiling glass cantilevers and private yacht docks.",
-    description: "Designed for discerning homeowners, Lumina Residences blend seamless indoor-outdoor coastal living with marine-grade structural concrete. Each villa features custom infinity pools, smart climate controls, and hurricane-resilient structural glazing.",
-    technologies: ["Marine-Grade Concrete", "Impact-Resilient Glass", "Infinity Edge Engineering", "Automated Smart Home Hub"],
-    mainImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
-    ],
-    features: [
-      "Private Deep-Water Yacht Slip per Villa",
-      "Seawall Reinforced Against Sea Level Rise",
-      "Rooftop Solar & Tesla Powerwall Integration",
-      "Zero-Edge Infinity Pools"
-    ]
-  },
-  {
-    id: "metro-viaduct-expansion",
-    title: "Central Express Highway & Viaduct",
-    category: "Infrastructure",
-    location: "Dallas Transit Corridor, Texas, USA",
+    id: "telecom-abuja-police-80m",
+    title: "80m Tactical Communications Mast, FCT Police Command.",
+    category: "Telecommunications",
+    location: "Abuja, Federal Capital Territory, Nigeria",
     year: "2025",
-    client: "Department of Transportation",
-    duration: "36 Months",
-    budget: "$320,000,000",
-    scale: "14.2 Miles Highway + 3 Bridges",
-    shortDescription: "A major civil engineering milestone expanding interstate capacity with post-tensioned flyover bridges and noise abatement corridors.",
-    description: "Viva Construct delivered this critical 14-mile infrastructure corridor 4 months ahead of schedule. Utilizing precast concrete bridge beams and round-the-clock slipform paving, the project increased regional traffic flow capacity by 65%.",
-    technologies: ["Precast Segmental Girders", "Slipform Concrete Paving", "GPS Automated Earthworks", "Acoustic Barrier Walls"],
-    mainImage: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1200&q=80",
+    client: "FCT Police Command, Abuja",
+    duration: "3 Months",
+    budget: "Tactical Infrastructure Contract",
+    scale: "80m High Communications Tower",
+    shortDescription: "Construction and deployment of an 80-meter high tactical communications tower and equipment shelter for the FCT Police Command.",
+    description: "Viva Constructs Limited constructed and deployed a 80-meter high secure tactical communications tower for the FCT Police Command headquarters in Abuja. The project guarantees 24/7 radio frequency coverage, security signal routing, emergency auxiliary generator change-over systems, and perimeter security fencing.",
+    services: [
+      "80m Heavy Steel Mast Erection & Structural Rigging",
+      "Heavy Concrete Anchor Pad Foundations",
+      "Secure Equipment Shelter & Generator Integration",
+      "Automatic Transfer Switch (ATS) & Earthing Grids",
+      "Tactical Antenna Bracket Mounts & RF Cabling"
+    ],
+    challenges: "Executing high-altitude tower erection within a high-security tactical headquarters environment with zero operational disturbance.",
+    solutions: "Deployed certified high-altitude riggers, established strict access control zones, and completed precision night-shift installations.",
+    mainImage: "/telecom-abuja-police-80m.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
+      "/telecom-abuja-police-80m.jpg",
+      "/telecom-abuja-police-80m.jpg",
+      "/telecom-abuja-police-80m.jpg"
     ],
     features: [
-      "Zero-Accident Safety Award Winner",
-      "Night-Shift Paving with Minimized Traffic Impact",
-      "Integrated Traffic Sensor Grid",
-      "High-Load Steel Expansion Joints"
+      "80m High Secure Tactical Communications Mast",
+      "Emergency Power Backup & ATS Integration",
+      "99.999% Operational Signal Uptime Guarantee",
+      "Full Security Enclosure & Perimeter Fencing"
     ]
   },
   {
-    id: "eco-logistics-park",
-    title: "Titan Green Industrial Logistics Hub",
-    category: "Industrial",
-    location: "Chicago International Trade Zone, Illinois",
-    year: "2024",
-    client: "Global Logistics Partners",
-    duration: "20 Months",
-    budget: "$140,000,000",
-    scale: "2,400,000 sq. ft. Facility",
-    shortDescription: "A mega distribution campus powered by 1.2MW rooftop solar arrays and automated robot loading docks.",
-    description: "Built for next-generation automated distribution, Titan Park features super-flat concrete slabs engineered for high-rack automated guided vehicles (AGVs), insulated cleanroom zones, and zero-carbon building status.",
-    technologies: ["Laser-Screed Super-Flat Floors", "1.2MW Solar Photovoltaics", "Automated HVAC Climate Zones", "Pre-engineered Steel Structural System"],
-    mainImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
-    ],
-    features: [
-      "Super-Flat FF/FL 100 Concrete Floor Tolerances",
-      "120 Automated Hydraulic Loading Bays",
-      "100% On-Site Solar Power Generation",
-      "Heavy-Duty Heavy Machinery Turning Radius"
-    ]
-  },
-  {
-    id: "grand-piazza-fitout",
-    title: "Metropolitan Financial HQ Interior Fit-Out",
-    category: "Interior Fit-Out",
-    location: "Financial Center, London, UK",
+    id: "telecom-oyo-circular-road-300ft",
+    title: "300ft Heavy Telecom Mast, Circular Road",
+    category: "Telecommunications",
+    location: "Circular Road, Oyo State, Nigeria",
     year: "2025",
-    client: "Metropolitan Banking Group",
-    duration: "10 Months",
-    budget: "$28,000,000",
-    scale: "180,000 sq. ft. Across 6 Floors",
-    shortDescription: "A prestigious corporate interior fit-out featuring curved marble staircases, acoustic timber ceilings, and executive suites.",
-    description: "Viva Construct transformed six raw floors into a world-class banking headquarters. The space integrates acoustic isolation pods, biometric access control, executive dining suites, and handcrafted Italian walnut paneling.",
-    technologies: ["Acoustic Timber Engineering", "Book-Matched Marble Fabrication", "Curved Structural Glass Rails", "Smart DALI Lighting"],
-    mainImage: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
+    client: "Oyo State Government",
+    duration: "5 Months",
+    budget: "State Infrastructure Project",
+    scale: "300ft Telecom Mast Tower",
+    shortDescription: "Turnkey installation of a 300-foot telecommunications mast tower along Circular Road for Oyo State Government infrastructure expansion.",
+    description: "Viva Constructs Limited engineered and deployed a 300ft heavy-duty telecommunications tower along Circular Road in Oyo State. The project enhances regional wireless connectivity, smart traffic management sensors, and municipal emergency network routing.",
+    services: [
+      "300ft Self-Supporting & Guyed Lattice Tower Erection",
+      "Subsurface Heavy Concrete Pad Foundations",
+      "Underground Cable Ducting & Fiber Integration",
+      "Lightning Arrestors & Earthing Pit Installations",
+      "Site Access Paving & Perimeter Security Fencing"
+    ],
+    challenges: "Managing high wind dynamics and expansive clay soil conditions along an active urban transit expansion corridor.",
+    solutions: "Implemented deep geotechnical soil stabilization, post-tensioned anchor bolts, and automated wind-load deflection monitoring.",
+    mainImage: "/telecom-oyo-300ft.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+      "/telecom-oyo-300ft.jpg",
+      "/telecom-oyo-300ft.jpg",
+      "/telecom-oyo-300ft.jpg"
     ],
     features: [
-      "Custom Sculptural Spiral Staircase",
-      "ISO 3744 Soundproof Executive Boardrooms",
-      "Biophilic Living Plant Walls",
-      "Smart Dynamic Color-Tuning LED Arrays"
+      "300ft High-Altitude Structural Mast Elevation",
+      "Integrated Traffic & Emergency Sensor Support",
+      "Corrosion-Resistant Hot-Dip Galvanized Steel",
+      "Complete Site Civil & Power Infrastructure"
     ]
   },
   {
-    id: "historic-city-hall-retrofit",
-    title: "City Hall Heritage Seismic Retrofit",
-    category: "Renovation",
-    location: "San Francisco, California, USA",
-    year: "2024",
-    client: "Municipal Public Works Department",
-    duration: "24 Months",
-    budget: "$45,000,000",
-    scale: "Historic Landmark Site",
-    shortDescription: "Seismic isolation upgrade and historic stone facade preservation of a 110-year-old civic landmark.",
-    description: "Combining historic preservation with cutting-edge engineering. We installed subterranean base isolators under historic sandstone columns while leaving the original gold-leaf dome completely unharmed during active operations.",
-    technologies: ["Subterranean Base Isolators", "Carbon Fiber Wrapping", "Historic Masonry Restoration", "Laser 3D Scanner Scanning"],
-    mainImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+    id: "telecom-ondo-owo-250ft",
+    title: "250ft Telecommunications Mast, Owo Town",
+    category: "Telecommunications",
+    location: "Owo Town, Ondo State, Nigeria",
+    year: "2025",
+    client: "Ondo State Government",
+    duration: "3.5 Months",
+    budget: "State Communications Contract",
+    scale: "250ft Telecom Mast",
+    shortDescription: "Installation of a 250-foot telecommunications mast tower for Ondo State Government at Owo town.",
+    description: "Turnkey execution of a 250-foot telecommunications mast tower in Owo town, Ondo State. Viva Constructs Limited delivered foundation excavation, concrete footing casting, mast section hoisting, electrical wiring, generator bases, and lightning protection.",
+    services: [
+      "250ft Structural Mast Hoisting & Bolting",
+      "Reinforced Concrete Footing & Base Excavation",
+      "Solar & Diesel Generator Auxiliary Power Integration",
+      "Copper Earthing & Grounding Protection",
+      "24/7 Remote Site Facility Servicing"
+    ],
+    challenges: "Navigating rocky terrain during base excavation and ensuring rapid completion ahead of regional wet weather.",
+    solutions: "Utilized hydraulic rock breakers, accelerated concrete curing agents, and modular mast assembly techniques.",
+    mainImage: "/telecom-ondo-250ft.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+      "/telecom-ondo-250ft.jpg",
+      "/telecom-ondo-250ft.jpg",
+      "/telecom-ondo-250ft.jpg"
     ],
     features: [
-      "Restoration of 19th Century Sandstone Facade",
-      "Base Isolators Capable of Withstanding 8.0 Magnitude Earthquake",
-      "Preservation of Intricate Stained Glass & Plaster Works",
-      "National Register of Historic Places Compliant"
+      "250ft Telecom Mast for State Network Expansion",
+      "Heavy Concrete Base Footing Engineering",
+      "Full Solar & Diesel Power Integration",
+      "Zero-Accident Safety Standard"
     ]
-  }
+  },
+  // {
+  //   id: "commercial-office-renovation",
+  //   title: "Commercial Office Renovation & Fit-Out",
+  //   category: "Commercial",
+  //   location: "Lagos, Nigeria",
+  //   year: "2025",
+  //   client: "Corporate Financial Institution",
+  //   duration: "6 Months",
+  //   budget: "Commercial Remodel",
+  //   scale: "45,000 sq. ft. Space",
+  //   shortDescription: "Complete office transformation including electrical upgrades, interior finishing, structural modifications, and modern workspace redesign.",
+  //   description: "Full interior remodeling and structural upgrade of a multi-story corporate headquarters in Lagos. Viva Constructs Limited converted an outdated corporate building into an open-plan collaborative hub with acoustic glass partitions, upgraded MEP electrical distribution, biometric access control, and executive suites.",
+  //   services: [
+  //     "Structural Modifications & Core Alterations",
+  //     "Interior Drywall Partitions & Acoustic Ceilings",
+  //     "Electrical Wiring & Lighting System Upgrades",
+  //     "HVAC Ducting & Mechanical Ventilation",
+  //     "Custom Italian Joinery & Reception Desk Fit-Out"
+  //   ],
+  //   challenges: "Executing heavy demolition and noise-intensive construction works within an active commercial district without disrupting surrounding businesses.",
+  //   solutions: "Implemented phased night-shift construction schedules, acoustic barrier screens, dust suppression systems, and just-in-time material deliveries to maintain 100% operational harmony.",
+  //   mainImage: "",
+  //   gallery: [
+      
+  //   ],
+  //   features: [
+  //     "High-Acoustic Glass Partitioning Systems",
+  //     "Energy-Efficient Smart LED Lighting Grid",
+  //     "Executive Boardroom AV & Security Controls",
+  //     "Turnkey Completion Delivered on Schedule"
+  //   ]
+  // },
+  // {
+  //   id: "residential-development",
+  //   title: "Luxury Residential Gated Estate",
+  //   category: "Residential",
+  //   location: "Lagos, Nigeria",
+  //   year: "2025",
+  //   client: "Private Real Estate Developer",
+  //   duration: "14 Months",
+  //   budget: "Turnkey Development",
+  //   scale: "12 Luxury Villas",
+  //   shortDescription: "Construction of modern residential buildings with premium finishes, high-quality engineering standards, and smart home provisions.",
+  //   description: "Viva Constructs Limited constructed a gated enclave of contemporary multi-story luxury residences in Lagos. Each home features deep pile foundation engineering, reinforced concrete frame structures, smart energy systems, high-durability marble flooring, and custom perimeter security works.",
+  //   services: [
+  //     "Foundation Excavation & Reinforced Concrete Framework",
+  //     "Architectural Exterior Finishes & Roofing Systems",
+  //     "Interior Plumbing, MEP & Electrical Works",
+  //     "Interlocking Stone Estate Paving & Drainage",
+  //     "Perimeter Wall Fencing & Automated Gate Access"
+  //   ],
+  //   challenges: "High water table soil conditions requiring specialized geotechnical deep foundation piling and waterproofing solutions.",
+  //   solutions: "Engineered raft-pile foundations with crystalline waterproofing admixtures, ensuring structural immunity against water ingress and soil settlement.",
+  //   mainImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+  //     "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+  //     "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80"
+  //   ],
+  //   features: [
+  //     "Deep Pile Foundation & Raft Slab Concrete Specs",
+  //     "Custom Architectural Interiors & Smart Provisions",
+  //     "Solar Backup Power Grid Integration",
+  //     "15-Year Structural Integrity Warranty"
+  //   ]
+  // },
+  // {
+  //   id: "civil-engineering-projects",
+  //   title: "Urban Civil Infrastructure & Drainage Works",
+  //   category: "Civil Engineering",
+  //   location: "Lagos & Ogun States, Nigeria",
+  //   year: "2025",
+  //   client: "Municipal Authorities & Private Estate Consortium",
+  //   duration: "10 Months",
+  //   budget: "Civil Infrastructure",
+  //   scale: "8.5km Road & Drainage Corridor",
+  //   shortDescription: "Roads, drainage systems, foundations, reinforced concrete structures, paving works, and supporting infrastructure.",
+  //   description: "Constructing heavy-duty civil transportation corridors and flood mitigation networks. Viva Constructs Limited executed earthworks, sub-base preparation, concrete box culverts, retaining walls, interlocking stone paving, and asphalt resurfacing.",
+  //   services: [
+  //     "Subsurface Stormwater Drainage Channeling",
+  //     "Reinforced Concrete Box Culverts & Retaining Walls",
+  //     "GPS Earthmoving, Grading & Sub-base Compaction",
+  //     "Heavy Interlocking Stone Paving & Asphalt Wearing Course",
+  //     "Street Lighting & Environmental Erosion Controls"
+  //   ],
+  //   challenges: "Executing heavy earthworks during peak tropical rainfall seasons while maintaining traffic access for resident communities.",
+  //   solutions: "Deployed rapid-setting concrete formulations, temporary bypass channels, and heavy dewatering pump stations to keep site works progressing continuously.",
+  //   mainImage: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1200&q=80",
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1200&q=80",
+  //     "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
+  //     "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
+  //   ],
+  //   features: [
+  //     "Reinforced Structural Drainage Channeling",
+  //     "Heavy-Load Interlocking Paving Works",
+  //     "Erosion Control & Geotechnical Stabilization",
+  //     "30-Year Infrastructure Service Life"
+  //   ]
+  // }
 ];

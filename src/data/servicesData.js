@@ -1,200 +1,184 @@
 export const servicesData = [
   {
-    id: "residential-construction",
-    title: "Residential Construction",
-    subtitle: "Bespoke Luxury Villas & High-Rise Living",
-    iconName: "Home",
-    category: "Building",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Custom luxury homes, modern high-rise residential complexes, and sustainable multi-family estates built to exacting standards.",
-    fullDescription: "Viva Constructs Limited designs and constructs iconic residential living spaces across Nigeria and West Africa. From private ultra-luxury estates to multi-story residential apartment complexes, our team combines innovative architectural engineering with sustainable building methodologies.",
-    features: [
-      "Custom Architectural Engineering",
-      "Smart Home Infrastructure Integration",
-      "LEED Certified Build Specifications",
-      "Acoustic & Thermal Energy Efficiency",
-      "End-to-End Turnkey Delivery"
-    ],
-    stats: { completed: "25+", avgScale: "Residential Excellence", warranty: "15 Years" }
-  },
-  {
-    id: "commercial-construction",
-    title: "Commercial Construction",
-    subtitle: "Iconic Office Towers & Retail Hubs",
+    id: "building-construction",
+    title: "Building Construction",
+    subtitle: "Turnkey Residential, Commercial & Industrial Structures",
     iconName: "Building2",
-    category: "Commercial",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "State-of-the-art corporate headquarters, mixed-use commercial centers, and premier hospitality developments.",
-    fullDescription: "We deliver landmark commercial projects that redefine urban skylines. Utilizing structural steel frameworks, curtain-wall glass engineering, and adaptive space planning, Viva Constructs Limited delivers projects on schedule and within budget.",
-    features: [
-      "Structural Steel & Curtain-Wall Systems",
-      "BIM 5D Virtual Modeling & Collision Detection",
-      "High-Traffic Commercial Flooring & HVAC",
-      "Integrated Security & Fire Suppression",
-      "Zero-Disruption Urban Site Management"
-    ],
-    stats: { completed: "15+", avgScale: "Commercial Towers", warranty: "20 Years" }
-  },
-  {
-    id: "telecom-infrastructure",
-    title: "Telecommunications Infrastructure",
-    subtitle: "Cell Towers, Fiber Ducting & Data Hubs",
-    iconName: "Radio",
-    category: "Specialized",
-    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Turnkey cellular mast foundations, fiber optic ducting networks, data center civil builds, and telecom site maintenance across West Africa.",
-    fullDescription: "Viva Constructs Limited specializes in mission-critical telecommunications civil engineering. We design and construct heavy tower foundation pads, rooftop antenna support structures, underground fiber optic duct banks, and data center facilities engineered for 99.999% uptime.",
-    features: [
-      "Cellular Tower Foundation & Mast Erection",
-      "Underground Fiber Optic Cable Ducting",
-      "Data Center Civil & Power Infrastructure",
-      "Remote Telecom Site Civil Works & Fencing",
-      "24/7 Telecom Structural Site Servicing"
-    ],
-    stats: { completed: "30+", avgScale: "Nationwide Telecom Sites", warranty: "Lifetime Structural" }
-  },
-  {
-    id: "industrial-projects",
-    title: "Industrial Projects",
-    subtitle: "Heavy Industry, Logistics & Processing Hubs",
-    iconName: "Factory",
-    category: "Industrial",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Automated distribution centers, manufacturing facilities, specialized warehouses, and processing plants.",
-    fullDescription: "Industrial engineering demands rigorous structural stability and precision. We engineer heavy-duty reinforced foundations, crane superstructures, high-voltage electrical grid integration, and hazard-compliant industrial spaces.",
-    features: [
-      "Heavy Load Slab Engineering",
-      "Hazardous Material Containment Systems",
-      "Automated Logistics Facilities Support",
-      "High-Capacity Electrical & Utility Distribution",
-      "Industrial Standards Compliance"
-    ],
-    stats: { completed: "12+", avgScale: "Industrial Plants", warranty: "25 Years" }
-  },
-  {
-    id: "civil-engineering",
-    title: "Civil Engineering",
-    subtitle: "Critical Infrastructure & Public Sector Works",
-    iconName: "LandPlot",
-    category: "Infrastructure",
+    category: "Building",
     image: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Public sector infrastructure, water drainage networks, retaining structures, and site preparation across all 36 Nigerian states.",
-    fullDescription: "Viva Constructs Limited partners with municipal authorities and private institutions to engineer civil projects that support growing populations. From subterranean drainage systems to retaining walls and deep foundation piling.",
+    shortDescription: "Complete construction of residential, commercial, institutional, and industrial buildings from foundation to final handover.",
+    fullDescription: "Viva Constructs Limited delivers end-to-end building construction across Nigeria and West Africa. We manage the entire construction lifecycle — from initial earthworks and structural foundation piling to superstructures, enclosure, and final client commissioning.",
     features: [
-      "Deep Foundation Piling & Earthworks",
-      "Subsurface Stormwater Management",
-      "Geotechnical Soil Stabilization",
-      "Structural Concrete Retaining Walls",
-      "Environmental Impact Compliance"
+      "Complete Residential & Commercial Superstructures",
+      "Institutional & Educational Facilities",
+      "Industrial Plants & High-Capacity Warehouses",
+      "Foundation Piling & Heavy Concrete Frameworks",
+      "End-to-End Turnkey Handover"
     ],
-    stats: { completed: "20+", avgScale: "Infrastructure Works", warranty: "30 Years" }
+    stats: { completed: "25+", avgScale: "Residential & Commercial", warranty: "15 Years" }
   },
   {
-    id: "road-construction",
-    title: "Road & Bridge Infrastructure",
-    subtitle: "Highways, Viaducts & Urban Transit Networks",
-    iconName: "HardHat",
-    category: "Infrastructure",
-    image: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Multi-lane highways, concrete bridge spans, asphalt paving, and urban transit corridors.",
-    fullDescription: "Connecting communities through resilient transport infrastructure. Viva Constructs Limited employs heavy machinery fleets, GPS-guided grading, and high-durability asphalt formulations for long-lasting transit networks.",
-    features: [
-      "GPS-Guided Automated Grading & Earthmoving",
-      "Reinforced Concrete Bridge Spans",
-      "High-Durability Polymer Asphalt",
-      "Smart Traffic Barriers & Drainage",
-      "Heavy-Duty Overpass Engineering"
-    ],
-    stats: { completed: "10+", avgScale: "Highway Corridors", warranty: "25 Years" }
-  },
-  {
-    id: "renovation-restoration",
-    title: "Renovation & Structural Retrofit",
-    subtitle: "Building Remodeling & Structural Upgrades",
+    id: "renovation-remodeling",
+    title: "Building Renovation & Remodeling",
+    subtitle: "Modern Property Remodeling & Structural Upgrades",
     iconName: "Wrench",
-    category: "Specialized",
+    category: "Building",
     image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Building renovation, structural strengthening, facade modernization, and adaptive reuse transformations.",
-    fullDescription: "Refreshing existing structures with modern engineering. We specialize in structural reinforcement, facade replacement, interior core rehabilitation, and energy efficiency retrofitting.",
+    shortDescription: "Modern renovation, structural upgrades, property remodeling, and rehabilitation designed to improve functionality and aesthetics.",
+    fullDescription: "We revitalize aged or underperforming real estate assets. Viva Constructs Limited specializes in complete structural retrofitting, layout reconfiguration, facade modernizations, and energy efficiency upgrades.",
     features: [
       "Structural Concrete & Carbon Fiber Upgrades",
-      "Building Rehabilitation & Remodeling",
-      "Cladding & High-Efficiency Glazing",
-      "Core Structural Load Alterations",
-      "Phase Construction in Occupied Sites"
+      "Commercial & Residential Property Remodeling",
+      "Exterior Facade Modernization & Cladding",
+      "Adaptive Space Reconfiguration",
+      "Occupied Site Phase Construction"
     ],
-    stats: { completed: "20+", avgScale: "Retrofit Projects", warranty: "15 Years" }
+    stats: { completed: "20+", avgScale: "Retrofit & Upgrades", warranty: "15 Years" }
   },
   {
     id: "interior-fitout",
-    title: "Interior Fit-Out",
-    subtitle: "High-End Corporate & Residential Interiors",
+    title: "Interior Fit-Out & Finishing",
+    subtitle: "High-End Workspaces & Bespoke Finishes",
     iconName: "Paintbrush",
-    category: "Specialized",
+    category: "Building",
     image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Turnkey corporate interiors, executive boardrooms, bespoke joinery, acoustic partition walls, and architectural finishing.",
-    fullDescription: "Transforming empty building shells into functional operational spaces. Our interior fit-out craftsmen install premium flooring, acoustic paneling, customized millwork, and intelligent ambient lighting solutions.",
+    shortDescription: "Professional interior finishing including ceilings, partitions, flooring, painting, lighting, furniture installation, and complete space transformation.",
+    fullDescription: "Transforming raw building shells into inspiring corporate environments and luxury living spaces. Our interior team executes precision partition walls, acoustic ceilings, high-durability flooring, ambient lighting, and custom joinery.",
     features: [
-      "Custom Architectural Joinery & Millwork",
-      "Acoustic Ceiling & Wall Panel Systems",
-      "Automated Architectural Lighting Controls",
-      "High-Durability Flooring Installation",
-      "MEP Integrated Ceiling Systems"
+      "Acoustic Ceiling & Gypsum Drywall Partitions",
+      "Custom Joinery, Architectural Millwork & Furniture",
+      "High-End Flooring (Marble, Granite, Epoxy, Hardwood)",
+      "Architectural Lighting & Ambient Control Systems",
+      "Turnkey Corporate & Residential Fit-Out"
     ],
     stats: { completed: "30+", avgScale: "Interior Fit-Outs", warranty: "10 Years" }
   },
   {
-    id: "architecture-design",
-    title: "Architecture & Master Planning",
-    subtitle: "Conceptualization, 3D Rendering & Planning",
-    iconName: "Compass",
-    category: "Design",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Architectural design, master planning, 3D photorealistic visualization, and municipal building approvals.",
-    fullDescription: "Our architectural planning team bridges aesthetic elegance with structural feasibility. We create inspiring floor plans and 3D renderings optimized for natural lighting, spatial flow, and environmental sustainability.",
+    id: "civil-engineering",
+    title: "Civil Engineering Works",
+    subtitle: "Roads, Drainage Systems & Retaining Walls",
+    iconName: "LandPlot",
+    category: "Civil",
+    image: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1200&q=80",
+    shortDescription: "Road construction, drainage systems, concrete structures, retaining walls, foundations, paving, and other civil infrastructure projects.",
+    fullDescription: "Engineering durable civil infrastructure across all 36 Nigerian states. Viva Constructs Limited executes heavy earthworks, stormwater drainage channels, interlocking paving, retaining walls, and highway pavements engineered for extreme heavy loads.",
     features: [
-      "Parametric Architectural Principles",
-      "3D Renderings & Virtual Walkthroughs",
-      "Municipal Planning & Building Approvals",
-      "Solar & Environmental Spatial Analysis",
-      "Master Site Plan Conception"
+      "Highway & Estate Road Construction",
+      "Subterranean & Surface Stormwater Drainage Networks",
+      "Heavy Concrete Retaining Walls & Earth Stabilizing",
+      "Interlocking Stone & Asphalt Paving Works",
+      "Deep Foundation Piling & Soil Stabilization"
     ],
-    stats: { completed: "40+", avgScale: "Design Phase", warranty: "Full Support" }
+    stats: { completed: "20+", avgScale: "Infrastructure Works", warranty: "30 Years" }
   },
   {
-    id: "structural-design",
-    title: "Structural Engineering",
-    subtitle: "Advanced Load Analysis & FEA Modeling",
-    iconName: "Layers",
-    category: "Design",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Structural analysis, foundation calculations, concrete and steel design calculations, and engineering sign-offs.",
-    fullDescription: "Uncompromising safety and computational efficiency. Our structural engineers solve complex geometric challenges using reinforced concrete, structural steel, and composite engineering technologies.",
+    id: "telecom-infrastructure",
+    title: "Telecommunications Infrastructure",
+    subtitle: "Turnkey BTS Sites, Towers, Shelters & Maintenance",
+    iconName: "Radio",
+    category: "Specialized",
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    shortDescription: "Construction and deployment of telecommunications infrastructure including BTS sites, tower foundations, shelters, cabling, earthing, and maintenance.",
+    fullDescription: "Viva Constructs Limited is a specialized telecoms infrastructure partner for major mobile network operators and tower infrastructure companies across West Africa. We handle turnkey BTS site builds from land clearance to tower erection, power integration, and site servicing.",
     features: [
-      "Load Calculation & Foundation Analysis",
-      "High-Rise Structural Design",
-      "Reinforced & Post-Tensioned Concrete Layouts",
-      "Structural Steel Frame Design",
-      "PE Engineering Sign-off"
+      "BTS Site Construction & Turnkey Deployment",
+      "Heavy Concrete Tower Foundations & Anchor Rings",
+      "Equipment Shelters & Generator Plinths",
+      "Cable Routing, Ducting & Underground Conduit Works",
+      "Electrical Integration, Change-Over & Earthing Systems",
+      "Cell Site Structural Upgrades & 24/7 Maintenance"
     ],
-    stats: { completed: "50+", avgScale: "Engineering Phase", warranty: "Lifetime Compliance" }
+    stats: { completed: "30+", avgScale: "Nationwide Telecom Sites", warranty: "Lifetime Structural" }
+  },
+  {
+    id: "electrical-engineering",
+    title: "Electrical Engineering",
+    subtitle: "Power Distribution, Generators & Lighting Systems",
+    iconName: "Zap",
+    category: "MEP",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    shortDescription: "Electrical installations, power distribution, change-over systems, generator integration, industrial electrical works, lighting, and energy solutions.",
+    fullDescription: "Comprehensive electrical engineering services for commercial towers, industrial plants, telecom sites, and residential estates. We design and install high/low voltage distribution panels, automatic transfer switches (ATS), power backup, and surge protection.",
+    features: [
+      "High & Low Voltage Electrical Installations",
+      "Industrial & Commercial Power Distribution Panels",
+      "Automatic Transfer Switches (ATS) & Generator Integration",
+      "Architectural & Industrial Lighting Systems",
+      "Surge Protection & Copper Earthing Grids",
+      "Renewable Energy & Solar Inverter Integration"
+    ],
+    stats: { completed: "35+", avgScale: "Electrical Systems", warranty: "10 Years" }
+  },
+  {
+    id: "mechanical-engineering",
+    title: "Mechanical Engineering",
+    subtitle: "Piping Systems, HVAC & Equipment Installation",
+    iconName: "Settings",
+    category: "MEP",
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+    shortDescription: "Mechanical installations, equipment installation, piping systems, and supporting engineering works.",
+    fullDescription: "Specialized mechanical systems installation and commissioning. Viva Constructs Limited handles industrial HVAC ducting, chilled water piping systems, heavy industrial machinery rigging, pumping stations, and fire protection piping.",
+    features: [
+      "Industrial Mechanical Systems & Equipment Rigging",
+      "Chilled Water & Fluid Piping Networks",
+      "HVAC Centralized Air Conditioning & Ventilation",
+      "Fire Suppression & Sprinkler Piping Installations",
+      "Water Treatment & Pumping Station Mechanical Works"
+    ],
+    stats: { completed: "20+", avgScale: "Mechanical Installations", warranty: "10 Years" }
   },
   {
     id: "project-management",
-    title: "Construction Project Management",
-    subtitle: "Cost Governance, Procurement & HSE Oversight",
+    title: "Project Management",
+    subtitle: "Scheduling, Cost Control, Procurement & QA Governance",
     iconName: "ClipboardCheck",
     category: "Management",
     image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "End-to-end project management, transparent budgeting, supply chain procurement, and HSE site governance.",
-    fullDescription: "Guaranteeing project success through disciplined governance. We enforce rigorous milestone tracking, transparent financial auditing, subcontractor oversight, and strict HSE safety protocols.",
+    shortDescription: "Our project management services include planning, scheduling, procurement, cost management, site supervision, quality assurance, risk management, and contract administration.",
+    fullDescription: "Protecting project capital and guaranteeing delivery dates. Viva Constructs Limited applies strict PMBOK and 5D BIM methodologies for master scheduling, cost auditing, site HSE supervision, quality inspection, and risk mitigation.",
     features: [
-      "Milestone Tracking & Cost Governance",
-      "Transparent Procurement & Material Sourcing",
-      "HSE Health, Safety & Environmental Compliance",
-      "Quality Assurance & Inspection Audits",
-      "Timely Project Delivery SLA"
+      "Master Project Planning & Critical Path Scheduling",
+      "Transparent Procurement & Contract Administration",
+      "Cost Governance & Earned Value Financial Auditing",
+      "On-Site Technical Supervision & Quality Assurance",
+      "Comprehensive HSE & Project Risk Mitigation"
     ],
-    stats: { completed: "50+", avgScale: "Full Project SLA", warranty: "Guaranteed Delivery" }
+    stats: { completed: "50+", avgScale: "Over N15B Managed", warranty: "Guaranteed SLA" }
+  },
+  {
+    id: "procurement-supply",
+    title: "Procurement & Supply",
+    subtitle: "Construction Materials, Machinery & Project Logistics",
+    iconName: "Truck",
+    category: "Management",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+    shortDescription: "Supply of quality construction materials, engineering equipment, tools, machinery, and project logistics.",
+    fullDescription: "Reliable supply chain solutions for major infrastructure and building developments. We source and deliver certified high-grade structural steel, cement, aggregates, heavy earthmoving equipment, generators, and specialized tools.",
+    features: [
+      "Certified High-Grade Steel & Cement Supply",
+      "Heavy Earthmoving & Construction Machinery Fleet",
+      "Electrical, Mechanical & Telecom Equipment Procurement",
+      "Project Site Logistics & Material Haulage",
+      "Quality Certification & Batch Testing Approvals"
+    ],
+    stats: { completed: "40+", avgScale: "Supply Contracts", warranty: "Certified Material" }
+  },
+  {
+    id: "facility-maintenance",
+    title: "Facility Maintenance",
+    subtitle: "Preventive & Corrective Maintenance Services",
+    iconName: "ShieldCheck",
+    category: "Management",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+    shortDescription: "Preventive and corrective maintenance services for residential, commercial, and industrial facilities.",
+    fullDescription: "Sustaining long-term property performance and structural integrity. Viva Constructs Limited delivers 24/7 facility management, preventative MEP servicing, emergency structural repairs, and routine building inspections.",
+    features: [
+      "Preventive & Corrective Building Maintenance",
+      "24/7 Emergency Electrical & Plumbing Response",
+      "Generator & Auxiliary Power Plant Maintenance",
+      "Structural Crack & Water Leakage Repairs",
+      "Scheduled HVAC & Lift System Servicing"
+    ],
+    stats: { completed: "30+ SLA Contracts", avgScale: "24/7 SLA", warranty: "Service SLA" }
   }
 ];

@@ -55,9 +55,9 @@ export const BrandShowcase = () => {
           <div className="flex items-center gap-3">
             <button
               onClick={() => alert("Viva Constructs Limited Official Corporate Profile PDF download initiated.")}
-              className="bg-[#B22222] hover:bg-[#8B0000] text-white text-xs font-bold px-5 py-3 rounded-xl transition-all shadow-lg shadow-[#B22222]/20 flex items-center gap-2"
+              className="bg-[#B22222] hover:bg-[#8B0000] text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md shadow-[#B22222]/20 inline-flex items-center gap-1.5 flex-shrink-0"
             >
-              <Download className="w-4 h-4" /> Download Corporate Brochure
+              <Download className="w-3.5 h-3.5" /> Download Corporate Brochure
             </button>
           </div>
         </div>
@@ -93,7 +93,7 @@ export const BrandShowcase = () => {
             <img 
               src="/Viva logo.png" 
               alt="Viva Constructs Limited Official Brand Logo" 
-              className="w-32 h-auto object-contain rounded-xl shadow-lg border border-white/10"
+              className="w-32 h-32 object-cover rounded-full shadow-lg border border-white/10 bg-black/40"
             />
             <span className="text-xs font-bold text-gray-300 font-['Montserrat'] mt-3">
               Official Crest Logo
@@ -146,7 +146,7 @@ export const BrandShowcase = () => {
         </div>
 
         {/* Color Palette Tokens */}
-        <div>
+        {/* <div>
           <h3 className="text-lg font-bold font-['Montserrat'] text-white mb-4 flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-[#B22222]" /> Visual Design System Tokens
           </h3>
@@ -166,7 +166,7 @@ export const BrandShowcase = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
       </div>
     </div>

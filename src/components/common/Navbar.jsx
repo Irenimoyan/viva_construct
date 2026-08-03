@@ -83,7 +83,7 @@ export const Navbar = () => {
             <img 
               src="/Viva logo.png" 
               alt="Viva Construct Logo"  
-              className="w-12 h-12 object-contain rounded-xl border border-white/20 shadow-lg group-hover:scale-105 transition-transform"
+              className="w-12 h-12 object-cover rounded-full border border-white/20 shadow-lg group-hover:scale-105 transition-transform bg-black/40"
             />
             <div>
               <span className="text-2xl font-black tracking-wider text-[#B22222] font-['Montserrat'] block leading-none">
@@ -125,19 +125,19 @@ export const Navbar = () => {
           <div className="hidden sm:flex items-center gap-4">
             <Link
               to="/contact"
-              className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-sm px-5 py-2.5 rounded-lg transition-all transform hover:-translate-y-0.5 shadow-lg shadow-[#B22222]/30 flex items-center gap-2"
+              className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-xs px-4 py-2 rounded-xl transition-all shadow-md shadow-[#B22222]/20 inline-flex items-center gap-1.5"
             >
-              Get a Quote <ChevronRight className="w-4 h-4" />
+              Get a Quote <ChevronRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-2.5 rounded-lg text-gray-200 hover:text-white hover:bg-white/10 focus:outline-none"
+            className="xl:hidden p-2 rounded-lg text-gray-200 hover:text-white hover:bg-white/10 focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
-            {mobileMenuOpen ? <X className="w-7 h-7 text-[#B22222]" /> : <Menu className="w-7 h-7" />}
+            {mobileMenuOpen ? <X className="w-6 h-6 text-[#B22222]" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </nav>
@@ -158,7 +158,8 @@ export const Navbar = () => {
                   <Link
                     key={link.path}
                     to={link.path}
-                    className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                       isActive 
                         ? 'bg-[#B22222] text-white font-bold' 
                         : 'text-gray-200 hover:bg-white/10 hover:text-white'
@@ -169,15 +170,16 @@ export const Navbar = () => {
                 );
               })}
 
-              <div className="pt-4 border-t border-[#444444] flex flex-col gap-3">
+              <div className="pt-3 border-t border-[#444444] flex flex-col gap-2">
                 <Link
                   to="/contact"
-                  className="w-full text-center bg-[#B22222] text-white font-bold px-5 py-3 rounded-lg shadow-lg"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="w-full text-center bg-[#B22222] text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow-md inline-flex items-center justify-center gap-1.5"
                 >
-                  Request Proposal
+                  Request Proposal <ChevronRight className="w-3.5 h-3.5" />
                 </Link>
-                <div className="text-center text-xs text-gray-400 pt-2">
-                  Emergency Desk: <span className="text-[#B22222] font-semibold">+1 (800) 555-0199</span>
+                <div className="text-center text-xs text-gray-400 pt-1">
+                  Main Desk: <span className="text-[#B22222] font-semibold">+234-7089057979</span>
                 </div>
               </div>
             </div>

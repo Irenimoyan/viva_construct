@@ -14,7 +14,7 @@ export const Services = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeModalService, setActiveModalService] = useState(null);
 
-  const categories = ['All', 'Building', 'Commercial', 'Industrial', 'Infrastructure', 'Specialized', 'Design', 'Management'];
+  const categories = ['All', 'Building', 'Civil', 'Specialized', 'MEP', 'Management'];
 
   const filteredServices = servicesData.filter(service => {
     const matchesCategory = selectedCategory === 'All' || service.category === selectedCategory;

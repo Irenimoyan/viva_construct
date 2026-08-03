@@ -4,6 +4,7 @@ import { Navbar } from './components/common/Navbar';
 import { Footer } from './components/common/Footer';
 import { BackToTop } from './components/common/BackToTop';
 import { Loader } from './components/common/Loader';
+import { WhatsAppWidget } from './components/common/WhatsAppWidget';
 
 // Pages
 import { Home } from './pages/Home';
@@ -65,6 +66,7 @@ export function App() {
         </main>
         <Footer />
         <BackToTop />
+        <WhatsAppWidget />
       </div>
     </Router>
   );

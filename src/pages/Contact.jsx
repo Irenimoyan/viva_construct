@@ -249,17 +249,35 @@ export const Contact = () => {
           </div>
 
           {/* Interactive Map Embed Frame */}
-          <div className="mt-16 bg-white rounded-3xl p-4 shadow-lg border border-gray-200 overflow-hidden">
-            <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3 pl-2 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-[#B22222]" /> Corporate Headquarters Location (Lagos, Nigeria)
-            </h4>
-            <div className="w-full h-80 rounded-2xl overflow-hidden bg-gray-200 relative">
+          <div className="mt-16 bg-white rounded-3xl p-6 shadow-xl border border-gray-200 overflow-hidden">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5 gap-3">
+              <div>
+                <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block font-['Montserrat']">
+                  Interactive Site Map
+                </span>
+                <h4 className="font-bold text-xl text-[#000000] font-['Montserrat'] flex items-center gap-2 mt-0.5">
+                  <MapPin className="w-5 h-5 text-[#B22222]" /> 39 Ugbejeaki Street, Mende, Maryland, Lagos State
+                </h4>
+                <p className="text-xs text-gray-500 mt-1">
+                  Corporate Headquarters of Viva Constructs Limited (RC: 8867751)
+                </p>
+              </div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=39+Ugbejeaki+street+Mende+Maryland+Lagos+State+Nigeria"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#B22222] hover:bg-[#8B0000] text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all flex items-center gap-2 shadow-md flex-shrink-0"
+              >
+                Open in Google Maps App <MapPin className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Embedded Google Map Container */}
+            <div className="w-full h-[450px] rounded-2xl overflow-hidden bg-gray-100 border border-gray-200 relative shadow-inner">
               <iframe
-                title="Viva Construct New York Headquarters Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.989782806275!2d-73.97607362342624!3d40.76110373453883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f97bf1db8d%3A0x6b63793740e53a3e!2s750%205th%20Ave%2C%20New%20York%2C%20NY%2010019!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
+                title="Google Map - Viva Constructs Limited Headquarters, 39 Ugbejeaki Street, Mende Maryland Lagos"
+                src="https://maps.google.com/maps?q=39%20Ugbejeaki%20street%2C%20Mende%2C%20Maryland%2C%20Lagos%20State%2C%20Nigeria&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                className="w-full h-full border-0"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

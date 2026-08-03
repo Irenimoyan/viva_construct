@@ -76,18 +76,18 @@ export const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 mt-8"
+              className="flex flex-wrap sm:flex-row gap-3 mt-8"
             >
               <Link
                 to="/projects"
-                className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-base px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1 shadow-2xl shadow-[#B22222]/30 flex items-center justify-center gap-3 group"
+                className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-sm px-6 py-3 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-xl shadow-[#B22222]/30 inline-flex items-center justify-center gap-2 group"
               >
                 Explore Projects 
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/contact"
-                className="bg-white/10 hover:bg-white/20 text-white font-bold text-base px-8 py-4 rounded-xl transition-all border border-white/20 backdrop-blur-md flex items-center justify-center gap-3"
+                className="bg-white/10 hover:bg-white/20 text-white font-bold text-sm px-6 py-3 rounded-xl transition-all border border-white/20 backdrop-blur-md inline-flex items-center justify-center gap-2"
               >
                 Request Proposal
               </Link>
@@ -267,8 +267,44 @@ export const Home = () => {
               to="/services"
               className="bg-[#B22222] hover:bg-[#8B0000] text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg transition-all inline-flex items-center gap-2"
             >
-              Explore All 11 Specialized Services <ArrowRight className="w-4 h-4" />
+              Explore All 10 Specialized Services <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience & Partnership Section */}
+      <section className="py-16 bg-white border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block mb-2 font-['Montserrat']">
+              Target Partners & Clients
+            </span>
+            <h2 className="text-3xl font-black text-[#000000] font-['Montserrat']">
+              Who We Partner With & Serve
+            </h2>
+            <p className="text-gray-600 text-sm mt-2">
+              Viva Constructs Limited delivers trusted infrastructure solutions tailored for key institutional and private stakeholders.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {[
+              "Government Agencies",
+              "Telecommunications Cos",
+              "Real Estate Developers",
+              "Corporate Enterprises",
+              "Financial Institutions",
+              "NGOs & International Donors",
+              "Architects & Consultants",
+              "Private Property Owners",
+              "Foreign Investors",
+              "Industrial Operators"
+            ].map((aud, idx) => (
+              <div key={idx} className="bg-[#F8F9FA] p-4 rounded-xl border border-gray-200 text-center hover:border-[#B22222] transition-colors">
+                <span className="text-xs font-bold text-[#000000] font-['Montserrat']">{aud}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
