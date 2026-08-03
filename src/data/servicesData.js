@@ -1,29 +1,29 @@
 export const servicesData = [
-  {
-    id: "building-construction",
-    title: "Building Construction",
-    subtitle: "Turnkey Residential, Commercial & Industrial Structures",
-    iconName: "Building2",
-    category: "Building",
-    image: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Complete construction of residential, commercial, institutional, and industrial buildings from foundation to final handover.",
-    fullDescription: "Viva Constructs Limited delivers end-to-end building construction across Nigeria and West Africa. We manage the entire construction lifecycle — from initial earthworks and structural foundation piling to superstructures, enclosure, and final client commissioning.",
-    features: [
-      "Complete Residential & Commercial Superstructures",
-      "Institutional & Educational Facilities",
-      "Industrial Plants & High-Capacity Warehouses",
-      "Foundation Piling & Heavy Concrete Frameworks",
-      "End-to-End Turnkey Handover"
-    ],
-    stats: { completed: "25+", avgScale: "Residential & Commercial", warranty: "15 Years" }
-  },
+  // {
+  //   id: "building-construction",
+  //   title: "Building Construction",
+  //   subtitle: "Turnkey Residential, Commercial & Industrial Structures",
+  //   iconName: "Building2",
+  //   category: "Building",
+  //   image: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
+  //   shortDescription: "Complete construction of residential, commercial, institutional, and industrial buildings from foundation to final handover.",
+  //   fullDescription: "Viva Constructs Limited delivers end-to-end building construction across Nigeria and West Africa. We manage the entire construction lifecycle — from initial earthworks and structural foundation piling to superstructures, enclosure, and final client commissioning.",
+  //   features: [
+  //     "Complete Residential & Commercial Superstructures",
+  //     "Institutional & Educational Facilities",
+  //     "Industrial Plants & High-Capacity Warehouses",
+  //     "Foundation Piling & Heavy Concrete Frameworks",
+  //     "End-to-End Turnkey Handover"
+  //   ],
+  //   stats: { completed: "25+", avgScale: "Residential & Commercial", warranty: "15 Years" }
+  // },
   {
     id: "renovation-remodeling",
     title: "Building Renovation & Remodeling",
     subtitle: "Modern Property Remodeling & Structural Upgrades",
     iconName: "Wrench",
     category: "Building",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+    image: "/renovation.jpeg",
     shortDescription: "Modern renovation, structural upgrades, property remodeling, and rehabilitation designed to improve functionality and aesthetics.",
     fullDescription: "We revitalize aged or underperforming real estate assets. Viva Constructs Limited specializes in complete structural retrofitting, layout reconfiguration, facade modernizations, and energy efficiency upgrades.",
     features: [
@@ -77,7 +77,7 @@ export const servicesData = [
     subtitle: "Turnkey BTS Sites, Towers, Shelters & Maintenance",
     iconName: "Radio",
     category: "Specialized",
-    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    image: "/telecom-abuja-police-80m.jpg",
     shortDescription: "Construction and deployment of telecommunications infrastructure including BTS sites, tower foundations, shelters, cabling, earthing, and maintenance.",
     fullDescription: "Viva Constructs Limited is a specialized telecoms infrastructure partner for major mobile network operators and tower infrastructure companies across West Africa. We handle turnkey BTS site builds from land clearance to tower erection, power integration, and site servicing.",
     features: [
@@ -90,43 +90,43 @@ export const servicesData = [
     ],
     stats: { completed: "30+", avgScale: "Nationwide Telecom Sites", warranty: "Lifetime Structural" }
   },
-  {
-    id: "electrical-engineering",
-    title: "Electrical Engineering",
-    subtitle: "Power Distribution, Generators & Lighting Systems",
-    iconName: "Zap",
-    category: "MEP",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Electrical installations, power distribution, change-over systems, generator integration, industrial electrical works, lighting, and energy solutions.",
-    fullDescription: "Comprehensive electrical engineering services for commercial towers, industrial plants, telecom sites, and residential estates. We design and install high/low voltage distribution panels, automatic transfer switches (ATS), power backup, and surge protection.",
-    features: [
-      "High & Low Voltage Electrical Installations",
-      "Industrial & Commercial Power Distribution Panels",
-      "Automatic Transfer Switches (ATS) & Generator Integration",
-      "Architectural & Industrial Lighting Systems",
-      "Surge Protection & Copper Earthing Grids",
-      "Renewable Energy & Solar Inverter Integration"
-    ],
-    stats: { completed: "35+", avgScale: "Electrical Systems", warranty: "10 Years" }
-  },
-  {
-    id: "mechanical-engineering",
-    title: "Mechanical Engineering",
-    subtitle: "Piping Systems, HVAC & Equipment Installation",
-    iconName: "Settings",
-    category: "MEP",
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Mechanical installations, equipment installation, piping systems, and supporting engineering works.",
-    fullDescription: "Specialized mechanical systems installation and commissioning. Viva Constructs Limited handles industrial HVAC ducting, chilled water piping systems, heavy industrial machinery rigging, pumping stations, and fire protection piping.",
-    features: [
-      "Industrial Mechanical Systems & Equipment Rigging",
-      "Chilled Water & Fluid Piping Networks",
-      "HVAC Centralized Air Conditioning & Ventilation",
-      "Fire Suppression & Sprinkler Piping Installations",
-      "Water Treatment & Pumping Station Mechanical Works"
-    ],
-    stats: { completed: "20+", avgScale: "Mechanical Installations", warranty: "10 Years" }
-  },
+  // {
+  //   id: "electrical-engineering",
+  //   title: "Electrical Engineering",
+  //   subtitle: "Power Distribution, Generators & Lighting Systems",
+  //   iconName: "Zap",
+  //   category: "MEP",
+  //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+  //   shortDescription: "Electrical installations, power distribution, change-over systems, generator integration, industrial electrical works, lighting, and energy solutions.",
+  //   fullDescription: "Comprehensive electrical engineering services for commercial towers, industrial plants, telecom sites, and residential estates. We design and install high/low voltage distribution panels, automatic transfer switches (ATS), power backup, and surge protection.",
+  //   features: [
+  //     "High & Low Voltage Electrical Installations",
+  //     "Industrial & Commercial Power Distribution Panels",
+  //     "Automatic Transfer Switches (ATS) & Generator Integration",
+  //     "Architectural & Industrial Lighting Systems",
+  //     "Surge Protection & Copper Earthing Grids",
+  //     "Renewable Energy & Solar Inverter Integration"
+  //   ],
+  //   stats: { completed: "35+", avgScale: "Electrical Systems", warranty: "10 Years" }
+  // },
+  // {
+  //   id: "mechanical-engineering",
+  //   title: "Mechanical Engineering",
+  //   subtitle: "Piping Systems, HVAC & Equipment Installation",
+  //   iconName: "Settings",
+  //   category: "MEP",
+  //   image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+  //   shortDescription: "Mechanical installations, equipment installation, piping systems, and supporting engineering works.",
+  //   fullDescription: "Specialized mechanical systems installation and commissioning. Viva Constructs Limited handles industrial HVAC ducting, chilled water piping systems, heavy industrial machinery rigging, pumping stations, and fire protection piping.",
+  //   features: [
+  //     "Industrial Mechanical Systems & Equipment Rigging",
+  //     "Chilled Water & Fluid Piping Networks",
+  //     "HVAC Centralized Air Conditioning & Ventilation",
+  //     "Fire Suppression & Sprinkler Piping Installations",
+  //     "Water Treatment & Pumping Station Mechanical Works"
+  //   ],
+  //   stats: { completed: "20+", avgScale: "Mechanical Installations", warranty: "10 Years" }
+  // },
   {
     id: "project-management",
     title: "Project Management",
@@ -145,40 +145,40 @@ export const servicesData = [
     ],
     stats: { completed: "50+", avgScale: "Over N15B Managed", warranty: "Guaranteed SLA" }
   },
-  {
-    id: "procurement-supply",
-    title: "Procurement & Supply",
-    subtitle: "Construction Materials, Machinery & Project Logistics",
-    iconName: "Truck",
-    category: "Management",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Supply of quality construction materials, engineering equipment, tools, machinery, and project logistics.",
-    fullDescription: "Reliable supply chain solutions for major infrastructure and building developments. We source and deliver certified high-grade structural steel, cement, aggregates, heavy earthmoving equipment, generators, and specialized tools.",
-    features: [
-      "Certified High-Grade Steel & Cement Supply",
-      "Heavy Earthmoving & Construction Machinery Fleet",
-      "Electrical, Mechanical & Telecom Equipment Procurement",
-      "Project Site Logistics & Material Haulage",
-      "Quality Certification & Batch Testing Approvals"
-    ],
-    stats: { completed: "40+", avgScale: "Supply Contracts", warranty: "Certified Material" }
-  },
-  {
-    id: "facility-maintenance",
-    title: "Facility Maintenance",
-    subtitle: "Preventive & Corrective Maintenance Services",
-    iconName: "ShieldCheck",
-    category: "Management",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-    shortDescription: "Preventive and corrective maintenance services for residential, commercial, and industrial facilities.",
-    fullDescription: "Sustaining long-term property performance and structural integrity. Viva Constructs Limited delivers 24/7 facility management, preventative MEP servicing, emergency structural repairs, and routine building inspections.",
-    features: [
-      "Preventive & Corrective Building Maintenance",
-      "24/7 Emergency Electrical & Plumbing Response",
-      "Generator & Auxiliary Power Plant Maintenance",
-      "Structural Crack & Water Leakage Repairs",
-      "Scheduled HVAC & Lift System Servicing"
-    ],
-    stats: { completed: "30+ SLA Contracts", avgScale: "24/7 SLA", warranty: "Service SLA" }
-  }
+  // {
+  //   id: "procurement-supply",
+  //   title: "Procurement & Supply",
+  //   subtitle: "Construction Materials, Machinery & Project Logistics",
+  //   iconName: "Truck",
+  //   category: "Management",
+  //   image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+  //   shortDescription: "Supply of quality construction materials, engineering equipment, tools, machinery, and project logistics.",
+  //   fullDescription: "Reliable supply chain solutions for major infrastructure and building developments. We source and deliver certified high-grade structural steel, cement, aggregates, heavy earthmoving equipment, generators, and specialized tools.",
+  //   features: [
+  //     "Certified High-Grade Steel & Cement Supply",
+  //     "Heavy Earthmoving & Construction Machinery Fleet",
+  //     "Electrical, Mechanical & Telecom Equipment Procurement",
+  //     "Project Site Logistics & Material Haulage",
+  //     "Quality Certification & Batch Testing Approvals"
+  //   ],
+  //   stats: { completed: "40+", avgScale: "Supply Contracts", warranty: "Certified Material" }
+  // },
+  // {
+  //   id: "facility-maintenance",
+  //   title: "Facility Maintenance",
+  //   subtitle: "Preventive & Corrective Maintenance Services",
+  //   iconName: "ShieldCheck",
+  //   category: "Management",
+  //   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+  //   shortDescription: "Preventive and corrective maintenance services for residential, commercial, and industrial facilities.",
+  //   fullDescription: "Sustaining long-term property performance and structural integrity. Viva Constructs Limited delivers 24/7 facility management, preventative MEP servicing, emergency structural repairs, and routine building inspections.",
+  //   features: [
+  //     "Preventive & Corrective Building Maintenance",
+  //     "24/7 Emergency Electrical & Plumbing Response",
+  //     "Generator & Auxiliary Power Plant Maintenance",
+  //     "Structural Crack & Water Leakage Repairs",
+  //     "Scheduled HVAC & Lift System Servicing"
+  //   ],
+  //   stats: { completed: "30+ SLA Contracts", avgScale: "24/7 SLA", warranty: "Service SLA" }
+  // }
 ];

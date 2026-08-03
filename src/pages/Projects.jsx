@@ -6,7 +6,7 @@ import { Modal } from '../components/common/Modal';
 import { projectsData } from '../data/projectsData';
 import { 
   MapPin, Calendar, DollarSign, Clock, Layers, ArrowRight, Search, Filter, 
-  CheckCircle2, HardHat, ExternalLink 
+  CheckCircle2, HardHat, ExternalLink, Video 
 } from 'lucide-react';
 
 export const Projects = () => {
@@ -100,9 +100,16 @@ export const Projects = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-85" />
                       
-                      <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
-                        {project.category}
-                      </span>
+                      <div className="absolute top-4 left-4 flex gap-2">
+                        <span className="bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                          {project.category}
+                        </span>
+                        {project.video && (
+                          <span className="bg-[#000000]/80 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow flex items-center gap-1">
+                            <Video className="w-3 h-3 text-[#B22222]" /> Video Tour
+                          </span>
+                        )}
+                      </div>
 
                       <div className="absolute bottom-3 left-4 right-4 text-xs text-gray-300 flex items-center justify-between">
                         <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-[#B22222]" /> {project.location}</span>
@@ -161,18 +168,31 @@ export const Projects = () => {
             
             {/* Gallery Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-              <img 
-                src={activeModalProject.mainImage} 
-                alt={activeModalProject.title}
-                className="w-full h-56 md:col-span-2 object-cover rounded-xl shadow"
-              />
+              {activeModalProject.video ? (
+                <div className="md:col-span-2 relative rounded-xl overflow-hidden shadow bg-black h-64">
+                  <video 
+                    src={activeModalProject.video} 
+                    controls 
+                    autoPlay 
+                    muted 
+                    loop 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ) : (
+                <img 
+                  src={activeModalProject.mainImage} 
+                  alt={activeModalProject.title}
+                  className="w-full h-64 md:col-span-2 object-cover rounded-xl shadow"
+                />
+              )}
               <div className="grid grid-rows-2 gap-3">
                 {activeModalProject.gallery.slice(0, 2).map((img, idx) => (
                   <img 
                     key={idx} 
                     src={img} 
                     alt={`Gallery ${idx}`}
-                    className="w-full h-26 object-cover rounded-xl shadow" 
+                    className="w-full h-30 object-cover rounded-xl shadow" 
                   />
                 ))}
               </div>

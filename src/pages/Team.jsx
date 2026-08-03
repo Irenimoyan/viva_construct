@@ -54,12 +54,19 @@ export const Team = () => {
                     </p>
 
                     <div className="mt-4 space-y-1.5">
-                      {member.credentials.slice(0, 2).map((cred, idx) => (
-                        <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-gray-700">
+                      {Array.isArray(member.credentials) ? (
+                        member.credentials.slice(0, 2).map((cred, idx) => (
+                          <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-gray-700">
+                            <Award className="w-3.5 h-3.5 text-[#B22222]" />
+                            <span>{cred}</span>
+                          </div>
+                        ))
+                      ) : (
+                        <div className="flex items-center gap-2 text-xs font-semibold text-gray-700">
                           <Award className="w-3.5 h-3.5 text-[#B22222]" />
-                          <span>{cred}</span>
+                          <span>{member.credentials}</span>
                         </div>
-                      ))}
+                      )}
                     </div>
                   </div>
                 </div>
@@ -125,12 +132,19 @@ export const Team = () => {
             <div className="bg-[#F8F9FA] p-5 rounded-xl border border-gray-200">
               <h4 className="font-bold text-sm text-[#000000] font-['Montserrat'] mb-3">Academic & Industry Credentials</h4>
               <div className="space-y-2">
-                {activeTeamModal.credentials.map((cred, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-xs text-gray-800 font-medium">
+                {Array.isArray(activeTeamModal.credentials) ? (
+                  activeTeamModal.credentials.map((cred, idx) => (
+                    <div key={idx} className="flex items-center gap-2 text-xs text-gray-800 font-medium">
+                      <CheckCircle2 className="w-4 h-4 text-[#B22222]" />
+                      <span>{cred}</span>
+                    </div>
+                  ))
+                ) : (
+                  <div className="flex items-center gap-2 text-xs text-gray-800 font-medium">
                     <CheckCircle2 className="w-4 h-4 text-[#B22222]" />
-                    <span>{cred}</span>
+                    <span>{activeTeamModal.credentials}</span>
                   </div>
-                ))}
+                )}
               </div>
             </div>
 

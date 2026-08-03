@@ -1,5 +1,41 @@
 export const projectsData = [
   {
+    id: "five-bedroom-duplex-remodeling",
+    title: "Remodeling of 5-Bedroom Duplex into Contemporary House",
+    category: "Residential",
+    location: "Lagos, Nigeria",
+    year: "2026",
+    client: "Private Residential Client",
+    duration: "1 Month",
+    budget: "Turnkey Luxury Remodel",
+    scale: "5-Bedroom Duplex Transformation",
+    shortDescription: "Complete structural remodeling, contemporary architectural redesign, and luxury transformation of a 5-bedroom duplex.",
+    description: "Viva Constructs Limited executed the complete interior and exterior remodeling of a 5-bedroom duplex into a state-of-the-art contemporary luxury residence. Scope encompassed structural layout reconfiguration, modern exterior facade cladding, high-end interior finishing, acoustic ceiling installation, custom joinery, ambient architectural lighting, and full MEP electrical upgrades.",
+    services: [
+      "Structural Layout Reconfiguration & Core Alterations",
+      "Modern Exterior Facade Cladding & Architectural Finishing",
+      "High-End Interior Fit-Out & Acoustic Ceiling Partitions",
+      "Smart Ambient Architectural & Accent LED Lighting",
+      "Complete Mechanical, Electrical & Plumbing (MEP) Upgrades",
+      "Turnkey Commissioning & Client Handover"
+    ],
+    challenges: "Transforming an outdated 5-bedroom layout into an open-plan contemporary aesthetic while maintaining load-bearing structural integrity.",
+    solutions: "Engineered reinforced steel beam support retrofits, integrated floor-to-ceiling glass paneling, and installed modern energy-efficient HVAC and power distribution systems.",
+    mainImage: "/renovation.jpeg",
+    video: "/Remodelling of a five bedroom.mp4",
+    gallery: [
+      "/renovation.jpeg",
+      "/frontpage.jpeg",
+      "/homepage.jpeg"
+    ],
+    features: [
+      "Contemporary Open-Plan Architectural Layout",
+      "Smart Ambient & Accent Architectural Lighting Grid",
+      "Structural Steel Beam Retrofit & Load Support",
+      "Complete 5-Bedroom Turnkey Transformation"
+    ]
+  },
+  {
     id: "telecom-delta-asaba-100m",
     title: "100m Heavy Lattice Telecom Tower, Asaba.",
     category: "Telecommunications",

@@ -67,7 +67,7 @@ export const Footer = () => {
               Quick Navigation
             </h4>
             <ul className="space-y-2.5 text-sm">
-              {['Home', 'About', 'Services', 'Projects', 'Team', 'Testimonials', 'Process', 'Certifications', 'FAQ', 'Blog', 'Contact'].map((item) => (
+              {['Home', 'About', 'Services', 'Projects', 'Team', 'Testimonials', 'Process', 'Certifications', 'FAQ', 'Contact'].map((item) => (
                 <li key={item}>
                   <Link 
                     to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}

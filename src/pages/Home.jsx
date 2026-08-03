@@ -29,7 +29,7 @@ export const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 scale-105"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=2000&q=85')`
+            backgroundImage: `url("/frontpage.jpeg")`
           }}
         />
         <div className="absolute inset-0 hero-overlay" />
@@ -132,7 +132,7 @@ export const Home = () => {
             <div className="relative">
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" 
+                  src="/frontpage.jpeg" 
                   alt="Viva Constructs Project Site"
                   className="w-full h-[480px] object-cover hover:scale-105 transition-transform duration-700" 
                 />
