@@ -35,7 +35,7 @@ export const Projects = () => {
   return (
     <>
       <SEOHead 
-        title="Landmark Portfolio | Viva Construct"
+        title="Landmark Portfolio | Viva Construct Limited"
         description="Browse Viva Construct's landmark portfolio of commercial skyscrapers, luxury estates, highways, and industrial facilities."
       />
 

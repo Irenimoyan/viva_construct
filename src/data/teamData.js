@@ -4,13 +4,13 @@ export const teamData = [
     name: "Ganiyat M. Tom-Alli",
     role: "Managing Director",
     category: "Executive",
-    credentials: ["B.Acct", "COREN Registered", "NSE Member"],
+    credentials: ["COREN Registered", "NSE Member"],
     bio: "Provides strategic leadership, business development, and overall operational direction while ensuring excellence across every project delivered by Viva Constructs Limited.",
     image: "https://i.pinimg.com/474x/9f/4c/f0/9f4cf0f24b376077a2fcdab2e85c3584.jpg?nii=t",
     specialties: ["Strategic Leadership", "Corporate Governance", "Engineering Operations", "Client Relations"],
     experience: "5+ Years",
     // email: "Ganiyat@vivaconstructs.com",
-    // phone: "+234 708 905 7979",
+    phone: "+234 708 905 7979",
     // linkedin: "https://linkedin.com"
   },
   {
@@ -18,18 +18,18 @@ export const teamData = [
     name: "Moshood Ramadan T.A Babatunde",
     role: "Senior Project Supervisor",
     category: "Management",
-    credentials: ["PMP Certified", "COREN Registered", "M.Sc Civil Engineering"],
+    credentials: ["PMP Certified", "COREN Registered"],
     bio: "Coordinates project planning, execution, quality control, scheduling, procurement, and seamless client communication on site.",
     image: "https://i.pinimg.com/474x/9f/4c/f0/9f4cf0f24b376077a2fcdab2e85c3584.jpg?nii=t",
     specialties: ["5D BIM Scheduling", "Contract Administration", "Site Governance", "Procurement Logistics"],
     experience: "5+ Years",
     // email: "m.babatunde@vivaconstructs.com",
-    // phone: "+234 708 905 7979",
+    phone: "+234 8067915015",
     // linkedin: "https://linkedin.com"
   },
   {
     id: "site-engineer",
-    name: "Engr. David Chen",
+    name: "Shonibare Qobeed ",
     role: "Lead Site & Civil Engineer",
     category: "Engineering",
     credentials: ["B.Sc Structural Engineering", "COREN Registered"],
@@ -38,7 +38,7 @@ export const teamData = [
     specialties: ["Concrete Piling", "Telecom Tower Foundations", "Structural Integrity", "On-Site Supervision"],
     experience: "10+ Years",
     // email: "d.chen@vivaconstructs.com",
-    // phone: "+234 708 905 7979",
+    phone: "+234 7013195209",
     // linkedin: "https://linkedin.com"
   },
   // {
