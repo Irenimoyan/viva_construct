@@ -1,8 +1,8 @@
 export const teamData = [
   {
-    id: "managing-director",
-    name: "Ganiyat M. Tom-Alli",
-    role: "Managing Director",
+    id: "project manager",
+    name: "Ganiyat M. Tom-Ali",
+    role: "Project Manager",
     category: "Executive",
     credentials: ["COREN Registered", "NSE Member"],
     bio: "Provides strategic leadership, business development, and overall operational direction while ensuring excellence across every project delivered by Viva Constructs Limited.",
