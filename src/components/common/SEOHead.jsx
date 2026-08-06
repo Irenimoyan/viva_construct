@@ -15,23 +15,6 @@ export const SEOHead = ({
       metaDesc.setAttribute('content', description);
     }
 
-    // Update tab icon (favicon)
-    let faviconTag = document.querySelector('link[rel="icon"]');
-    if (faviconTag) {
-      faviconTag.setAttribute('href', '/viva-logo-circular.png');
-      faviconTag.setAttribute('type', 'image/png');
-    }
-
-    // Update Open Graph & Twitter preview images
-    let ogImg = document.querySelector('meta[property="og:image"]');
-    if (ogImg) {
-      ogImg.setAttribute('content', '/viva-logo-circular.png');
-    }
-    let twImg = document.querySelector('meta[property="twitter:image"]');
-    if (twImg) {
-      twImg.setAttribute('content', '/viva-logo-circular.png');
-    }
-
     // Inject JSON-LD Schema
     const schemaData = {
       "@context": "https://schema.org",
@@ -40,7 +23,7 @@ export const SEOHead = ({
       "legalName": "Viva Constructs Limited",
       "foundingDate": "2025",
       "iso6523Code": "RC:8867751",
-      "url": "https://vivaconstructs.com",
+      "url": "https://vivaconstruct.com",
       "logo": "https://vivaconstructs.com/Viva logo.png",
       "description": description,
       "tagline": "Building Excellence. Delivering Confidence.",
@@ -53,11 +36,11 @@ export const SEOHead = ({
         "addressRegion": "Lagos State",
         "addressCountry": "NG"
       },
-      "sameAs": [
-        "https://linkedin.com",
-        "https://twitter.com",
-        "https://instagram.com"
-      ]
+      // "sameAs": [
+      //   "https://linkedin.com",
+      //   "https://twitter.com",
+      //   "https://instagram.com"
+      // ]
     };
 
     let scriptTag = document.getElementById('json-ld-schema');

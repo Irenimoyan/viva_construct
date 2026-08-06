@@ -1,5 +1,45 @@
 export const projectsData = [
   {
+    id: "ikeja-luxury-duplex-fitout",
+    title: "Contemporary Luxury Duplex & High-End Interior Fit-Out",
+    category: "Residential",
+    location: "Ikeja, Lagos State, Nigeria",
+    year: "2026",
+    client: "Private Residential Client",
+    duration: "3 Months",
+    budget: "Turnkey Luxury Fit-Out",
+    scale: "Multi-Bedroom Luxury Residence",
+    shortDescription: "Architectural design, luxury interior fit-out, bespoke sanitary installations, and contemporary residential finishing in Ikeja, Lagos.",
+    description: "Viva Constructs Limited executed full architectural design, luxury interior fit-out, custom sanitary installations, and high-end residential finishing for a contemporary duplex in Ikeja, Lagos. Scope encompassed master bedroom suite fit-outs, custom spa-grade bathroom tiling, ambient ceiling lighting grids, high-precision sanitary plumbing, and premium wall finishes.",
+    services: [
+      "Architectural Space Planning & Interior Layout Redesign",
+      "Luxury Master Suite & Bedroom Interior Fit-Out",
+      "Spa-Grade Bathroom Tiling & Bespoke Sanitary Installation",
+      "Smart Ambient Ceiling Lighting Grids & Joinery",
+      "High-Precision Mechanical, Electrical & Plumbing (MEP)",
+      "Turnkey Client Handover & Quality Assurance Inspection"
+    ],
+    challenges: "Delivering custom spa-grade bathroom and interior finishes requiring exact tile alignment, waterproofing, and high-spec imported sanitaryware within tight room layouts.",
+    solutions: "Utilized laser-guided leveling tools, applied high-durability elastomeric waterproofing membranes, and engineered modular interior joinery for seamless installation.",
+    mainImage: "/Ikeja Project/IMG_2878.jpg",
+    gallery: [
+      "/Ikeja Project/IMG_2878.jpg",
+      "/Ikeja Project/complete bathroom.jpg",
+      "/Ikeja Project/IMG_2893.jpg",
+      "/Ikeja Project/IMG_2908.jpg",
+      "/Ikeja Project/IMG_2923.jpg",
+      "/Ikeja Project/IMG_2924.jpg",
+      "/Ikeja Project/IMG_3547.jpg",
+      "/Ikeja Project/IMG_3548.jpg"
+    ],
+    features: [
+      "Contemporary Architectural Exterior & Duplex Elevation",
+      "Bespoke Spa-Grade Master Bathroom & Sanitary Plumbing",
+      "Smart Ambient Architectural LED & Drop Ceiling Grids",
+      "Turnkey High-End Residential Delivery in Ikeja, Lagos"
+    ]
+  },
+  {
     id: "djessy-boxing-gym",
     title: "Djessy Commercial Boxing Gym & Athletic Center",
     category: "Commercial",
