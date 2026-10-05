@@ -6,7 +6,7 @@ export const teamData = [
     category: "Executive",
     credentials: ["COREN Registered", "NSE Member"],
     bio: "Provides strategic leadership, business development, and overall operational direction while ensuring excellence across every project delivered by Viva Constructs Limited.",
-    image: "https://i.pinimg.com/474x/9f/4c/f0/9f4cf0f24b376077a2fcdab2e85c3584.jpg?nii=t",
+    image: "/team/ganiyat.jpeg",
     specialties: ["Strategic Leadership", "Corporate Governance", "Engineering Operations", "Client Relations"],
     experience: "5+ Years",
     // email: "Ganiyat@vivaconstructs.com",
