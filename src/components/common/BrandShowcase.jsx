@@ -93,7 +93,7 @@ export const BrandShowcase = () => {
             <img 
               src="/Viva logo.png" 
               alt="Viva Constructs Limited Official Brand Logo" 
-              className="w-32 h-32 object-cover rounded-full shadow-lg border border-white/10 bg-black/40"
+              className="w-32 h-32 object-contain p-1 rounded-full shadow-lg border border-white/10 bg-black/40 flex-shrink-0"
             />
             <span className="text-xs font-bold text-gray-300 font-['Montserrat'] mt-3">
               Official Crest Logo

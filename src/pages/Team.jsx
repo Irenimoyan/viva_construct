@@ -48,7 +48,7 @@ export const Team = () => {
                         alt={member.name} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-80" />
+                      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/80 via-[#000000]/30 to-transparent pointer-events-none" />
                       {member.experience && (
                         <span className="absolute bottom-4 left-4 bg-[#B22222] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
                           {member.experience}

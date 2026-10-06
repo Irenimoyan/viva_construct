@@ -100,13 +100,13 @@ export const Projects = () => {
                   className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="relative h-64 overflow-hidden">
+                    <div className="relative aspect-[16/10] overflow-hidden bg-gray-900">
                       <img 
                         src={project.mainImage} 
                         alt={project.title} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-85" />
+                      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/90 via-[#000000]/30 to-transparent pointer-events-none" />
                       
                       <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
                         <span className="bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
@@ -138,8 +138,8 @@ export const Projects = () => {
 
                       <div className="mt-4 pt-4 border-t border-gray-100 grid grid-cols-2 gap-2 text-xs">
                         <div>
-                          <span className="text-gray-400 block">Investment</span>
-                          <span className="font-bold text-[#B22222]">{project.budget}</span>
+                          <span className="text-gray-400 block">Scope</span>
+                          <span className="font-bold text-[#B22222]">{project.scope}</span>
                         </div>
                         <div>
                           <span className="text-gray-400 block">Timeline</span>
@@ -228,15 +228,15 @@ export const Projects = () => {
 
             {/* Selected Image Full Preview */}
             {selectedPreviewImage && (
-              <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-[#B22222]">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-[#B22222] bg-[#0A0A0A] flex items-center justify-center p-2 min-h-[300px]">
                 <img 
                   src={selectedPreviewImage} 
                   alt="Selected Preview" 
-                  className="w-full h-72 sm:h-96 object-cover"
+                  className="w-full max-h-[70vh] object-contain rounded-xl"
                 />
                 <button
                   onClick={() => setSelectedPreviewImage(null)}
-                  className="absolute top-3 right-3 bg-black/80 text-white text-xs font-bold px-3 py-1 rounded-full hover:bg-[#B22222]"
+                  className="absolute top-3 right-3 bg-black/80 text-white text-xs font-bold px-3 py-1 rounded-full hover:bg-[#B22222] border border-white/20 shadow-md"
                 >
                   Close Photo Preview ✕
                 </button>

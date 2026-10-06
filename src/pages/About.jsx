@@ -125,7 +125,7 @@ export const About = () => {
                 />
               </div>
 
-              <div className="absolute -bottom-6 -left-6 bg-[#000000] text-white p-6 rounded-2xl shadow-xl border border-[#B22222]/40 hidden sm:block">
+              <div className="absolute bottom-6 left-6 bg-[#000000] text-white p-5 sm:p-6 rounded-2xl shadow-xl border border-[#B22222]/40 hidden sm:block z-20">
                 <div className="text-4xl font-black text-[#B22222] font-['Montserrat']">36 States</div>
                 <div className="text-xs font-bold uppercase tracking-wider mt-1 text-gray-300">Nigeria & West Africa Capability</div>
               </div>

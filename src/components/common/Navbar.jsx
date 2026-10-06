@@ -82,7 +82,7 @@ export const Navbar = () => {
             <img 
               src="/Viva logo.png" 
               alt="Viva Construct Logo"  
-              className="w-12 h-12 object-cover rounded-full border border-white/20 shadow-lg group-hover:scale-105 transition-transform bg-black/40"
+              className="w-12 h-12 object-contain p-0.5 rounded-full border border-white/20 shadow-lg group-hover:scale-105 transition-transform bg-black/40 flex-shrink-0"
             />
             <div>
               <span className="text-2xl font-black tracking-wider text-[#B22222] font-['Montserrat'] block leading-none">

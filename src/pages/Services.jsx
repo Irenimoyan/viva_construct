@@ -91,13 +91,13 @@ export const Services = () => {
                   className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="relative h-56 overflow-hidden">
+                    <div className="relative aspect-[16/10] overflow-hidden bg-gray-900">
                       <img 
                         src={service.image} 
                         alt={service.title} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-80" />
+                      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/80 via-[#000000]/30 to-transparent pointer-events-none" />
                       <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
                         {service.category}
                       </span>
@@ -155,11 +155,13 @@ export const Services = () => {
           title={activeModalService.title}
         >
           <div className="space-y-6">
-            <img 
-              src={activeModalService.image} 
-              alt={activeModalService.title} 
-              className="w-full h-72 object-cover rounded-xl shadow-lg"
-            />
+            <div className="w-full bg-[#0A0A0A] rounded-xl overflow-hidden flex items-center justify-center p-2 border border-gray-800 shadow-lg min-h-[260px]">
+              <img 
+                src={activeModalService.image} 
+                alt={activeModalService.title} 
+                className="w-full max-h-80 sm:max-h-96 object-contain rounded-lg"
+              />
+            </div>
 
             <div>
               <span className="text-[#B22222] font-bold text-xs uppercase tracking-widest block font-['Montserrat']">

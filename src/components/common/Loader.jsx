@@ -21,7 +21,7 @@ export const Loader = () => {
         <img 
           src="/Viva logo.png" 
           alt="Viva Constructs Limited Logo Loading" 
-          className="w-20 h-20 object-cover rounded-full border border-white/20 shadow-2xl bg-black/60 p-1.5" 
+          className="w-20 h-20 object-contain rounded-full border border-white/20 shadow-2xl bg-black/60 p-1 flex-shrink-0" 
         />
       </motion.div>
 

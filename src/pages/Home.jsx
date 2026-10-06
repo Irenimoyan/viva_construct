@@ -139,7 +139,7 @@ export const Home = () => {
               </div>
 
               {/* Floating Highlight Card */}
-              <div className="absolute -bottom-8 -right-4 sm:bottom-6 sm:right-6 z-20 bg-[#000000] text-white p-6 rounded-2xl shadow-2xl border border-[#B22222]/40 max-w-xs">
+              <div className="relative sm:absolute sm:bottom-6 sm:right-6 mt-4 sm:mt-0 z-20 bg-[#000000] text-white p-5 sm:p-6 rounded-2xl shadow-2xl border border-[#B22222]/40 max-w-xs mx-auto sm:mx-0">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-10 h-10 rounded-lg bg-[#B22222] flex items-center justify-center text-white font-bold">
                     <ShieldCheck className="w-6 h-6" />
@@ -231,7 +231,7 @@ export const Home = () => {
                       alt={service.title} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-80" />
+                    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/90 via-[#000000]/40 to-transparent pointer-events-none" />
                     <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
                       {service.category}
                     </span>
@@ -344,7 +344,7 @@ export const Home = () => {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent opacity-90" />
+                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/90 via-[#000000]/40 to-transparent pointer-events-none" />
                   <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
                     {project.category}
                   </span>
