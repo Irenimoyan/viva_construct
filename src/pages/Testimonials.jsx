@@ -112,7 +112,7 @@ export const Testimonials = () => {
 
                 <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full object-cover border-2 border-[#000000]" />
+                    {/* <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full object-cover border-2 border-[#000000]" /> */}
                     <div>
                       <h4 className="font-bold text-sm text-[#000000] font-['Montserrat']">{item.name}</h4>
                       <p className="text-xs text-gray-500">{item.title}, {item.company}</p>
