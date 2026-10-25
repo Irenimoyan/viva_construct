@@ -104,7 +104,7 @@ export const Projects = () => {
                       <img 
                         src={project.mainImage} 
                         alt={project.title} 
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" 
                       />
                       <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/90 via-[#000000]/30 to-transparent pointer-events-none" />
                       
@@ -188,7 +188,7 @@ export const Projects = () => {
                     autoPlay 
                     muted 
                     loop 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                   <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1 border border-white/10">
                     <Video className="w-3.5 h-3.5 text-[#B22222]" /> Playing Video
@@ -251,17 +251,17 @@ export const Projects = () => {
                 </span>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2">
                   {activeModalProject.gallery.map((img, idx) => (
-                    <div 
+                  <div 
                       key={idx}
                       onClick={() => setSelectedPreviewImage(img)}
-                      className={`relative h-24 rounded-xl overflow-hidden shadow cursor-pointer group border-2 transition-all ${
+                      className={`relative aspect-square rounded-xl overflow-hidden shadow cursor-pointer group border-2 transition-all bg-gray-900 ${
                         selectedPreviewImage === img ? 'border-[#B22222] ring-2 ring-[#B22222]/30 scale-95' : 'border-transparent hover:border-[#B22222]/60'
                       }`}
                     >
                       <img 
                         src={img} 
                         alt={`Site Gallery ${idx + 1}`}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" 
                       />
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
                     </div>

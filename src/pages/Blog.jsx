@@ -30,11 +30,11 @@ export const Blog = () => {
                 className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  <div className="relative h-56 overflow-hidden">
+                  <div className="relative aspect-[16/9] overflow-hidden bg-gray-900">
                     <img 
                       src={post.image} 
                       alt={post.title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" 
                     />
                     <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
                       {post.category}
@@ -87,7 +87,7 @@ export const Blog = () => {
             <img 
               src={activeArticle.image} 
               alt={activeArticle.title} 
-              className="w-full h-72 object-cover rounded-xl shadow"
+              className="w-full aspect-[16/9] object-cover object-center rounded-xl shadow"
             />
 
             <div className="flex items-center justify-between text-xs text-gray-500 border-b pb-3">

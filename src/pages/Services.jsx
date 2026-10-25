@@ -95,7 +95,7 @@ export const Services = () => {
                       <img 
                         src={service.image} 
                         alt={service.title} 
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" 
                       />
                       <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/80 via-[#000000]/30 to-transparent pointer-events-none" />
                       <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">

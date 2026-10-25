@@ -134,7 +134,7 @@ export const Home = () => {
                 <img 
                   src="/frontpage.jpeg" 
                   alt="Viva Constructs Project Site"
-                  className="w-full h-[480px] object-cover hover:scale-105 transition-transform duration-700" 
+                  className="w-full aspect-[4/3] object-cover object-center hover:scale-105 transition-transform duration-700" 
                 />
               </div>
 
@@ -225,11 +225,11 @@ export const Home = () => {
                 className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group border border-gray-100 flex flex-col justify-between"
               >
                 <div>
-                  <div className="relative h-52 overflow-hidden">
+                  <div className="relative aspect-[16/10] overflow-hidden bg-gray-900">
                     <img 
                       src={service.image} 
                       alt={service.title} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/90 via-[#000000]/40 to-transparent pointer-events-none" />
                     <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
@@ -338,11 +338,11 @@ export const Home = () => {
                 key={project.id}
                 className="glass-card-dark rounded-2xl overflow-hidden border border-white/10 group hover:border-[#B22222]/50 transition-all duration-300"
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative aspect-[16/10] overflow-hidden bg-gray-900">
                   <img 
                     src={project.mainImage} 
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" 
                   />
                   <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/90 via-[#000000]/40 to-transparent pointer-events-none" />
                   <span className="absolute top-4 left-4 bg-[#B22222] text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
@@ -407,7 +407,13 @@ export const Home = () => {
                 </div>
 
                 <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
-                  <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full object-cover border-2 border-[#B22222]" />
+                  {item.image ? (
+                    <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full object-cover border-2 border-[#B22222] flex-shrink-0" />
+                  ) : (
+                    <div className="w-12 h-12 rounded-full bg-[#B22222]/20 border-2 border-[#B22222] flex items-center justify-center flex-shrink-0">
+                      <span className="text-[#B22222] font-bold text-sm">{item.name.charAt(0)}</span>
+                    </div>
+                  )}
                   <div>
                     <h4 className="font-bold text-sm text-[#000000] font-['Montserrat']">{item.name}</h4>
                     <p className="text-xs text-gray-500">{item.title}, {item.company}</p>

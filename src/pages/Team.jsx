@@ -42,12 +42,18 @@ export const Team = () => {
                   className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between"
                 >
                   <div>
-                    <div className="relative h-72 overflow-hidden">
-                      <img 
-                        src={member.image || "https://i.pinimg.com/474x/9f/4c/f0/9f4cf0f24b376077a2fcdab2e85c3584.jpg?nii=t"} 
-                        alt={member.name} 
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                      />
+                    <div className="relative aspect-[3/4] overflow-hidden bg-gray-200">
+                      {member.image ? (
+                        <img 
+                          src={member.image} 
+                          alt={member.name} 
+                          className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" 
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
+                          <span className="text-6xl font-black text-[#B22222]/40 font-['Montserrat']">{member.name.charAt(0)}</span>
+                        </div>
+                      )}
                       <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#000000]/80 via-[#000000]/30 to-transparent pointer-events-none" />
                       {member.experience && (
                         <span className="absolute bottom-4 left-4 bg-[#B22222] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
@@ -119,11 +125,17 @@ export const Team = () => {
         >
           <div className="space-y-6">
             <div className="flex flex-col sm:flex-row gap-6 items-center">
-              <img 
-                src={activeTeamModal.image || "https://i.pinimg.com/474x/9f/4c/f0/9f4cf0f24b376077a2fcdab2e85c3584.jpg?nii=t"} 
-                alt={activeTeamModal.name} 
-                className="w-36 h-36 rounded-2xl object-cover shadow-lg border-2 border-[#B22222]"
-              />
+              {activeTeamModal.image ? (
+                <img 
+                  src={activeTeamModal.image} 
+                  alt={activeTeamModal.name} 
+                  className="w-36 h-48 rounded-2xl object-cover object-top shadow-lg border-2 border-[#B22222] flex-shrink-0"
+                />
+              ) : (
+                <div className="w-36 h-48 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-lg border-2 border-[#B22222] flex items-center justify-center flex-shrink-0">
+                  <span className="text-5xl font-black text-[#B22222]/50 font-['Montserrat']">{activeTeamModal.name.charAt(0)}</span>
+                </div>
+              )}
               <div>
                 {activeTeamModal.experience && (
                   <span className="bg-[#B22222]/20 text-[#B22222] border border-[#B22222]/30 text-xs font-bold px-3 py-1 rounded-full">

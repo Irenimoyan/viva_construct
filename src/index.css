@@ -24,6 +24,18 @@
     font-family: 'Montserrat', 'Poppins', sans-serif;
     letter-spacing: -0.02em;
   }
+
+  /* Global image safety — prevents horizontal overflow and layout breaks */
+  img, video {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Prevent images inside flex containers from shrinking unexpectedly */
+  img[class*="object-cover"],
+  img[class*="object-contain"] {
+    flex-shrink: 0;
+  }
 }
 
 /* Brand Palette Utilities */

@@ -63,11 +63,17 @@ export const Testimonials = () => {
                   </p>
 
                   <div className="flex flex-col items-center">
-                    <img 
-                      src={item.image} 
-                      alt={item.name} 
-                      className="w-16 h-16 rounded-full object-cover border-2 border-[#B22222] mb-2"
-                    />
+                    {item.image ? (
+                      <img 
+                        src={item.image} 
+                        alt={item.name} 
+                        className="w-16 h-16 rounded-full object-cover border-2 border-[#B22222] mb-2"
+                      />
+                    ) : (
+                      <div className="w-16 h-16 rounded-full bg-[#B22222]/20 border-2 border-[#B22222] flex items-center justify-center mb-2">
+                        <span className="text-[#B22222] font-bold text-xl">{item.name.charAt(0)}</span>
+                      </div>
+                    )}
                     <h4 className="font-bold text-lg text-white font-['Montserrat']">{item.name}</h4>
                     <p className="text-xs text-[#B22222] font-semibold">{item.title}, {item.company}</p>
                     <span className="text-[11px] text-gray-400 mt-1 bg-white/10 px-3 py-1 rounded-full border border-white/10">
@@ -112,7 +118,17 @@ export const Testimonials = () => {
 
                 <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    {/* <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full object-cover border-2 border-[#000000]" /> */}
+                    {item.image ? (
+                      <img 
+                        src={item.image} 
+                        alt={item.name} 
+                        className="w-12 h-12 rounded-full object-cover border-2 border-[#B22222] flex-shrink-0" 
+                      />
+                    ) : (
+                      <div className="w-12 h-12 rounded-full bg-[#B22222]/10 border-2 border-[#B22222]/30 flex items-center justify-center flex-shrink-0">
+                        <span className="text-[#B22222] font-bold text-base font-['Montserrat']">{item.name.charAt(0)}</span>
+                      </div>
+                    )}
                     <div>
                       <h4 className="font-bold text-sm text-[#000000] font-['Montserrat']">{item.name}</h4>
                       <p className="text-xs text-gray-500">{item.title}, {item.company}</p>

@@ -121,11 +121,11 @@ export const About = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" 
                   alt="Viva Constructs Engineering Site" 
-                  className="w-full h-[520px] object-cover"
+                  className="w-full aspect-[4/3] object-cover object-center"
                 />
               </div>
 
-              <div className="absolute bottom-6 left-6 bg-[#000000] text-white p-5 sm:p-6 rounded-2xl shadow-xl border border-[#B22222]/40 hidden sm:block z-20">
+              <div className="relative sm:absolute sm:bottom-6 sm:left-6 mt-4 sm:mt-0 bg-[#000000] text-white p-5 sm:p-6 rounded-2xl shadow-xl border border-[#B22222]/40 z-20 inline-block max-w-xs">
                 <div className="text-4xl font-black text-[#B22222] font-['Montserrat']">36 States</div>
                 <div className="text-xs font-bold uppercase tracking-wider mt-1 text-gray-300">Nigeria & West Africa Capability</div>
               </div>

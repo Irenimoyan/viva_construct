@@ -402,7 +402,7 @@ export const Contact = () => {
                                 <img 
                                   src="/Viva logo.png" 
                                   alt="" 
-                                  className="w-4 h-4 rounded-full object-cover" 
+                                  className="w-4 h-4 rounded-full object-contain" 
                                   aria-hidden="true"
                                 />
                               </div>
