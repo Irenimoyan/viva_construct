@@ -124,6 +124,49 @@ export const projectsData = [
     ]
   },
   {
+    id: "telecom-benin-city-tower",
+    title: "Heavy Structural Telecom Tower, Earthing & Lightning Protection",
+    category: "Telecommunications",
+    location: "Akpakpava Road, Benin City, Edo State, Nigeria",
+    year: "2026",
+    client: "Edo State Telecommunications Infrastructure",
+    duration: "3 Months",
+    scope: "Turnkey Tower & Lightning Protection",
+    scale: "High-Altitude Lattice Tower & ESE System",
+    shortDescription: "Turnkey structural lattice tower erection, high-altitude rigging, Prevectron Early Streamer Emission lightning protection, and copper earthing grid in Benin City.",
+    description: "Viva Constructs Limited delivered comprehensive structural telecommunications tower works, certified high-altitude rigging, precision anti-corrosive coating, and advanced atmospheric lightning protection in Benin City, Edo State. The scope encompassed heavy steel lattice assembly and torque inspection, installation of the French Prevectron Early Streamer Emission (ESE) lightning terminal, subsurface continuous solid copper ground ring bonding, and full HSE safety oversight.",
+    services: [
+      "High-Altitude Structural Steel Lattice Rigging & Erection",
+      "Prevectron Early Streamer Emission (ESE) Lightning Protection",
+      "Subsurface Solid Copper Ground Ring & Earthing Grid",
+      "Anti-Corrosive Industrial Painting & Weatherproof Coating",
+      "Rigorous High-Altitude Fall-Arrest HSE Protocols",
+      "Antenna Mount Infrastructure & Commissioning Inspection"
+    ],
+    challenges: "Conducting high-elevation structural steel rigging, anti-corrosive coating, and lightning terminal installation at height over an active urban environment with zero disruption.",
+    solutions: "Deployed certified riggers with double-lanyard fall-arrest systems, established perimeter ground-safety exclusion zones, and integrated specialized French Prevectron ESE technology for wide-area surge dissipation.",
+    mainImage: "/Benin tower/44da63b1-b24d-450e-94a8-ccfaeeaec783.jpg",
+    video: "/Benin tower/26265106-efcf-4ac2-9c71-462aa7a39718.mp4",
+    videos: [
+      { title: "Tower Rigging & Structural Works", src: "/Benin tower/26265106-efcf-4ac2-9c71-462aa7a39718.mp4" },
+      { title: "High-Altitude Panoramic Tour", src: "/Benin tower/9a7d9344-e85e-47d7-9e76-ec67b951b181.mp4" },
+      { title: "Tower Maintenance & Coating", src: "/Benin tower/e6a3f7c7-aa1c-4ea2-a646-63f824a6aefb.mp4" }
+    ],
+    gallery: [
+      "/Benin tower/44da63b1-b24d-450e-94a8-ccfaeeaec783.jpg",
+      "/Benin tower/8569174e-bc19-4966-88fe-e77fa99c05cf.jpg",
+      "/Benin tower/87a46ba8-aa78-45fa-a757-d4ae206e86d6.jpg",
+      "/Benin tower/67315bc0-2d9b-4f9e-b5f9-3dd3ac8b47ff.jpg",
+      "/Benin tower/7fd37606-8c21-4891-ba3d-ec46d51b19bb.jpg"
+    ],
+    features: [
+      "Certified High-Altitude Telecom Rigging & Erection",
+      "Prevectron Early Streamer Emission Lightning Protection",
+      "Subsurface Heavy Copper Ground Ring & Surge Dissipation",
+      "Full HSE Compliance with Zero Lost-Time Incidents"
+    ]
+  },
+  {
     id: "telecom-delta-asaba-100m",
     title: "100m Heavy Lattice Telecom Tower, Asaba.",
     category: "Telecommunications",
